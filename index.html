@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper/css/swiper.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -82,15 +84,37 @@
                 <li class="catalog__box__item"><object data="img/capoeira.svg" type="image/svg+xml"></object>Капоэйра</li>
             </ul>
             <div class="catalog__box__form">
-                <div class="catalog__box__form__title">
+                <div class="catalog__box__form__title">Не знаете что выбрать? Мы вам поможем.</div>
+                <form action="">
                     <label><input type="text">Темп активности</label>
                     <label><input type="text">Ваш возраст</label>
                     <label><input type="text">Предпочтения</label>
                     <label><input type="text">Тип занятий</label>
-                </div>
+
+                    <button type="submit">Показать доступные варианты</button>
+                </form>
             </div>
         </div>
     </section>
-    
+    <section class="team">
+        <div class="team__title">Команда Арены</div>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+            </div>
+            
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+    </section>
+    <script src="js/script.js"></script>
+    <script src="swiper/js/swiper.min.js"></script>
 </body>
 </html>

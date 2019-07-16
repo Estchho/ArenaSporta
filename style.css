@@ -149,12 +149,20 @@ header{
 }
 
 .catalog__box__item{
-    width: 16%;
+    width: 10%;
     height: 200px;
     color: #203260;
+    margin-left: 3%;
+    margin-right: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    text-align: center;   
+}
+
+.swiper-container {
+    width: 1110px;
+    height: 300px;
+    background-color: #6289D9;
 }
