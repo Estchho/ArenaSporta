@@ -1,6 +1,5 @@
 body{
     font-size: 16px;
-
     max-width: 1367px;
     margin: 0 auto;
 }
@@ -10,7 +9,9 @@ body{
     list-style: none;
     text-decoration: none;
     box-sizing:border-box;
-    
+    padding: 0;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
 }
 
 header{
@@ -23,6 +24,7 @@ header{
     align-items: center;
     border-bottom: 2px rgb(255, 255, 255, 0.2) solid;
 }
+
 .header__logo{
     margin-left: 20px;
 }
@@ -35,37 +37,84 @@ header{
 }
 
 .header__nav__link{
-    color: #fff;
     list-style: none;
 }
 
 .header__tool{
     display: flex;
 }
+
 .header__tool_phone{
     margin: 0 20px;
 }
+
 .main{
     background-image: url(img/Main_bg.jpg);
+    width: 100%;
     margin: 0 auto;
-    border: 2px blue solid;
+    border: 2px blue dashed;
     height: 600px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
+}
+
+.main__middle{
+    width: 95%;
+    justify-self: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px red dashed;
+    margin: 70px;
+}
+.main__middle__social{
+    transform: rotate(-90deg);
+    margin-left: -50px;
 }
 .main__middle__logo{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: inline-block;
     background-color: #fff;
     width: 608px;
     height: 316px;
-    margin-bottom: 80px;
+    position: relative;
+
 }
+.main__middle__logo__location{
+    display: flex;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    border: 1px black dashed;
+    color: #203260;
+}
+.point{
+    width: 31px;
+    height: 31px;
+    border: 1px #203260 solid;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.point img{
+    
+}
+.text_box{
+   
+}
+.text_box p{
+    color: #203260;
+}
+ 
 .video_button{
+    position: absolute;
+    right: -20px;
     width: 86px;
     height: 86px;
     border: 10px solid #203260;
@@ -73,49 +122,47 @@ header{
     background: url(img/button_tri.svg) no-repeat center;
 }
 .video_button::before{
-    content: url(img/video_txt.svg); 
-    position: absolute; 
-     
+    content: url(img/video_txt.svg);
 }
-
-/*
-.video_button_txt{
-    margin-left: -120px;
-    margin-top: -50px;
-    transform: rotate(-90deg);
-    transform: rotate3d(5deg);
-    color: #203260;
+.video_button:hover{
+    transform: scale(0.9);
+    transition: all 1s ease-in-out;
 }
-*/
-
+.video_button:hover:before{
+    display: none;
+}
 
 .main__button_box{
    width: 90%;
-   border: 2px green solid;
+   border: 2px green dashed;
+   justify-self: end;
    display: flex;
-   margin: 0 auto;
+   justify-content: space-between;
+   align-items: center;
 }
-
 .main__button{
     background-color: #6289D9;
     height: 50px;
     border: none;
     border-radius: 50px;
 }
-.main__button:nth-child(2){
+.main__button__middle{
     width: 40px;
     height: 40px;
-    margin: 0 auto;
+    box-shadow:
+       0 0 0 7px rgb(98, 137, 217, 0.3),
+       0 0 0 14px rgb(98, 137, 217, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.main__button:nth-child(2)::after{
-    content: "";
-    position: absolute;
-    width: 54px;
-    height: 54px;
-    background-color: rgb(98, 137, 217, 0.3);
-    border-radius: 50px;
+.main__button__middle:hover{
+    box-shadow:none;
 }
-
+.main__button:first-child,
+.main__button:last-child{
+    padding: 0 20px;
+}
 .sections__nav{
     display: flex;
     justify-content: space-around;
@@ -165,4 +212,9 @@ header{
     width: 1110px;
     height: 300px;
     background-color: #6289D9;
+}
+
+.partners__item:hover{
+    background-color: yellowgreen;
+  fill: #FFFFFF;
 }

@@ -9,7 +9,7 @@ $(document).ready(function () {
         draggable: true,
       },
       loop: true
-    })
+    })    
   });
 
  
