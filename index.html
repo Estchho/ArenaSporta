@@ -82,12 +82,13 @@
             </ul>
             <div class="catalog__box__form">
                 <div class="catalog__box__form__title">Не знаете что выбрать? Мы вам поможем.</div>
-                <form action="">
-                    <label><input type="text">Темп активности</label>
-                    <label><input type="text">Ваш возраст</label>
-                    <label><input type="text">Предпочтения</label>
-                    <label><input type="text">Тип занятий</label>
-
+                <form class="form" action="">
+                    <label><input class="catalog__box__form__input" type="text"><!--Темп активности--></label>
+                    <label><input class="catalog__box__form__input" type="text"><!--Ваш возраст--></label>
+                    <label><input class="catalog__box__form__input" type="text"><!--Предпочтения--></label>
+                    <label><input class="catalog__box__form__input" type="text"><!--Тип занятий--></label>
+                    <label><input type="radio" name="male"></label>
+                    <label><input type="radio" name="female"></label>
                     <button type="submit">Показать доступные варианты</button>
                 </form>
             </div>
@@ -100,10 +101,26 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
             <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ...
+                <div class="swiper-slide">
+                    <div class="swiper-slide__img"><img src="img/trener1.jpg" alt="Леонид Грицай"></div>
+                    <div class="swiper-slide__sport_type">ВОЛЕЙБОЛ</div>
+                    <div class="swiper-slide__name">Леонид Грицай</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__img"><img src="img/trener2.jpg" alt="Александр Кулик"></div>
+                    <div class="swiper-slide__sport_type">Мини-футбол</div>
+                    <div class="swiper-slide__name">Александр Кулик</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__img"><img src="img/trener3.jpg" alt="Алексей Воскобойников"></div>
+                    <div class="swiper-slide__sport_type">Каратэномичи</div>
+                    <div class="swiper-slide__name">Алексей Воскобойников</div>   
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__img"><img src="img/trener4.jpg" alt="Сергей Пыхов"></div>
+                    <div class="swiper-slide__sport_type">Капоэро</div>
+                    <div class="swiper-slide__name">Сергей Пыхов</div>   
+                </div>
             </div>
             
             <!-- If we need scrollbar -->
@@ -112,13 +129,13 @@
 
     </section>
     <section class="about">
-        <div class="about__slider"></div>
+        <div class="about__slider"><img src="img/about_img.svg" alt=""></div>
         <div class="about__text">
             <div class="about__text__sup">Арена спорта - Это современный комплекс, призванный не только развивать и поддерживать приморский спорт, но и создавать максимально комфортные и благоприятные условия.</div>
             <div class="about__text__middle">
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
+                <div class="">Об Арене</div>
+                <div class="">Направления</div>
+                <div class="">Специалисты</div>
             </div>
             <div class="about__text__sub">Пти́цы — группа теплокровных яйцекладущих позвоночных животных, традиционно рассматриваемая в ранге отдельного класса. Представляют собой хорошо обособленную на фоне остальных современных животных группу, одним из наиболее характерных признаков представителей которой является покров.</div>
         </div>

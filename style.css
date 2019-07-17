@@ -215,12 +215,153 @@ header{
     text-align: center;   
 }
 
+.catalog__box__form{
+    width: 1052px;
+    height: 514px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.form{
+    
+}
+.catalog__box__form__title,
+.form label{
+    color: #203260;
+}
+.form button{
+    width: 920px;
+    height: 58px;
+    background: #203260;
+    border:none;
+    border-radius: 2px;
+}
+.catalog__box__form__input{
+    width: 445px;
+    height: 49px;
+    margin: 33px 30px;
+}
+.team{
+    height: 633px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.team__title{
+    color: #203260;
+}
 .swiper-container {
     width: 1110px;
     height: 300px;
-    background-color: #6289D9;
+}
+.swiper-slide{
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid #F2F5FA;
+}
+.swiper-slide__img{
+    width: 128px;
+    height: 128px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide__sport_type{
+    color: #6289D9;
+    border: #6289D9 1px solid;
+    border-radius: 25px;
+    padding: 15 25px !important;
+    margin-bottom: 20px;
+}
+.swiper-slide__name{
+    color: #203260;
 }
 
+.about{
+    width: 1366px;
+    height: 560px;
+    background: #F5F8FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about__slider{
+ margin-right: 64px;
+}
+.about__text{
+    max-width: 551px;
+}
+
+.about__text__sup{
+    margin-bottom: 29px;
+}
+.about__text__sup,
+.about__text__middle div{
+    color: #203260;
+}
+.about__text__middle div{
+    display: inline-block;
+    margin-right: 34px;
+}
+.about__text__middle{
+    margin-bottom: 35px;
+}
+
+.about__text__sub{
+    color: #3A516A;
+}
+.news{
+    height: 739px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news__item{
+    width: 350px;
+    height: 432px;
+    margin-right: 30px;
+    background: #F2F5FA;
+    border-radius: 2px; 
+    position: relative;
+}
+.news__item img{
+    margin-bottom: 34px; 
+}
+.news__item__title{
+    color: #203260;
+    margin-bottom: 10px;
+}
+.news__item__txt{
+    color: #3A516A;
+}
+.news__item__link{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 44px;
+    height: 44px;
+    background: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.training{
+    height: 288px;
+    width: 100%;
+    background-image: url(img/ball_bg.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .partners__item:hover{
     background-color: yellowgreen;
   fill: #FFFFFF;
