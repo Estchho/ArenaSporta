@@ -23,6 +23,7 @@ header{
     justify-content: center;
     align-items: center;
     border-bottom: 2px rgb(255, 255, 255, 0.2) solid;
+    z-index: 999;
 }
 
 .header__logo{
@@ -168,15 +169,21 @@ header{
     justify-content: space-around;
     align-items: center;
     height: 119px;
-    border: 2px green solid;
+    border: 2px green dashed;
 }
 .sections__nav__item{
     display: flex;
     flex-direction: column;
     color: #203260;
-    background-color: none;
-    border: none;
+    border: #6289D9 1px dashed;
+    filter: opacity(0.3);
+    border-bottom: 3px solid #B6BECB;
 }
+.sections__nav__item:hover{
+    filter: none;
+
+}
+
 .catalog{
     width: 1110px;
     height: 960px;
