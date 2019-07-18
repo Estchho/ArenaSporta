@@ -258,33 +258,49 @@ option{
 }
 
 .catalog__box__form{
-    width: 1052px;
-    height: 514px;
+    max-width: 1052px;
+    max-height: 514px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
 }
-.form{
-    
+.catalog__activity,
+.catalog__type{
+    margin-left: 66px;
+    margin-right: 30px;
 }
+.catalog__age,
+.group_type{
+    margin-right: 66px;
+}
+
+
 .catalog__box__form__title,
 .form label{
     color: #203260;
 }
-.form button{
-    width: 920px;
-    height: 58px;
-    background: #203260;
-    border:none;
-    border-radius: 2px;
-}
+
 .catalog__box__form__input{
     width: 445px;
     height: 49px;
     margin: 33px 30px;
+    
+    color: #203260;
 }
+.catalog__box__form__input:nth-child(1){
+ 
+}
+
+.form button{
+    background: #203260;
+    padding: 20px 340px 13px;
+    border:none;
+    border-radius: 2px;
+    margin: 93px 66px 67px;
+}
+
 .team{
     height: 633px;
     display: flex;

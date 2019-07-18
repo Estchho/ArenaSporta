@@ -57,7 +57,7 @@
                <div class="modal__wrap"> 
                 <h2 class="modal__title">Запись на тренировку</h2>
                 <label class="modal__label" for="modal__name">Ваше имя</label> <input class="modal__input" type="text" id="modal__name" placeholder="Введите" >
-                <label class="modal__label" for="modal__phone">Телефон</label><input class="modal__input" type="text" id="modal__phone">
+                <label class="modal__label" for="modal__phone">Телефон</label><input class="modal__input" type="tel" id="modal__phone" placeholder="+7 (999) 99 99 999">
                 <label class="modal__label" for="modal__type">Выберите направление</label>
                 <select class="modal__input" type="text"id="modal__type">
                     <option value="Фитнес">Фитнес</option>
@@ -105,10 +105,21 @@
             <div class="catalog__box__form">
                 <div class="catalog__box__form__title">Не знаете что выбрать? Мы вам поможем.</div>
                 <form class="form" action="">
-                    <label><input class="catalog__box__form__input" type="text"><!--Темп активности--></label>
-                    <label><input class="catalog__box__form__input" type="text"><!--Ваш возраст--></label>
-                    <label><input class="catalog__box__form__input" type="text"><!--Предпочтения--></label>
-                    <label><input class="catalog__box__form__input" type="text"><!--Тип занятий--></label>
+                    <select name="activity" id="catalog__activity" class="catalog__box__form__input catalog__activity"> 
+                        <option value="Низкий">Низкий</option>
+                        <option value="Средний" selected>Средний</option>
+                        <option value="Высокий">Высокий</option>
+                    </select>
+                    <label><input class="catalog__box__form__input catalog__age" type="number" step="1" value="35"><!--Ваш возраст--></label>
+                    <select name="type" id="catalog__type" class="catalog__box__form__input catalog__type"> 
+                            <option value="Силовые тренировки" selected>Силовые тренировки</option>
+                            <option value="Кардио">Кардио</option>
+                            <option value="Безудержные нагрузки">Безудержные нагрузки</option>
+                        </select>
+                    <select name="group_type" id="catalog__group_type" class="catalog__box__form__input group_type"> 
+                            <option value="Групповые занятия" selected>Групповые занятия</option>
+                            <option value="Индивидуальные знаятия">Индивидуальные знаятия</option>
+                        </select>
                     <label><input type="radio" name="male"></label>
                     <label><input type="radio" name="female"></label>
                     <button type="submit">Показать доступные варианты</button>
