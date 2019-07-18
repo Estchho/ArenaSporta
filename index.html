@@ -7,23 +7,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="swiper/css/swiper.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/moment.js" type="text/javascript"></script>
+    <script src="js/underscore.js" type="text/javascript"></script>
+    <script src="js/clndr.js" type="text/javascript"></script>
 </head>
 <body>
     <header class="header">
         <a href="#" class="header__logo"><img src="img/Header_logo.svg" alt=""></a>
         <nav class="header__nav">
-            <a href="" class="header__nav__link">Главная</a>
+            <a href="" class="header__nav__link" >Главная</a>
             <a href="" class="header__nav__link">Комплекс</a>
             <a href="" class="header__nav__link">Команда</a>
             <a href="" class="header__nav__link">Новости</a>
             <a href="" class="header__nav__link">Тренировки</a>
             <a href="" class="header__nav__link">Контакты</a>
         </nav> 
-        <ul class="header__tool">
-            <li><a href="#" class="header__tool_cal"><img src="img/Header_cal.svg" alt=""></a></li>
-            <li><a href="#" class="header__tool_phone"><img src="img/Header_phone.svg" alt=""></a></li>
-        </ul>
+        <div class="header__tool">
+            <div class="header__tool_cal" id="calendar"><img src="img/Header_cal.svg" alt=""></div>
+            <a href="#" class="header__tool_phone"><img src="img/Header_phone.svg" alt=""></a>
+        </div>
     </header>    
     <section class="main">
         <div class="main__middle">
@@ -190,5 +192,6 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="swiper/js/swiper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
 </body>
 </html>

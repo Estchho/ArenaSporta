@@ -4,6 +4,11 @@ body{
     margin: 0 auto;
 }
 
+@font-face {
+    font-family: "TTNorms"; 
+   src: url("font/TTNorms-Medium.otf");
+}
+
 *{
     color: #fff;
     list-style: none;
@@ -12,7 +17,9 @@ body{
     padding: 0;
     margin: 0;
     transition: all 0.5s ease-in-out;
+    font-family: "TTNorms"; 
 }
+
 
 header{
     position:sticky;
@@ -121,9 +128,12 @@ header{
 }
 .video_button::before{
     content: url(img/video_txt.svg);
+    position: absolute;
+    top: 11px;
+    left: -30px;
 }
 .video_button:hover{
-    transform: scale(0.9);
+    transform: scale(0.7);
     transition: all 1s ease-in-out;
 }
 .video_button:hover:before{
@@ -172,6 +182,8 @@ header{
     color: #203260;
     filter: opacity(0.3);
     border-bottom: 3px solid #B6BECB;
+    padding-top: 14px;
+    padding-bottom: 35px;
 }
 .sections__nav__item:hover{
     filter: none;
