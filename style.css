@@ -495,8 +495,9 @@ option{
 .news__item__link:hover{
     background: #203260;
 }
-.news__item__link:hover{
-    background: #203260;
+.news__item__link:hover object{
+    filter: brightness(1000%);
+
 }
 .training{
     height: 288px;
@@ -577,7 +578,7 @@ option{
 
 
 .footer__partners__item:hover{
-   filter: brightness(550%);
+   filter: brightness(1000%);
     
 }
 
