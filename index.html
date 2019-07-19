@@ -57,7 +57,7 @@
                <div class="modal__wrap"> 
                 <h2 class="modal__title">Запись на тренировку</h2>
                 <label class="modal__label" for="modal__name">Ваше имя</label> <input class="modal__input" type="text" id="modal__name" placeholder="Введите" >
-                <label class="modal__label" for="modal__phone">Телефон</label><input class="modal__input" type="tel" id="modal__phone" placeholder="+7 (999) 99 99 999">
+                <label class="modal__label" for="modal__phone">Телефон</label><input class="modal__input" type="tel" id="modal__phone" placeholder="+7 (___) ___-__-__">
                 <label class="modal__label" for="modal__type">Выберите направление</label>
                 <select class="modal__input" type="text"id="modal__type">
                     <option value="Фитнес">Фитнес</option>
@@ -83,7 +83,7 @@
     </section>
     <section class="catalog">
         <div class="catalog__title">
-            <h2>Каталог видов спорта</h2>
+            <h2 class="catalog__title__text">Каталог видов спорта</h2>
             <div class="catalog__title__button">показать все</div>
         </div>
         <div class="catalog__box">
@@ -141,17 +141,17 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-slide__img"><img src="img/trener2.jpg" alt="Александр Кулик"></div>
-                    <div class="swiper-slide__sport_type">Мини-футбол</div>
+                    <div class="swiper-slide__sport_type">МИНИ-ФУТБОЛ</div>
                     <div class="swiper-slide__name">Александр Кулик</div>
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-slide__img"><img src="img/trener3.jpg" alt="Алексей Воскобойников"></div>
-                    <div class="swiper-slide__sport_type">Каратэномичи</div>
+                    <div class="swiper-slide__sport_type">КАРАТЭНОМИЧИ</div>
                     <div class="swiper-slide__name">Алексей Воскобойников</div>   
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-slide__img"><img src="img/trener4.jpg" alt="Сергей Пыхов"></div>
-                    <div class="swiper-slide__sport_type">Капоэро</div>
+                    <div class="swiper-slide__sport_type">КАПОЭРО</div>
                     <div class="swiper-slide__name">Сергей Пыхов</div>   
                 </div>
             </div>
@@ -174,25 +174,29 @@
         </div>
     </section>
     <section class="news">
-        <div class="news__title">Новости</div>
-        <div class="news__button">показать все</div>
+        <div class="news__title__wrapper">
+            <div class="news__title">Новости</div>
+            <div class="news__button">показать все</div>
+        </div>    
+        <div class="news__item__wrapper">    
         <div class="news__item">
             <img src="img/news_1.jpg" alt="">
             <div class="news__item__title">Дружественный матч по волейболу в рамках Приморской спартакиады среди студентов</div>
-            <div class="news__item__txt">Пти́цы (лат. Aves) — группа теплокровных яйцекладущих позвоночных животных</div>
+            <div class="news__item__text">Пти́цы (лат. Aves) — группа теплокровных яйцекладущих позвоночных животных</div>
             <a href="" class="news__item__link"><object data="img/news_arrow.svg" type="image/svg+xml"></object></a>
         </div>
         <div class="news__item">
             <img src="img/news_2.jpg" alt="">
             <div class="news__item__title">Боксеры клуба «Патриот» подвели итоги достижений 2017 года и обсудили спортивные планы</div>
-            <div class="news__item__txt">Пти́цы (лат. Aves) — группа теплокровных яйцекладущих позвоночных животных</div>
+            <div class="news__item__text">Пти́цы (лат. Aves) — группа теплокровных яйцекладущих позвоночных животных</div>
             <a href="" class="news__item__link"><object data="img/news_arrow.svg" type="image/svg+xml"></object></a>
         </div>
         <div class="news__item">
             <img src="img/news_3.jpg" alt="">
             <div class="news__item__title">Финальные игры по гандболу в рамках Приморской Спартакиады среди студентов</div>
-            <div class="news__item__txt">Пти́цы (лат. Aves) — группа теплокровных яйцекладущих позвоночных животных</div>
+            <div class="news__item__text">Пти́цы (лат. Aves) — группа теплокровных яйцекладущих позвоночных животных</div>
             <a href="" class="news__item__link"><object data="img/news_arrow.svg" type="image/svg+xml"></object></a>
+        </div>
         </div>
     </section>
     <section class="training">
