@@ -223,13 +223,29 @@ option{
     flex-direction: column;
     color: #203260;
     filter: opacity(0.3);
-    border-bottom: 3px solid #B6BECB;
     padding-top: 14px;
     padding-bottom: 35px;
+    position: relative;
+}
+
+.sections__nav__item::before{
+    position: absolute;
+    content: "";
+    bottom:-1px;
+    width: 72px;
+    height: 3px;
+    background-color: #B6BECB;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+.sections__nav__item:hover:before{
+    background: #FFD117;;
 }
 .sections__nav__item:hover{
     filter: none;
-
 }
 
 .catalog{
@@ -476,7 +492,12 @@ option{
     justify-content: center;
     align-items: center;
 }
-
+.news__item__link:hover{
+    background: #203260;
+}
+.news__item__link:hover{
+    background: #203260;
+}
 .training{
     height: 288px;
     width: 100%;
