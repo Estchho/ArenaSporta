@@ -10,13 +10,9 @@ $(document).ready(function () {
       },
       loop: true
     });
-
-    $("#phone").mask("+7(999)999-99-99", {
-    });
-
-    $('#calendar').clndr();
+    
   });
  
-    
+    //$('.header__tool_cal').clndr();
   
   
