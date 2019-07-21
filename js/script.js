@@ -11,6 +11,15 @@ $(document).ready(function () {
       loop: true
     });
     
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 1){
+      $('header').addClass("sticky");
+      }
+      else{
+      $('header').removeClass("sticky");
+      }
+      });
+      
   });
  
     //$('.header__tool_cal').clndr();
