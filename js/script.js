@@ -10,11 +10,22 @@ $(document).ready(function () {
       },
       loop: true
     });
+    
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 1){
+      $('header').addClass("sticky");
+      $('.header__nav__link').addClass("header__nav__link-scroll");
+      $('.header__logo').html('<img src="img/Header_logo-scroll.svg" alt=""></img>');
+      
+      }
+      else{
+      $('header').removeClass("sticky");
+      $('.header__nav__link').removeClass("header__nav__link-scroll")
+      $('.header__logo').html('<img src="img/Header_logo.svg" alt="">');
+      }
+      });
 
-    $("#phone").mask("+7(999)999-99-99", {
-    });
-
-    $('#calendar').clndr();
+       //$('#calendar').clndr();
   });
  
     
