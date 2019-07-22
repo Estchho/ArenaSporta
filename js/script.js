@@ -24,7 +24,15 @@ $(document).ready(function () {
       $('.header__logo').html('<img src="img/Header_logo.svg" alt="">');
       $('.header__tool').html('<div class="header__tool_cal" id="calendar"><img src="img/Header_cal.svg" alt=""></div><a href="tel:+79510000000" class="header__tool_phone"><img src="img/Header_phone.svg" alt=""></a>')
       }
-      });
+    });
+    
+      $('.catalog__box__item').hover(function(){
+      $(this).closest('.catalog__box__item').find('.catalog__box__item__title').css("opacity", "1");
+      $(this).closest('.catalog__box__item').find('.catalog__box__item__dots').css("opacity", "1");
+      }, function(){
+      $('.catalog__box__item__title').css("opacity", "0");
+      $('.catalog__box__item__dots').css("opacity", "0");
+    });
 
        //$('#calendar').clndr();
   });
