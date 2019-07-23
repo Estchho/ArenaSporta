@@ -1,9 +1,10 @@
 body{
     font-size: 16px;
+}
+.wrapper{
     max-width: 1367px;
     margin: 0 auto;
 }
-
 @font-face {
     font-family: "TTNorms"; 
    src: url("font/TTNorms-Medium.otf");
@@ -107,12 +108,6 @@ header{
     justify-content: center;
     align-items: center;
     margin-right: 20px;
-}
-.point img{
-    
-}
-.text_box{
-   
 }
 .text_box p{
     color: #203260;
@@ -387,10 +382,6 @@ option{
     
     color: #203260;
 }
-.catalog__box__form__input:nth-child(1){
- 
-}
-
 .form button{
     background: #203260;
     padding: 20px 340px ;
@@ -644,4 +635,63 @@ option{
 
 .sticky{
     background: #fff;
+}
+
+/*-------------------Стрпница About-------------------*/
+
+
+.about-main{
+    width: 100%;
+    height: 325px;
+    background-image: url(img/about-main-bg.jpg);
+    
+}
+
+.about-main__social{
+    transform: rotate(-90deg);
+    margin-left: -50px;
+}
+
+.about-content__arena{
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-content__arena_text{
+    max-width: 520px;
+    margin-left: 63px;
+}
+.about-content__arena_text__item{
+    color: #203260;
+    margin-bottom: 30px; 
+}
+.about-content__arena_text_top{
+    font-size: 23px;
+    line-height: 30px; 
+    max-width: 500px;   
+}
+.about-content__arena_text_middle,
+.about-content__arena_text_bottom{
+    font-size: 15px;
+    line-height: 25px;
+}
+.about-content__nikolaev{
+    max-width: 1110px;
+    background: #F5F8FB;
+    padding-top: 76px;
+    padding-bottom: 76px;
+    margin: 0 auto;
+}
+.about-content__nikolaev__items{
+    margin-left: 539px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-content__nikolaev__item{
+    color: #203260;
+    max-width: 500px;
+    margin-bottom: 25px;
 }

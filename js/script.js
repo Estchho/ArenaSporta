@@ -26,7 +26,7 @@ $(document).ready(function () {
       }
     });
     
-      $('.catalog__box__item').hover(function(){
+    $('.catalog__box__item').hover(function(){
       $(this).closest('.catalog__box__item').find('.catalog__box__item__title').css("opacity", "1");
       $(this).closest('.catalog__box__item').find('.catalog__box__item__dots').css("opacity", "1");
       }, function(){

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper/css/swiper.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/moment.js" type="text/javascript"></script>
+    <script src="js/underscore.js" type="text/javascript"></script>
+    <script src="js/clndr.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <a href="#" class="header__logo"><img src="img/Header_logo.svg" alt=""></a>
+        <nav class="header__nav"><div ></div>
+            <a href="" class="header__nav__link" >Главная</a>
+            <a href="" class="header__nav__link">Комплекс</a>
+            <a href="" class="header__nav__link">Команда</a>
+            <a href="" class="header__nav__link">Новости</a>
+            <a href="" class="header__nav__link">Тренировки</a>
+            <a href="" class="header__nav__link">Контакты</a>
+        </nav> 
+        <div class="header__tool">
+            <div class="header__tool_cal" id="calendar"><img src="img/Header_cal.svg" alt=""></div>
+            <a href="tel:+79510000000" class="header__tool_phone"><img src="img/Header_phone.svg" alt=""></a>
+        </div>
+    </header>
+    <section class="about-main">
+        <div class="about-main__social">
+            <a href="">WhatsApp</a>
+            <span>/</span>
+            <a href="">Instagram</a>
+        </div>
+        <div class="about-main__text">
+            <h1>Комплекс</h1>
+            Спортивные и оздоровительные направления. 3000 кв.м. для реализации твоих возможностей
+        </div>
+        <a class="main__button main__button__link" href="#login-form" rel="modal:open">Запись на тренировку</a>
+        <form id="login-form" class="modal">
+            <div class="modal__wrap"> 
+                <h2 class="modal__title">Запись на тренировку</h2>
+                <label class="modal__label" for="modal__name">Ваше имя</label> <input class="modal__input" type="text" id="modal__name" placeholder="Введите" >
+                <label class="modal__label" for="modal__phone">Телефон</label><input class="modal__input" type="tel" id="modal__phone" placeholder="+7 (___) ___-__-__">
+                <label class="modal__label" for="modal__type">Выберите направление</label>
+                <select class="modal__input" type="text"id="modal__type">
+                    <option value="Фитнес">Фитнес</option>
+                    <option value="Бойцовский клуб">Бойцовский клуб</option>
+                    <option value="Детские секции">Детские секции</option>
+                    <option value="Игровой зал">Игровой зал</option>
+                    <option value="Олимпийские секции">Олимпийские секции</option>
+                </select>
+                <label class="modal__label" for="modal__politics">Я согласен с политикой конфиденциальности</label><input class="modal__input" type="checkbox" checked name="politics" id="modal__politics">
+                <label class="modal__label__submit" for="modal__submit">Отправить</label><input id="modal__submit" class="modal__submit" type="submit">
+            </div>
+        </form>
+    </section>
+    <section class="sections">
+        <nav class="sections__nav">
+            <div class="sections__nav__item"><object data="img/fitnes_hover.svg" type="image/svg+xml"></object>Фитнес</div>
+            <div class="sections__nav__item"><object data="img/fight_hover.svg" type="image/svg+xml"></object>Бойцовский клуб</div>
+            <div class="sections__nav__item"><object data="img/child_hover.svg" type="image/svg+xml"></object>Детские секции</div>
+            <div class="sections__nav__item"><object data="img/basket.svg" type="image/svg+xml"></object>Игровой зал</div>
+            <div class="sections__nav__item"><object data="img/rings_hover.svg" type="image/svg+xml"></object>Олимпийские секции</div>
+        </nav>
+    </section>
+    <section class="about-content">
+        <div class="about-content__arena">
+            <div class="about-content__arena_img"><img src="img/about-text_img.jpg" alt=""></div>
+            <div class="about-content__arena_text">
+                <div class="about-content__arena_text_top about-content__arena_text__item">Спортивный комплекс АРЕНА СПОРТА, созданный при поддержке Фонда ВВН и по личной инициативе его президента Владимира Николаева.</div>
+                <div class="about-content__arena_text_middle about-content__arena_text__item">Он объединяет спортивные и оздоровительные направления, профессионалов и спортсменов-любителей, детскую и взрослую аудитории, подходит для семейного посещения.</div>
+                <div class="about-content__arena_text_bottom about-content__arena_text__item">Каждый из четырех этажей оборудован современным профессиональным снаряжением, имеет соответствующую спортивную инфраструктуру. Для удобства гостей действует система годовых комплексных карт, а также индивидуальные пакеты тренировок.</div>
+            </div>
+        </div>
+        <div class="about-content__nikolaev">
+            <div class="about-content__nikolaev__items">
+                <div class="about-content__nikolaev__item">Созданный мною спортивный клуб «Патриот» существует уже 20 лет, в нём занимаются более тысячи человек, из него вышли десятки мастеров спорта, в том числе международного класса. Занятия в клубе для детей – бесплатные, это моя принципиальная позиция, вступить в него может любой мальчишка с восьмилетнего возраста.</div>
+                <div class="about-content__nikolaev__item">Я сам с детства в спорте и занимался бесплатно до 91-го года. А потом мне сказали – плати. Денег не было, и я уже уходил из зала, но остановил тренер… А университет продавал свой спорткомплекс как ненужный. Три тысячи квадратных метров в удручающем состоянии.</div>
+                <div class="about-content__nikolaev__item">Мы приняли решение сделать здесь спортивную арену международного класса, где можно будет проводить соревнования для всего Тихоокеанского региона. Участие в разработке концепции принимали все желающие, активно делились опытом спортивные федерации города и края…</div>
+                <div class="about-content__nikolaev__item">
+                    <img src="img/nikolaev.jpg" alt="">
+                    <div class=""><span>Владимир Николаев</span> Президент Фонда ВВН, пятый мэр Владивостока</div>
+                </div>
+            </div>    
+        </div>
+        <div class="about-content__feature">
+            <div class="">В чем же кроется ключевая особенность проекта?</div>
+            <div class="">Особенностью проекта является уникальная система тренировок под руководством олимпийских чемпионов и чемпионов мира. Такой формат, когда региональная площадка собирает легендарные имена не просто номинально, а внедряет опыт именитых спортсменов, не имеет аналогов. Это новый уровень тренировок, а также мощная мотивация к развитию, воспитание силы духа и упорства у подрастающего поколения.</div>
+        </div>  
+        <div class="about-content__interior">
+            <div class="about-content__interior__text">
+                <div class="">Интерьер Арены спорта</div>
+                <div class="">А что же внутри?</div>
+                <div class="">Оформленное внутреннее пространство здания, обеспечивающее человеку эстетическое восприятие 
+                        и благоприятные условия жизнедеятельности; внутреннее пространство здания или отдельного помещения, архитектурное решение которого определяется его функциональным назначением.</div>
+            </div>
+            <div class="about-content__interior__slider">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="about-content__history">
+            <div class="">В прежние времена здесь занимались спортсмены, которые впоследствии становились чемпионами страны, Европы и мира.</div>
+            <div class="">
+                <div class="">Знаменитая школа приморского самбо закладывалась именно здесь. Но за все годы своего существования корпус ни разу капитально не ремонтировался. А после объединения в 2010 году четырёх дальневосточных вузов в федеральный университет и переезда в новый кампус на остров Русский, занятия в спортивном комплексе и вовсе прекратились.</div>
+                <div class="">Здание было обречено на медленное разрушение. И это при том, что Владивостоку не хватает спортивной инфраструктуры. В процессе капитального ремонта комплекса были увеличены полезные площади, а также инженерные мощности для создания современной спортивной инфраструктуры, необходимой для проведения продуктивных тренировок и эффективного восстановления. Развитие приморского спорта, создание максимально комфортных условий не только для профессиональных спортсменов, но и тех, кому предстоит ими стать – главные задачи, которые ставит перед собой команда комплекса.</div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <footer class="footer">
+        <div class="footer__contacts">
+            <div class="footer__contacts__bar">
+                <div class="footer__contacts__bar__title"><span>Приходи</span><br>Владивосток, Володарского 3А</div>
+                <div class="footer__contacts__bar__phone"><span>Звони</span><br>+7 (423) 276 10 10<br> +7 (423) 242 04 04<br> +7 (423) 426 40 10</div>
+                <div class="footer__contacts__bar__socials"><span>Пиши</span><br>WhatsApp / Instagram</div>
+            </div>
+            <div class="footer__contacts__map"></div>
+        </div>
+        <div class="footer__partners">
+            <div class="footer__partners__item"><object class="partners__item" data="img/lifefitnes.svg" type="image/svg+xml"></object></div>
+            <div class="footer__partners__item"><object data="img/hammerstrength.svg" type="image/svg+xml"></object></div>
+            <div class="footer__partners__item"><object data="img/trx.svg" type="image/svg+xml"></object></div>
+            <div class="footer__partners__item"><object data="img/bbh.svg" type="image/svg+xml"></object></div>
+            <div class="footer__partners__item"><object data="img/atlantikscity.svg" type="image/svg+xml"></object></div>
+            <div class="footer__partners__item"><object data="img/magnum.svg" type="image/svg+xml"></object></div>
+            <div class="footer__partners__item"><object data="img/amurskiyzaliv.svg" type="image/svg+xml"></object></div>
+        </div>
+        <div class="footer__copyright">Арена спорта 2017. Все права защищены</div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="swiper/js/swiper.min.js"></script>
+</div>
+</body>
+</html>
