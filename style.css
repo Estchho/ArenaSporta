@@ -664,9 +664,10 @@ option{
     max-width: 300px;
     margin-left: 100px;
     margin-bottom: 90px;
+    margin-right: 600px;
 }
 .about-main__button__link{
-    margin-left: 80%;
+    
 }
 
 .about-content__arena{
