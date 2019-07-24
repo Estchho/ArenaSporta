@@ -649,12 +649,24 @@ option{
     max-width: 1366px;
     height: 325px;
     background-image: url(img/about-main-bg.jpg);
-    
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 
 .about-main__social{
     transform: rotate(-90deg);
-    margin-left: -50px;
+    margin-left: -10px;
+    margin-bottom: 130px;
+}
+.about-main__text{
+    max-width: 300px;
+    margin-left: 100px;
+    margin-bottom: 90px;
+}
+.about-main__button__link{
+    margin-left: 80%;
 }
 
 .about-content__arena{
