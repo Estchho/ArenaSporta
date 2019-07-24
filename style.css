@@ -573,7 +573,7 @@ option{
 }
 .footer{
     position: relative;
-    width: 1367px;
+    max-width: 1367px;
     height: 668px;
     background: #203260;
     display: flex;
@@ -639,9 +639,14 @@ option{
 
 /*-------------------Стрпница About-------------------*/
 
+.about-main,
+.about-content{
+    max-width: 1110px;
+    margin: 0 auto;
+}
 
 .about-main{
-    width: 100%;
+    max-width: 1366px;
     height: 325px;
     background-image: url(img/about-main-bg.jpg);
     
@@ -694,4 +699,98 @@ option{
     color: #203260;
     max-width: 500px;
     margin-bottom: 25px;
+}
+.about-content__nikolaev__item:last-child{
+    display: flex;
+}
+.about-content__nikolaev__item:last-child div span{
+    color: #203260;
+    font-size: 15px;
+    line-height: 18px;
+
+}
+.about-content__nikolaev__item:last-child div{
+    color: #203260;
+    font-size: 13px;
+    line-height: 15px;
+}
+.about-content__feature{
+    display: flex;
+}
+
+.about-content__feature{
+    padding: 90px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.about-content__feature__left{
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 350px;
+    color: #203260; 
+}
+.about-content__feature__right{
+    font-size: 15px;
+    line-height: 165%;  
+    max-width: 520px;
+    color: #3A516A; 
+    margin-right: 60px; 
+}
+
+.about-content__interior{
+    max-width: 1366px;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(0deg, #F5F8FB, #F5F8FB), #F7F7F7;
+}
+
+.about-content__interior__text{
+    max-width: 400px;
+}
+.about-content__interior__text div:first-child{
+    font-size: 23px;
+    line-height: 30px;
+    color: #203260;
+}
+.about-content__interior__text div:nth-child(2){
+    font-size: 13px;
+    line-height: 21px;
+    color: #3A516A;
+}
+.about-content__interior__text div:nth-child(3){
+    font-size: 15px;
+    line-height: 25px;
+    color: #3A516A;
+}
+.about-content__interior__slider{
+    width: 700px;
+    border: 2px dashed red;
+}
+.about-swiper-slide img{
+    object-fit: cover;
+}
+.about-swiper-slide{
+    width: 700px;
+}
+
+.about-content__history{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+}
+
+.about-content__history__left{
+    max-width: 400px;    
+    color: #203260;     
+}
+
+.about-content__history__right{
+    max-width: 520px;
+}
+.about-content__history__right__top,
+.about-content__history__right__bottom{
+    color: #3A516A;
+    margin-bottom: 20px;
 }
