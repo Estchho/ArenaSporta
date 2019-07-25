@@ -823,13 +823,17 @@ option{
 }
 .team-members__item{
     width: 25%;
+    padding: 80px;
 }
 .team-links__item{
+    padding: 20px;
     font-size: 15px;
     line-height: 19px;
     color: #3A516A;
 }
-
+.team-members__item__img{
+    object-fit: cover;
+}
 .team-members__item__type{
     font-size: 9px;
     line-height: 11px; 
@@ -840,4 +844,14 @@ option{
     font-size: 15px;
     line-height: 18px;
     color: #203260;
+}
+
+/*-------------------News-------------------*/
+.news-main{
+    background: url(img/news-main-bg.jpg);
+}
+.news-slider__wrapper{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
 }
