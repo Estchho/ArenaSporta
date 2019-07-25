@@ -637,7 +637,7 @@ option{
     background: #fff;
 }
 
-/*-------------------Стрпница About-------------------*/
+/*-------------------About-------------------*/
 
 .about-main,
 .about-content{
@@ -805,4 +805,39 @@ option{
 .about-content__history__right__bottom{
     color: #3A516A;
     margin-bottom: 20px;
+}
+/*-------------------Team-------------------*/
+
+.team-main{
+    background: url(img/team-main-bg.jpg)
+}
+
+.team-links{
+    display: flex;
+}
+.team-members{
+    max-width: 1110px;;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.team-members__item{
+    width: 25%;
+}
+.team-links__item{
+    font-size: 15px;
+    line-height: 19px;
+    color: #3A516A;
+}
+
+.team-members__item__type{
+    font-size: 9px;
+    line-height: 11px; 
+    color: #7198D7;   
+}
+
+.team-members__item__name{
+    font-size: 15px;
+    line-height: 18px;
+    color: #203260;
 }
