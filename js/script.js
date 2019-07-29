@@ -35,6 +35,7 @@ $(document).ready(function () {
     });
 
        //$('#calendar').clndr();
+       $('#news-filter__date').clndr();
   });
  
     

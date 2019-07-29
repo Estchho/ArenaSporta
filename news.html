@@ -97,9 +97,17 @@
                 <a href="" class="news-slider__item__link"><object data="img/news_arrow.svg" type="image/svg+xml"></object></a>
             </div>   
         </div>
-        <div class="news-right-bar">
-            <div class="news-right-bar__search"></div>
-            <div class="news-right-bar__calendar"></div>
+        <div class="news-filter">
+            <form action="" class="news-filter__form">
+            <select name="news-filter__type" id="news-filter__type">
+                <option value="Все" selected>Все</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <input type="date" name="news-filter__date" id="news-filter__date">
+            <div class="news-filter__date"></div>
+            </form>
         </div>
     </section>
     <footer class="footer">
