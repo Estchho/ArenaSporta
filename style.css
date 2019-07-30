@@ -29,11 +29,12 @@ body{
     color: #fff;
     list-style: none;
     text-decoration: none;
-    box-sizing:border-box;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     transition: all 0.5s ease-in-out;
     font-family: 'TT Norms Medium'; 
+    font-weight: 500;
 }
 
 .header{
@@ -277,7 +278,6 @@ option{
 
 .catalog{
     width: 80%;
-    height: 960px;
     margin: 0 auto;
 }
 .catalog__title{
@@ -302,6 +302,7 @@ option{
 }
 .catalog__box{
     background-color: #F5F8FB;
+    padding-bottom: 26px
 }
 
 .catalog__box__items{
@@ -314,7 +315,6 @@ option{
 
 .catalog__box__item{
     width: 10%;
-    color: #203260;
     margin: 90px 3% 0;
     display: flex;
     flex-direction: column;
@@ -378,7 +378,13 @@ option{
     background: #FFD117;
     border-radius: 50%;
 }
+.catalog__box__item__text{
+    color: #203260;
+}
 
+.catalog__box__item:hover .catalog__box__item__text{
+    box-shadow: inset 0 -0.5em #FFD117;
+} 
 
 .catalog__box__form{
     max-width: 95%;
@@ -388,12 +394,11 @@ option{
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    padding-left: 66px;
-    padding-right: 66px; 
+    padding: 55px 66px 66px;
 }
+
 .catalog__activity,
 .catalog__type{
-    
     margin-right: 30px;
 }
 
@@ -426,7 +431,7 @@ option{
 .form button{
     width: 100%;
     background: #203260;
-    padding: 20px 340px ;
+    padding: 20px;
     border:none;
     border-radius: 2px;
     
@@ -435,8 +440,8 @@ option{
     background: #7198D7;    
 }
 .team{
-    max-height: 633px;
-    margin: 94px 128px 87px;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -444,18 +449,23 @@ option{
 .team__title{
     color: #203260;
     margin-bottom: 23px;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
 }
 .swiper-container {
-    max-width: 80%;
-    height: 300px;
+    max-width: 100%;
 }
+
 .swiper-slide{
-    max-width: 285px;
+    width: 25% !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-right: 2px solid #F2F5FA;
+    margin-bottom: 80px;
+
 }
 .swiper-slide__img{
     max-width: 128px;
@@ -477,7 +487,25 @@ option{
 .swiper-slide__name{
     color: #203260;
 }
-
+.swiper-scrollbar{
+    bottom: 30px !important;
+    height: 2px !important;
+}
+.swiper-scrollbar__circle{
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    left: 135px;
+    top: -15px;
+    background: #203260;
+    z-index: 999;
+    border-radius: 100%;
+    box-shadow: 0 0 0 7px rgb(98, 137, 217, 0.3), 
+                0 0 0 14px rgb(98, 137, 217, 0.2);
+}
+.swiper-scrollbar__circle:hover{
+    box-shadow: none;
+}
 .about{
     width: 100%;
     height: 560px;
