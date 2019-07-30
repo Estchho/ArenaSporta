@@ -56,21 +56,32 @@
             <a class="main__button main__button__link" href="#login-form" rel="modal:open">Запись на тренировку</a>
             <form id="login-form" class="modal">
                <div class="modal__wrap"> 
-                <h2 class="modal__title">Запись на тренировку</h2>
-                <label class="modal__label" for="modal__name">Ваше имя</label> <input class="modal__input" type="text" id="modal__name" placeholder="Введите" >
-                <label class="modal__label" for="modal__phone">Телефон</label><input class="modal__input" type="tel" id="modal__phone" placeholder="+7 (___) ___-__-__">
-                <label class="modal__label" for="modal__type">Выберите направление</label>
-                <select class="modal__input" type="text" id="modal__type">
-                    <option value="Фитнес">Фитнес</option>
-                    <option value="Бойцовский клуб">Бойцовский клуб</option>
-                    <option value="Детские секции">Детские секции</option>
-                    <option value="Игровой зал">Игровой зал</option>
-                    <option value="Олимпийские секции">Олимпийские секции</option>
-                </select>
-                <label class="modal__label" for="modal__politics">Я согласен с политикой конфиденциальности</label><input class="modal__input" type="checkbox" checked name="politics" id="modal__politics">
-                <label class="modal__label__submit" for="modal__submit">Отправить</label><input id="modal__submit" class="modal__submit" type="submit">
-            </div>
-        </form>
+                    <h2 class="modal__title">Запись на тренировку</h2>
+                    <div class="modal-input-box">
+                        <label class="modal__label" for="modal__name">Ваше имя</label>
+                        <input class="modal__input" type="text" id="modal__name" placeholder="Введите">
+                    </div>
+                    <div class="modal-input-box">
+                        <label class="modal__label" for="modal__phone">Телефон</label>
+                        <input class="modal__input" type="tel" id="modal__phone" placeholder="+7 (___) ___-__-__">
+                    </div>
+                    <div class="modal-input-box">
+                        <label class="modal__label" for="modal__type">Выберите направление</label>
+                        <select class="modal__input" type="text" id="modal__type">
+                            <option value="Фитнес">Фитнес</option>
+                            <option value="Бойцовский клуб">Бойцовский клуб</option>
+                            <option value="Детские секции">Детские секции</option>
+                            <option value="Игровой зал">Игровой зал</option>
+                            <option value="Олимпийские секции">Олимпийские секции</option>
+                        </select>
+                    </div>
+                    <div class="modal-check-box">
+                        <input class="modal__input" type="checkbox" checked name="politics" id="modal__politics" checked>
+                        <label class="modal__label__check" for="modal__politics">Я согласен с <a href="#">политикой конфиденциальности</a></label>
+                    </div>
+                    <input id="modal__submit" class="modal__submit" type="submit">
+                </div>
+            </form>
         </div>
     </div>
     </section>
