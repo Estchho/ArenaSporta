@@ -200,6 +200,7 @@ section.main{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all .3s ease;
 }
 .main__button:hover,
 .training__button:hover{
@@ -444,6 +445,7 @@ option{
     background: #FFFFFF;
     padding: 2px 5px;
     border-radius: 33px;
+    transition: all .3s ease;
 }
 .catalog__box__item__title::after{
     content: "";
@@ -462,6 +464,7 @@ option{
     top: 5px;
     left: -5px;
     opacity: 0;
+    transition: all .3s ease;
 }
 .catalog__box__item__dots::before{
     content: "";
@@ -485,6 +488,8 @@ option{
 }
 .catalog__box__item__text{
     color: #203260;
+    box-shadow: inset 0 -0.5em transparent;
+    transition: all .3s ease;
 }
 
 .catalog__box__item:hover .catalog__box__item__text{
@@ -515,7 +520,7 @@ option{
 .right-top,
 .left-bottom,
 .right-bottom{
-    font-family: 'TT Norms Medium';
+    font-family: 'TT Norms';
     font-size: 12px;
     line-height: 14px;
     position: absolute;
@@ -828,6 +833,8 @@ option{
     font-size: 16px;
     line-height: 19px;
     border: none;
+    cursor: pointer;
+    transition: all .3s ease;
 }
 .footer{
     position: relative;
@@ -866,7 +873,7 @@ option{
 }
 
 .footer__contacts__bar__content span{
-    font-weight: 500;
+    font-family: 'TT Norms';
     font-size: 17px;
     line-height: 30px;
 }
