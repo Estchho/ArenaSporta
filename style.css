@@ -345,7 +345,7 @@ option{
     position: absolute;
     width: 170px;
     color: #203260;
-    top: -20px;
+    top: -25px;
     left: -70px;
     opacity: 0;
     font-size: 12px;
@@ -488,6 +488,9 @@ option{
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+.swiper-slide__img img{
     max-width: 100%;
     height: auto;
 }
@@ -727,7 +730,7 @@ option{
 
 }
 .footer__partners{
-    width: 1056px;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
