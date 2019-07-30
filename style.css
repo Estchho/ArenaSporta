@@ -11,7 +11,7 @@ body{
     src: url('font/TTNorms-Medium.eot?#iefix') format('embedded-opentype'),
     url('font/TTNorms-Medium.woff') format('woff'),
     url('font/TTNorms-Medium.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
     }
 
@@ -21,6 +21,17 @@ body{
     src: url('font/TTNorms-Bold.eot?#iefix') format('embedded-opentype'),
     url('font/TTNorms-Bold.woff') format('woff'),
     url('font/TTNorms-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('font/TTNorms-Regular.eot');
+    src: local('font/TT Norms Regular'), local('TTNorms-Regular'),
+        url('font/TTNorms-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/TTNorms-Regular.woff') format('woff'),
+        url('font/TTNorms-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -62,6 +73,9 @@ body{
 
 .header__nav__link{
     list-style: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 }
 .header__nav__link-scroll{
     color: #1A284D;
@@ -684,6 +698,17 @@ option{
     padding-bottom: 51px;
     padding-left: 42px; 
 }
+.footer__contacts__bar__content{
+    font-family: 'TT Norms Thin';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;    
+}
+.footer__contacts__bar__content span{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;    
+}
 .map{
     width: 60%;
 }
@@ -708,8 +733,7 @@ option{
 
 
 .footer__partners__item:hover{
-   filter: brightness(1000%);
-    
+    opacity: 1;
 }
 
 .footer__copyright{
@@ -723,7 +747,9 @@ option{
 .sticky{
     background: #fff;
 }
-
+.footer__partners__item{
+    opacity: 0.3;
+}
 /*-------------------About-------------------*/
 
 .about-main,
