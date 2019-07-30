@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="swiper/css/swiper.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
     <script src="js/moment.js" type="text/javascript"></script>
@@ -13,6 +12,7 @@
     <script src="js/clndr.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
@@ -24,7 +24,7 @@
             <a href="" class="header__nav__link">Новости</a>
             <a href="" class="header__nav__link">Тренировки</a>
             <a href="" class="header__nav__link">Контакты</a>
-        </nav> 
+        </nav>
         <div class="header__tool">
             <div class="header__tool_cal" id="calendar"><img src="img/Header_cal.svg" alt=""></div>
             <a href="tel:+79510000000" class="header__tool_phone"><img src="img/Header_phone.svg" alt=""></a>
@@ -51,11 +51,11 @@
         <div class="main__button_box">
             <button class="main__button">Узнать подробнее</button>
             <button class="main__button main__button__middle">
-                <object data="img/downarrow.svg" type="image/svg+xml"></object> 
+                <object data="img/downarrow.svg" type="image/svg+xml"></object>
             </button>
             <a class="main__button main__button__link" href="#login-form" rel="modal:open">Запись на тренировку</a>
             <form id="login-form" class="modal">
-               <div class="modal__wrap"> 
+               <div class="modal__wrap">
                 <h2 class="modal__title">Запись на тренировку</h2>
                 <label class="modal__label" for="modal__name">Ваше имя</label> <input class="modal__input" type="text" id="modal__name" placeholder="Введите" >
                 <label class="modal__label" for="modal__phone">Телефон</label><input class="modal__input" type="tel" id="modal__phone" placeholder="+7 (___) ___-__-__">
@@ -122,7 +122,7 @@
                 </li>
                 <li class="catalog__box__item">
                     <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
-                    <div class="catalog__box__item__dots"></div>    
+                    <div class="catalog__box__item__dots"></div>
                     <object data="img/kickboxing.svg" type="image/svg+xml"></object>
                     <div class="catalog__box__item__text">Кикбоксинг</div>
                 </li>
@@ -168,7 +168,7 @@
                 <form class="form" action="">
                     <div class="form-wrapper">
                         <label class="left-top" for="catalog__activity">Темп активности</label>
-                        <select name="activity" id="catalog__activity" class="catalog__box__form__input catalog__activity"> 
+                        <select name="activity" id="catalog__activity" class="catalog__box__form__input catalog__activity">
                             <option value="Низкий">Низкий</option>
                             <option value="Средний" selected>Средний</option>
                             <option value="Высокий">Высокий</option>
@@ -180,7 +180,7 @@
                     </div>
                     <div class="form-wrapper">
                         <label class="left-bottom" for="catalog__type">Предпочтения</label>
-                        <select name="type" id="catalog__type" class="catalog__box__form__input catalog__type"> 
+                        <select name="type" id="catalog__type" class="catalog__box__form__input catalog__type">
                             <option value="Силовые тренировки" selected>Силовые тренировки</option>
                             <option value="Кардио">Кардио</option>
                             <option value="Безудержные нагрузки">Безудержные нагрузки</option>
@@ -188,7 +188,7 @@
                     </div>
                     <div class="form-wrapper">
                         <label class="right-bottom" for="catalog__group_type">Тип занятий</label>
-                        <select name="group_type" id="catalog__group_type" class="catalog__box__form__input group_type"> 
+                        <select name="group_type" id="catalog__group_type" class="catalog__box__form__input group_type">
                             <option value="Групповые занятия" selected>Групповые занятия</option>
                             <option value="Индивидуальные знаятия">Индивидуальные знаятия</option>
                         </select>
@@ -225,15 +225,15 @@
                 <div class="swiper-slide">
                     <div class="swiper-slide__img"><img src="img/trener3.jpg" alt="Алексей Воскобойников"></div>
                     <div class="swiper-slide__sport_type">КАРАТЭНОМИЧИ</div>
-                    <div class="swiper-slide__name">Алексей Воскобойников</div>   
+                    <div class="swiper-slide__name">Алексей Воскобойников</div>
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-slide__img"><img src="img/trener4.jpg" alt="Сергей Пыхов"></div>
                     <div class="swiper-slide__sport_type">КАПОЭРО</div>
-                    <div class="swiper-slide__name">Сергей Пыхов</div>   
+                    <div class="swiper-slide__name">Сергей Пыхов</div>
                 </div>
             </div>
-            
+
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"><div class="swiper-scrollbar-drag" style="width: 290.333px; transform: translate3d(217.75px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-scrollbar__circle"></div></div>
                 </div>
@@ -257,8 +257,8 @@
         <div class="news__title__wrapper">
             <div class="news__title">Новости</div>
             <a class="news__button" href="">показать все</a>
-        </div>    
-        <div class="news__item__wrapper">    
+        </div>
+        <div class="news__item__wrapper">
         <div class="news__item">
             <img src="img/news_1.jpg" alt="">
             <div class="news__item__title">Дружественный матч по волейболу в рамках Приморской спартакиады среди студентов</div>
