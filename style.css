@@ -1173,8 +1173,9 @@ option{
 .news-slider__item__link:hover object{
     filter: brightness(1000%);
 
+.footer__contacts_map {
+    flex: 1 0 auto;
 }
-
 
 .sections__nav__item > object {
     margin-bottom: 8px;
