@@ -89,7 +89,7 @@ body{
 }
 
 .main{
-    background-image: url(img/Main_bg.jpg);
+    background: no-repeat center center url(img/Main_bg.jpg);
     width: 100%;
     margin: 0 auto;
     height: 600px;
@@ -646,7 +646,7 @@ option{
 .training{
     height: 288px;
     width: 100%;
-    background-image: url(img/ball_bg.jpg);
+    background: no-repeat center center url(img/ball_bg.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
