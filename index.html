@@ -31,6 +31,8 @@
             <a href="tel:+79510000000" class="header__tool_phone"><img src="img/Header_phone.svg" alt=""></a>
         </div>
     </header>
+
+
     <section class="main" id="hero">
 
       <div class="hero__video-wrap">
@@ -44,63 +46,61 @@
         </div>
       </div>
 
-      <div class="hero__slider-wrap">
-        <div class="main__middle">
+        <!-- Slider main container -->
+        <div class="swiper-container hero__slider-wrap">
+
           <div class="main__middle__social">
             <a href="">WhatsApp</a>
             <span>/</span>
             <a href="">Instagram</a>
           </div>
-            <div class="main__middle__logo">
-              <img class="main__middle__logo__img" src="img/Main_logo.png" alt="">
-              <div class="main__middle__logo__location">
-                <div class="point"><img src="img/point.svg" alt=""></div>
-                <div class="text_box">   <p>Владивосток , Володарского, 3А</p>
-                  <p>+7 (423) 276 10 10</p>
+
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+
+              <!-- 1st slide -->
+              <div class="swiper-slide hero-slide --one">
+                <div class="main__middle">
+                  <div class="main__middle__logo">
+                    <img class="main__middle__logo__img" src="img/Main_logo.png" alt="">
+                    <div class="main__middle__logo__location">
+                      <div class="point"><img src="img/point.svg" alt=""></div>
+                      <div class="text_box">
+                        <p>Владивосток , Володарского, 3А</p>
+                        <p>+7 (423) 276 10 10</p>
+                      </div>
+                    </div>
+
+                    <div class="video_button"></div>
+
+                  </div>
+
+                  <div class="main__button_box">
+                    <button class="main__button">Узнать подробнее</button>
+                    <button class="main__button main__button__middle">
+                      <object data="img/downarrow.svg" type="image/svg+xml"></object>
+                    </button>
+                    <a class="main__button main__button__link" href="#login-form" rel="modal:open">Запись на тренировку</a>
+                  </div>
+
                 </div>
               </div>
 
-              <div class="video_button"></div>
+              <div class="swiper-slide hero-slide --two">\
+                <div class="hero-slide__content">
+                  <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
+                  <p class="hero-slide__text training__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-            </div>
-          </div>
-
-          <div class="main__button_box">
-            <button class="main__button">Узнать подробнее</button>
-            <button class="main__button main__button__middle">
-              <object data="img/downarrow.svg" type="image/svg+xml"></object>
-            </button>
-            <a class="main__button main__button__link" href="#login-form" rel="modal:open">Запись на тренировку</a>
-            <form id="login-form" class="modal">
-               <div class="modal__wrap">
-                    <h2 class="modal__title">Запись на тренировку</h2>
-                    <div class="modal-input-box">
-                        <label class="modal__label" for="modal__name">Ваше имя</label>
-                        <input class="modal__input" type="text" id="modal__name" placeholder="Введите">
-                    </div>
-                    <div class="modal-input-box">
-                        <label class="modal__label" for="modal__phone">Телефон</label>
-                        <input class="modal__input" type="tel" id="modal__phone" placeholder="+7 (___) ___-__-__">
-                    </div>
-                    <div class="modal-input-box">
-                        <label class="modal__label" for="modal__type">Выберите направление</label>
-                        <select class="modal__input" type="text" id="modal__type">
-                            <option value="Фитнес">Фитнес</option>
-                            <option value="Бойцовский клуб">Бойцовский клуб</option>
-                            <option value="Детские секции">Детские секции</option>
-                            <option value="Игровой зал">Игровой зал</option>
-                            <option value="Олимпийские секции">Олимпийские секции</option>
-                        </select>
-                    </div>
-                    <div class="modal-check-box">
-                        <input class="modal__input" type="checkbox" checked name="politics" id="modal__politics" checked>
-                        <label class="modal__label__check" for="modal__politics">Я согласен с <a href="#">политикой конфиденциальности</a></label>
-                    </div>
-                    <input id="modal__submit" class="modal__submit" type="submit">
+                    <button class="main__button training__button hero-slide__cta-btn">Узнать подробнее</button>
+                  </p>
                 </div>
-            </form>
+              </div>
+
           </div>
-      </div> <!-- slider-wrap end -->
+
+        </div> <!-- slider-wrap end -->
 
     </section>
 
@@ -239,29 +239,29 @@
     <section class="team">
         <div class="team__title">Команда Арены</div>
         <!-- Slider main container -->
-        <div class="swiper-container">
+        <div class="swiper-container swiper-team">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
             <!-- Slides -->
-                <div class="swiper-slide">
-                    <div class="swiper-slide__img"><img src="img/trener1.jpg" alt="Леонид Грицай"></div>
-                    <div class="swiper-slide__sport_type">ВОЛЕЙБОЛ</div>
-                    <div class="swiper-slide__name">Леонид Грицай</div>
+                <div class="team-slide swiper-slide">
+                    <div class="team-slide__img"><img src="img/trener1.jpg" alt="Леонид Грицай"></div>
+                    <div class="team-slide__sport_type">ВОЛЕЙБОЛ</div>
+                    <div class="team-slide__name">Леонид Грицай</div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="swiper-slide__img"><img src="img/trener2.jpg" alt="Александр Кулик"></div>
-                    <div class="swiper-slide__sport_type">МИНИ-ФУТБОЛ</div>
-                    <div class="swiper-slide__name">Александр Кулик</div>
+                <div class="team-slide swiper-slide">
+                    <div class="team-slide__img"><img src="img/trener2.jpg" alt="Александр Кулик"></div>
+                    <div class="team-slide__sport_type">МИНИ-ФУТБОЛ</div>
+                    <div class="team-slide__name">Александр Кулик</div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="swiper-slide__img"><img src="img/trener3.jpg" alt="Алексей Воскобойников"></div>
-                    <div class="swiper-slide__sport_type">КАРАТЭНОМИЧИ</div>
-                    <div class="swiper-slide__name">Алексей Воскобойников</div>
+                <div class="team-slide swiper-slide">
+                    <div class="team-slide__img"><img src="img/trener3.jpg" alt="Алексей Воскобойников"></div>
+                    <div class="team-slide__sport_type">КАРАТЭНОМИЧИ</div>
+                    <div class="team-slide__name">Алексей Воскобойников</div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="swiper-slide__img"><img src="img/trener4.jpg" alt="Сергей Пыхов"></div>
-                    <div class="swiper-slide__sport_type">КАПОЭРО</div>
-                    <div class="swiper-slide__name">Сергей Пыхов</div>
+                <div class="team-slide swiper-slide">
+                    <div class="team-slide__img"><img src="img/trener4.jpg" alt="Сергей Пыхов"></div>
+                    <div class="team-slide__sport_type">КАПОЭРО</div>
+                    <div class="team-slide__name">Сергей Пыхов</div>
                 </div>
             </div>
 
@@ -341,6 +341,28 @@
         <div class="footer__copyright">Арена спорта 2017. Все права защищены</div>
     </div>
     </footer>
+
+
+    <!-- MODALS -->
+
+    <form id="login-form" class="modal">
+      <div class="modal__wrap">
+        <h2 class="modal__title">Запись на тренировку</h2>
+        <label class="modal__label" for="modal__name">Ваше имя</label> <input class="modal__input" type="text" id="modal__name" placeholder="Введите" >
+        <label class="modal__label" for="modal__phone">Телефон</label><input class="modal__input" type="tel" id="modal__phone" placeholder="+7 (___) ___-__-__">
+        <label class="modal__label" for="modal__type">Выберите направление</label>
+        <select class="modal__input" type="text" id="modal__type">
+          <option value="Фитнес">Фитнес</option>
+          <option value="Бойцовский клуб">Бойцовский клуб</option>
+          <option value="Детские секции">Детские секции</option>
+          <option value="Игровой зал">Игровой зал</option>
+          <option value="Олимпийские секции">Олимпийские секции</option>
+        </select>
+        <label class="modal__label" for="modal__politics">Я согласен с политикой конфиденциальности</label><input class="modal__input" type="checkbox" checked name="politics" id="modal__politics">
+        <label class="modal__label__submit" for="modal__submit">Отправить</label><input id="modal__submit" class="modal__submit" type="submit">
+      </div>
+    </form>
+
 
     <script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
     <script src="swiper/js/swiper.min.js"></script>

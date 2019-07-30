@@ -1,6 +1,11 @@
 $(document).ready(function () {
+
+    // init hero swiper
+    var heroSwiper = new Swiper ('.hero__slider-wrap', {});
+
+
     //initialize swiper when document ready
-    var mySwiper = new Swiper ('.swiper-container', {
+    var mySwiper = new Swiper ('.swiper-team', {
       // Optional parameters
       direction: 'horizontal',
       slidesPerView: 4,
