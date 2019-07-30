@@ -39,6 +39,25 @@ $(document).ready(function () {
   });
 
 
-
   // init PLYR
-  var player = new Plyr('#hero-player');
+  var player = new Plyr('#hero-player', {
+      ratio: '16:7',
+      poster: '/img/poster.jpg'
+  });
+
+  // reveal video on hover
+  $('.hero__video-wrap').hover(
+    // handle mouse in
+    function(e){
+      $('.hero__slider-wrap').addClass('--hidden');
+    },
+    // handle mouse out
+    function(e){
+      $('.hero__slider-wrap').removeClass('--hidden');
+    }
+  );
+
+  // reveal video on click
+  $('.video_button').click(function(e){
+    $('.hero__slider-wrap').toggleClass('--hidden');
+  });
