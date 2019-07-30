@@ -278,7 +278,7 @@ option{
 
 .catalog{
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 70px;
 }
 .catalog__title{
     display: flex;
@@ -441,7 +441,7 @@ option{
 }
 .team{
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -474,6 +474,8 @@ option{
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
+    height: auto;
 }
 .swiper-slide__sport_type{
     color: #6289D9;
@@ -502,6 +504,18 @@ option{
     border-radius: 100%;
     box-shadow: 0 0 0 7px rgb(98, 137, 217, 0.3), 
                 0 0 0 14px rgb(98, 137, 217, 0.2);
+}
+.swiper-scrollbar__circle::before{
+    content: url(img/left-arrow.png);
+    position: inherit;
+    left: 5px;
+    top: 5px;
+}
+.swiper-scrollbar__circle::after{
+    content: url(img/right-arrow.png);
+    position: inherit;
+    right: 5px;
+    top: 5px;
 }
 .swiper-scrollbar__circle:hover{
     box-shadow: none;
