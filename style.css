@@ -2,9 +2,10 @@ body{
     font-size: 16px;
 }
 .wrapper{
+    width: 100%;
     max-width: 1367px;
     margin: 0 auto;
-    width: 100%;
+   
 }
 @font-face {
     font-family: 'TT Norms Medium';
@@ -50,9 +51,11 @@ body{
 }
 
 .header{
+    width: 100%;
+    max-width: 1270px;
     position: sticky;
     top: 0;
-    margin: 0 48px -46px;
+    margin: 0 auto -46px;
     height: 43px;
     display: flex;
     justify-content: center;
@@ -99,7 +102,12 @@ body{
     align-items: center;
     justify-content: center;
 }
-
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
 .main__middle{
     width: 95%;
     justify-self: start;
@@ -459,6 +467,7 @@ option{
     color: #203260;
     border-radius: 3px;
     border: 1px solid #B6BECB;
+    padding-left: 15px;
 }
 
 .radio-title{
@@ -467,6 +476,31 @@ option{
     line-height: 17px;
     color: #203260;
     margin-bottom: 85px;
+}
+.catalog__box__form__input-radio{
+    display: none;
+}
+.radio-title label{
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    margin-left: 11px;
+}
+.radio-title label::before{
+    content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	left: 0;
+	bottom: 1px;
+	border: 1px solid #E4E4E4;
+    border-radius: 1px;
+}
+.catalog__box__form__input-radio:checked + label::before{
+    content: url('img/radio-checked.svg');
+    text-align: center;
+    background: #6289D8; 
 }
 
 .form button{
@@ -758,7 +792,7 @@ option{
 
 }
 .footer__partners{
-    margin: 0 auto;
+    margin: 0 auto 61px;
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -770,11 +804,10 @@ option{
 }
 
 .footer__copyright{
-    position: absolute;
-    left: 127px;
-    bottom: 62px;
     color:#8A9BC6;
     font-size: 14px;
+    width: 80%;
+    margin: auto;
 }
 
 .sticky{

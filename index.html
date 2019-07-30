@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
 </head>
 <body>
-    <div class="wrapper">
+    
         <header class="header">
             <a href="#" class="header__logo"><img src="img/Header_logo.svg" alt=""></a>
             <nav class="header__nav"><div ></div>
@@ -31,9 +31,9 @@
                 <a href="tel:+79510000000" class="header__tool_phone"><img src="img/Header_phone.svg" alt=""></a>
             </div>
         </header> 
-    </div>   
+       
     <section class="main">
-    <div class="wrapper">
+    <div class="wrapper main-wrapper">
         <div class="main__middle">
             <div class="main__middle__social">
                 <a href="">WhatsApp</a>
@@ -196,8 +196,11 @@
                         </select>
                     </div>
                     <div class="radio-title">Ваш пол:
-                    <label><input class="catalog__box__form__input-radio" type="radio" name="gender" value="man">М</label>
-                    <label><input class="catalog__box__form__input-radio" type="radio" name="gender" value="woman">Ж</label>
+                    <input class="catalog__box__form__input-radio" type="radio" name="gender" value="man" id="male">
+                       <label for="male">М</label>
+                    /
+                    <input class="catalog__box__form__input-radio" type="radio" name="gender" value="woman" id="female">
+                    <label for="female">Ж</label>
                     </div>
                     <button type="submit">Показать доступные варианты</button>
                 </form>
