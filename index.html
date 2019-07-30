@@ -16,20 +16,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header class="header">
+      <div class="header-container">
         <a href="#" class="header__logo"><img src="img/Header_logo.svg" alt=""></a>
         <nav class="header__nav"><div ></div>
-            <a href="" class="header__nav__link">Главная</a>
-            <a href="" class="header__nav__link">Комплекс</a>
-            <a href="" class="header__nav__link">Команда</a>
-            <a href="" class="header__nav__link">Новости</a>
-            <a href="" class="header__nav__link">Тренировки</a>
-            <a href="" class="header__nav__link">Контакты</a>
+          <a href="" class="header__nav__link">Главная</a>
+          <a href="" class="header__nav__link">Комплекс</a>
+          <a href="" class="header__nav__link">Команда</a>
+          <a href="" class="header__nav__link">Новости</a>
+          <a href="" class="header__nav__link">Тренировки</a>
+          <a href="" class="header__nav__link">Контакты</a>
         </nav>
         <div class="header__tool">
-            <div class="header__tool_cal" id="calendar"><img src="img/Header_cal.svg" alt=""></div>
-            <a href="tel:+79510000000" class="header__tool_phone"><img src="img/Header_phone.svg" alt=""></a>
+          <div class="header__tool_cal" id="calendar"><img src="img/Header_cal.svg" alt=""></div>
+          <a href="tel:+79510000000" class="header__tool_phone"><img src="img/Header_phone.svg" alt=""></a>
         </div>
+      </div>
     </header>
 
 
@@ -62,6 +65,8 @@
               <!-- 1st slide -->
               <div class="swiper-slide hero-slide --one">
                 <div class="main__middle">
+
+                  <!-- `card` -->
                   <div class="main__middle__logo">
                     <img class="main__middle__logo__img" src="img/Main_logo.png" alt="">
                     <div class="main__middle__logo__location">
@@ -74,8 +79,12 @@
 
                     <div class="video_button"></div>
 
+                    <!-- pagination -->
+                    <div class="hero-swiper-pagination"></div>
                   </div>
 
+
+                  <!-- buttons container -->
                   <div class="main__button_box">
                     <button class="main__button">Узнать подробнее</button>
                     <button class="main__button main__button__middle">
@@ -87,13 +96,35 @@
                 </div>
               </div>
 
-              <div class="swiper-slide hero-slide --two">\
+              <div class="swiper-slide hero-slide --two">
+                <div class="hero-slide__content">
+                  <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
+                  <p class="hero-slide__text training__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                    <button class="main__button training__button hero-slide__cta-btn --ghost">Узнать подробнее</button>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide hero-slide --three">
                 <div class="hero-slide__content">
                   <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
                   <p class="hero-slide__text training__text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
                     <button class="main__button training__button hero-slide__cta-btn">Узнать подробнее</button>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide hero-slide --four">
+                <div class="hero-slide__content">
+                  <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
+                  <p class="hero-slide__text training__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                    <button class="main__button training__button hero-slide__cta-btn --ghost">Узнать подробнее</button>
                   </p>
                 </div>
               </div>

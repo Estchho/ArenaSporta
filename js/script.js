@@ -1,7 +1,18 @@
 $(document).ready(function () {
 
     // init hero swiper
-    var heroSwiper = new Swiper ('.hero__slider-wrap', {});
+    var heroSwiper = new Swiper ('.hero__slider-wrap', {
+      autoplay: {
+        delay: 6000,
+      },
+      pagination: {
+        el: '.hero-swiper-pagination',
+        type: 'bullets',
+        bulletClass: 'fancy-pagination-bullet',
+        bulletActiveClass: '--active',
+        clickable: true,
+      },
+    });
 
 
     //initialize swiper when document ready
@@ -46,7 +57,7 @@ $(document).ready(function () {
 
   // init PLYR
   var player = new Plyr('#hero-player', {
-      ratio: '16:7',
+      // ratio: '16:7',
       poster: '/img/poster.jpg'
   });
 
@@ -55,14 +66,17 @@ $(document).ready(function () {
     // handle mouse in
     function(e){
       $('.hero__slider-wrap').addClass('--hidden');
+      player.play();
     },
     // handle mouse out
     function(e){
       $('.hero__slider-wrap').removeClass('--hidden');
+      player.pause();
     }
   );
 
   // reveal video on click
   $('.video_button').click(function(e){
+    player.togglePlay();
     $('.hero__slider-wrap').toggleClass('--hidden');
   });
