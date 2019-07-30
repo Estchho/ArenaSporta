@@ -698,16 +698,17 @@ option{
     padding-bottom: 51px;
     padding-left: 42px; 
 }
-.footer__contacts__bar__content{
-    font-family: 'TT Norms Thin';
-    font-weight: 500;
+.footer__contacts__bar__content,
+.footer__contacts__bar__content a{
+    font-family: 'TT Norms';
     font-size: 14px;
     line-height: 19px;    
 }
+
 .footer__contacts__bar__content span{
-    font-weight: 500;
+    font-family: 'TT Norms Medium';
     font-size: 17px;
-    line-height: 20px;    
+    line-height: 30px;  
 }
 .map{
     width: 60%;
