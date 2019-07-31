@@ -13,6 +13,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
     <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
+
+    <!-- tabby  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12/dist/css/tabby.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12/dist/js/tabby.polyfills.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -80,12 +85,12 @@
         </a>
 
         <nav class="header__nav">
-          <a href="" class="header__nav__link">Главная</a>
-          <a href="" class="header__nav__link">Комплекс</a>
-          <a href="" class="header__nav__link">Команда</a>
-          <a href="" class="header__nav__link">Новости</a>
-          <a href="" class="header__nav__link">Тренировки</a>
-          <a href="" class="header__nav__link">Контакты</a>
+          <a href="#" class="header__nav__link">Главная</a>
+          <a href="#" class="header__nav__link">Комплекс</a>
+          <a href="#" class="header__nav__link">Команда</a>
+          <a href="#" class="header__nav__link">Новости</a>
+          <a href="#" class="header__nav__link">Тренировки</a>
+          <a href="#" class="header__nav__link">Контакты</a>
         </nav>
 
         <div class="header__tool">
@@ -121,9 +126,9 @@
         <div class="swiper-container hero__slider-wrap">
 
           <div class="main__middle__social">
-            <a href="">WhatsApp</a>
+            <a href="#">WhatsApp</a>
             <span>&nbsp;/&nbsp;</span>
-            <a href="">Instagram</a>
+            <a href="#">Instagram</a>
           </div>
 
           <!-- Additional required wrapper -->
@@ -176,7 +181,7 @@
               </div>
 
               <div class="swiper-slide hero-slide --three">
-                <div class="hero-slide__content">
+                <div class="hero-slide__content --left">
                   <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
                   <p class="hero-slide__text training__text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -187,7 +192,7 @@
               </div>
 
               <div class="swiper-slide hero-slide --four">
-                <div class="hero-slide__content">
+                <div class="hero-slide__content --left">
                   <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
                   <p class="hero-slide__text training__text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -372,40 +377,69 @@
     </section>
     </div>
     <section class="about">
-        <div class="about__slider"><img src="img/about_img.svg" alt=""></div>
-        <div class="about__text">
-            <div class="about__text__sup">Арена спорта - Это современный комплекс, призванный не только развивать и поддерживать приморский спорт, но и создавать максимально комфортные и благоприятные условия.</div>
-            <div class="about__text__middle">
-                <div class="">Об Арене</div>
-                <div class="">Направления</div>
-                <div class="">Специалисты</div>
-            </div>
-            <div class="about__text__sub">Пти́цы — группа теплокровных яйцекладущих позвоночных животных, традиционно рассматриваемая в ранге отдельного класса. Представляют собой хорошо обособленную на фоне остальных современных животных группу, одним из наиболее характерных признаков представителей которой является покров.</div>
-        </div>
+
+      <div class="container">
+        <div class="flex-wrap">
+
+          <!-- Slider main container -->
+          <div class="swiper-container about__slider about__col-left">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <img src="img/about_img.svg" class="swiper-slide">
+                  <img src="img/slider2/2-1.jpg" class="swiper-slide">
+                  <img src="img/slider2/2-2.jpg" class="swiper-slide">
+                  <img src="img/slider2/2-3.jpg" class="swiper-slide">
+                  <img src="img/slider2/2-4.jpg" class="swiper-slide">
+                  <img src="img/slider2/2-5.jpg" class="swiper-slide">
+              </div>
+              <!-- navigation buttons -->
+              <div class="about__swiper-controls">
+                <div class="swiper-control swiper-button-prev --type1"></div>
+                <div class="swiper-control swiper-button-next --type1"></div>
+              </div>
+          </div>
+
+          <div class="about__text about__col-right">
+              <div class="about__text__sup">Арена спорта - Это современный комплекс, призванный не только развивать и поддерживать приморский спорт, но и создавать максимально комфортные и благоприятные условия.</div>
+              <ul data-tabs class="about__text__middle">
+                  <li><a data-tabby-default class="about__tab" href="#about-tab">Об Арене</a></li>
+                  <li><a class="about__tab" href="#fields-tab">Направления</a></li>
+                  <li><a class="about__tab" href="#team-tab">Специалисты</a></li>
+              </ul>
+              <div class="about__text__sub" id="about-tab">Об Арене — группа теплокровных яйцекладущих позвоночных животных, традиционно рассматриваемая в ранге отдельного класса. Представляют собой хорошо обособленную на фоне остальных современных животных группу, одним из наиболее характерных признаков представителей которой является покров.</div>
+              <div class="about__text__sub" id="fields-tab">Направления — группа теплокровных яйцекладущих позвоночных животных, традиционно рассматриваемая в ранге отдельного класса. Представляют собой хорошо обособленную на фоне остальных современных животных группу, одним из наиболее характерных признаков представителей которой является покров.</div>
+              <div class="about__text__sub" id="team-tab">Специалисты — группа теплокровных яйцекладущих позвоночных животных, традиционно рассматриваемая в ранге отдельного класса. Представляют собой хорошо обособленную на фоне остальных современных животных группу, одним из наиболее характерных признаков представителей которой является покров.</div>
+          </div>
+
+        </div> <!-- flex wrap end -->
+      </div> <!-- container end -->
     </section>
+
+
     <section class="news">
         <div class="news__title__wrapper">
             <div class="news__title">Новости</div>
-            <a class="news__button" href="">показать все</a>
+            <a class="news__button" href="#">показать все</a>
         </div>
         <div class="news__item__wrapper">
         <div class="news__item">
             <img src="img/news_1.jpg" alt="">
             <div class="news__item__title">Дружественный матч по волейболу в рамках Приморской спартакиады среди студентов</div>
             <div class="news__item__text">Пти́цы (лат. Aves) — группа теплокровных яйцекладущих позвоночных животных</div>
-            <a href="" class="news__item__link"><object data="img/news_arrow.svg" type="image/svg+xml"></object></a>
+            <a href="#" class="news__item__link"><object data="img/news_arrow.svg" type="image/svg+xml"></object></a>
         </div>
         <div class="news__item">
             <img src="img/news_2.jpg" alt="">
             <div class="news__item__title">Боксеры клуба «Патриот» подвели итоги достижений 2017 года и обсудили спортивные планы</div>
             <div class="news__item__text">Пти́цы (лат. Aves) — группа теплокровных яйцекладущих позвоночных животных</div>
-            <a href="" class="news__item__link"><object data="img/news_arrow.svg" type="image/svg+xml"></object></a>
+            <a href="#" class="news__item__link"><object data="img/news_arrow.svg" type="image/svg+xml"></object></a>
         </div>
         <div class="news__item">
             <img src="img/news_3.jpg" alt="">
             <div class="news__item__title">Финальные игры по гандболу в рамках Приморской Спартакиады среди студентов</div>
             <div class="news__item__text">Пти́цы (лат. Aves) — группа теплокровных яйцекладущих позвоночных животных</div>
-            <a href="" class="news__item__link"><object data="img/news_arrow.svg" type="image/svg+xml"></object></a>
+            <a href="#" class="news__item__link"><object data="img/news_arrow.svg" type="image/svg+xml"></object></a>
         </div>
         </div>
     </section>
@@ -420,7 +454,7 @@
             <div class="footer__contacts__bar">
                 <div class="footer__contacts__bar__title footer__contacts__bar__content"><span>Приходи</span><br>Владивосток, Володарского 3А</div>
                 <div class="footer__contacts__bar__phone footer__contacts__bar__content"><span>Звони</span><br>+7 (423) 276 10 10<br> +7 (423) 242 04 04<br> +7 (423) 426 40 10</div>
-                <div class="footer__contacts__bar__socials footer__contacts__bar__content"><span>Пиши</span><br><a href="#" class="">WhatsApp </a>/<a href="">Instagram</a></div>
+                <div class="footer__contacts__bar__socials footer__contacts__bar__content"><span>Пиши</span><br><a href="#" class="">WhatsApp </a>/<a href="#">Instagram</a></div>
             </div>
             <div class="footer__contacts_map"></div>
             <script src="/js/map.js"></script>
