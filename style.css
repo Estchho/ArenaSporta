@@ -57,12 +57,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px rgb(255, 255, 255, 0.2) solid;
     z-index: 999;
+    transition: all .3s ease;
+    background: transparent;
 }
 
 .header__logo{
     margin-left: 20px;
+    width: 24px;
+    height: 26px;
+    fill: #fff;
+    transition: all .3s ease;
 }
 
 .header__nav{
@@ -87,6 +92,10 @@ body{
 
 .header__tool_phone{
     margin: 0 20px;
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    transition: all .3s ease;
 }
 
 section.main{
@@ -107,6 +116,8 @@ section.main{
 }
 .main__middle{
     width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
     justify-self: start;
     display: flex;
     justify-content: space-between;
@@ -164,7 +175,7 @@ section.main{
     height: 86px;
     border: 10px solid #203260;
     border-radius: 50%;
-    background: url(img/button_tri.svg) no-repeat center;
+    background: url(img/button_tri.svg) no-repeat center, #fff;
     transition: all .6s ease-in-out;
 }
 .video_button::before{
@@ -189,9 +200,14 @@ section.main{
    justify-content: space-between;
    align-items: center;
    position: absolute;
+   left: 0;
+   right: 0;
    width: 100%;
    bottom: 45px;
    padding: 0 64px;
+   max-width: 1270px;
+   box-sizing: content-box;
+   margin: 0 auto;
 }
 .main__button{
     background-color: #6289D9;
@@ -238,7 +254,7 @@ section.main{
     flex-direction: column;
 }
 .modal__title{
-    max-width: 238px;
+    /* max-width: 238px; */
     color: #203260;
     font-size: 23px;
     margin-bottom: 31px;
@@ -725,6 +741,9 @@ option{
 .about__text__middle div{
     display: inline-block;
     margin-right: 34px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 130%;
 }
 .about__text__middle{
     margin-bottom: 35px;
@@ -732,6 +751,8 @@ option{
 
 .about__text__sub{
     color: #3A516A;
+    font-size: 15px;
+    line-height: 165%;
 }
 .news{
     display: flex;
@@ -743,7 +764,7 @@ option{
     margin: 0 auto;
 }
 .news__title__wrapper{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-self: flex-start;
     margin-bottom: 24px;
@@ -752,12 +773,13 @@ option{
 .news__title{
     font-size: 24px;
     font-weight: 500;
-    line-height: 30px;
     margin-right: 20px;
     color: #203260;
+    display: inline-block;
 }
 .news__button{
     font-size: 12px;
+    font-weight: 500;
     color: #203260;
     padding: 0 10px;
     border: #203260 1px solid;
@@ -765,6 +787,8 @@ option{
     height: 24px;
     box-sizing: border-box;
     line-height: 1.7;
+    display: inline-block;
+    vertical-align: 4px;
 }
 .news__item__wrapper{
     display: flex;
@@ -788,11 +812,17 @@ option{
     margin: 0 auto;
     margin-bottom: 10px;
     text-decoration: underline;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    cursor: pointer;
 }
 .news__item__text{
     color: #3A516A;
     max-width: 280px;
     margin: 0 auto;
+    font-size: 15px;
+    line-height: 21px;
 }
 .news__item__link{
     position: absolute;
@@ -828,11 +858,15 @@ option{
     font-size: 45px;
     line-height: 110%;
     margin-bottom: 15px;
+    font-weight: 500;
 }
 .training__text{
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 32px;
+    font-weight: 500;
+    max-width: 536px;
+    text-align: center;
 }
 .training__button{
     width: 171px;
@@ -844,6 +878,7 @@ option{
     border: none;
     cursor: pointer;
     transition: all .3s ease;
+    font-weight: 500;
 }
 .footer{
     position: relative;
@@ -885,6 +920,7 @@ option{
     font-family: 'TT Norms';
     font-size: 17px;
     line-height: 30px;
+    font-weight: 500;
 }
 .map{
     width: 60%;
@@ -920,8 +956,9 @@ option{
     color:#8A9BC6;
     font-weight: 400;
     font-size: 14px;
-    width: 80%;
     margin: auto;
+    line-height: 17px;
+    margin-top: 60px;
 }
 
 .sticky{
@@ -1358,8 +1395,61 @@ p.hero-slide__text {
     padding: 0 20px;
     display: flex;
     align-items: center;
+    border-bottom: 2px rgb(255, 255, 255, 0.2) solid;
+    padding: 20px 0;
 }
 
 .team-slide__name {
     font-weight: 500;
+}
+
+.about__text__sup {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 30px;
+}
+
+.about__text__middle div:first-of-type {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    cursor: pointer;
+}
+
+.text_box {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+svg#sprites {
+    position: absolute;
+    visibility: hidden;
+}
+
+svg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+svg, use, path {
+    fill: inherit;
+}
+
+.header__tool_cal {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    transition: all .3s ease;
+}
+
+.sticky .header__tool_cal {
+    fill: #1A284D;
+}
+
+.sticky .header__tool_phone {
+    fill: #1A284D;
+}
+
+.sticky .header__logo {
+    fill: #1A284D;
 }
