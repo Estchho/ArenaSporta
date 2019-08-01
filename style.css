@@ -1720,3 +1720,7 @@ a.about__tab:hover:after,
 a.about__tab[aria-selected="true"]:after {
     background: #FFD117;
 }
+
+.team-slide:last-child {
+    border-right: none;
+}
