@@ -616,14 +616,16 @@ option{
     padding-left: 16px;
     padding: 0 16px;
     font-weight: 500;
+    position: relative;
+}
+
+.modal__input:hover,
+.catalog__box__form__input:hover{
+    border-color: #3A516A;
     transition: all .3s ease;
     font-size: 14px;
     outline: none;
     box-sizing: border-box;
-}
-.modal__input:hover,
-.catalog__box__form__input:hover{
-    border-color: #3A516A;
 }
 .modal__input:focus,
 .catalog__box__form__input:focus{

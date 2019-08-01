@@ -25,7 +25,7 @@
           <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5249 13L11.5329 16.5501V21.2749C11.5329 21.3532 11.5329 21.4576 11.5329 21.5359C11.4553 24.1463 10.1876 25.2688 8.01447 25.9997V16.5501L5.91895 13H13.5249Z"/>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M6.17804 8.27539C11.8696 8.27539 16.4746 8.27539 19.8119 8.27539C18.7512 10.5986 16.7074 11.46 12.2059 11.2773C9.79993 11.2773 7.80789 11.2773 6.28153 11.2773C4.54819 11.2512 3.7462 10.703 3.84969 9.60668C3.9273 8.71915 4.70342 8.27539 6.17804 8.27539Z"/>
         </symbol>
-    
+
         <!-- CALENDAR ICON -->
         <symbol viewBox="0 0 19 19" id="Calendar">
           <path d="M14.3242 8.53516C14.7341 8.53516 15.0664 8.20287 15.0664 7.79297C15.0664 7.38307 14.7341 7.05078 14.3242 7.05078C13.9143 7.05078 13.582 7.38307 13.582 7.79297C13.582 8.20287 13.9143 8.53516 14.3242 8.53516Z"/>
@@ -40,7 +40,7 @@
           <path d="M7.86719 14.9922C8.27709 14.9922 8.60938 14.6599 8.60938 14.25C8.60938 13.8401 8.27709 13.5078 7.86719 13.5078C7.45729 13.5078 7.125 13.8401 7.125 14.25C7.125 14.6599 7.45729 14.9922 7.86719 14.9922Z"/>
           <path d="M7.86719 8.53516C8.27709 8.53516 8.60938 8.20287 8.60938 7.79297C8.60938 7.38307 8.27709 7.05078 7.86719 7.05078C7.45729 7.05078 7.125 7.38307 7.125 7.79297C7.125 8.20287 7.45729 8.53516 7.86719 8.53516Z"/>
         </symbol>
-    
+
         <!-- PHONE ICON -->
         <symbol viewBox="0 0 21 21" id="Phone">
           <path d="M8.4,3.8L8.4,3.8L6.1,1.4c-0.7-0.7-1.8-0.7-2.5,0C3.4,1.6,3.3,1.7,3.2,1.8C3,2,2.8,2.1,2.7,2.3v0l0,0
@@ -64,7 +64,7 @@
               L15.5,13.8z M7.2,5.8L4,2.7l0.4-0.4c0.2-0.2,0.6-0.2,0.8,0l2.4,2.4C7.7,4.7,7.7,4.9,7.7,5c0,0.1-0.1,0.3-0.2,0.4h0l0,0L7.2,5.8z
                M4.3,2.7l2.9,2.9l0.3-0.3C7.5,5.2,7.5,5.1,7.5,5c0-0.1,0-0.2-0.1-0.3L5.1,2.4c-0.1-0.1-0.4-0.1-0.5,0h0L4.3,2.7z"/>
         </symbol>
-    
+
       </svg>
       <!-- sprites end -->
 
@@ -112,8 +112,26 @@
             Спортивные и оздоровительные направления. 3000 кв.м. для реализации твоих возможностей
         </div>
         <a class="main__button main__button__link about-main__button__link" href="#login-form" rel="modal:open">Запись на тренировку</a>
+        <form id="login-form" class="modal">
+            <div class="modal__wrap">
+                <h2 class="modal__title">Запись на тренировку</h2>
+                <label class="modal__label" for="modal__name">Ваше имя</label> <input class="modal__input" type="text" id="modal__name" placeholder="Введите" >
+                <label class="modal__label" for="modal__phone">Телефон</label><input class="modal__input" type="tel" id="modal__phone" placeholder="+7 (___) ___-__-__">
+                <label class="modal__label" for="modal__type">Выберите направление</label>
+                <select class="modal__input" type="text"id="modal__type">
+                    <option value="Фитнес">Фитнес</option>
+                    <option value="Бойцовский клуб">Бойцовский клуб</option>
+                    <option value="Детские секции">Детские секции</option>
+                    <option value="Игровой зал">Игровой зал</option>
+                    <option value="Олимпийские секции">Олимпийские секции</option>
+                </select>
+                <label class="modal__label" for="modal__politics">Я согласен с политикой конфиденциальности</label><input class="modal__input" type="checkbox" checked name="politics" id="modal__politics">
+                <label class="modal__label__submit" for="modal__submit">Отправить</label><input id="modal__submit" class="modal__submit" type="submit">
+            </div>
+        </form>
     </div>
     </section>
+    <div class="wrapper"></div>
     <section class="sections">
         <nav class="sections__nav">
             <div class="sections__nav__item"><object data="img/fitnes_hover.svg" type="image/svg+xml"></object>Фитнес</div>
@@ -145,7 +163,7 @@
                     <img src="img/nikolaev.png" alt="">
                 <div class="about-content__nikolaev__item__"><span>Владимир Николаев</span><br> Президент Фонда ВВН, пятый мэр Владивостока</div>
                 </div>
-            </div>    
+            </div>
         </div>
         <div class="about-content__feature">
             <div class="content-left">
@@ -154,14 +172,14 @@
             <div class="content-right">
                 <div class="about-content__feature__right">Особенностью проекта является уникальная система тренировок под руководством олимпийских чемпионов и чемпионов мира. Такой формат, когда региональная площадка собирает легендарные имена не просто номинально, а внедряет опыт именитых спортсменов, не имеет аналогов. Это новый уровень тренировок, а также мощная мотивация к развитию, воспитание силы духа и упорства у подрастающего поколения.</div>
             </div>
-        </div>  
+        </div>
         <div class="about-content__interior">
             <div class="about-content__interior__wrapper">
-                <div class="content-left">    
+                <div class="content-left">
                     <div class="about-content__interior__text">
                         <div class="">Интерьер Арены спорта</div>
                         <div class="">А что же внутри?</div>
-                        <div class="">Оформленное внутреннее пространство здания, обеспечивающее человеку эстетическое восприятие 
+                        <div class="">Оформленное внутреннее пространство здания, обеспечивающее человеку эстетическое восприятие
                                 и благоприятные условия жизнедеятельности; внутреннее пространство здания или отдельного помещения, архитектурное решение которого определяется его функциональным назначением.</div>
                     </div>
                 </div>
@@ -173,7 +191,7 @@
                             <div class="swiper-slide about-swiper-slide"></div>
                             <div class="swiper-slide about-swiper-slide"></div>
                             <div class="swiper-slide about-swiper-slide"></div>
-                            <div class="swiper-scrollbar about-swiper-scrollbar"></div>    
+                            <div class="swiper-scrollbar about-swiper-scrollbar"></div>
                         </div>
                     </div>
                 </div>
