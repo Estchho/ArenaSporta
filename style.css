@@ -46,6 +46,7 @@ body{
     margin: 0;
     /* transition: all 0.5s ease-in-out; */
     font-family: 'TT Norms', sans-serif;
+    outline: none;
 }
 
 .header{
@@ -582,9 +583,32 @@ option{
     border: 1px solid #B6BECB;
     padding-left: 16px;
     font-weight: 500;
+    position: relative;
 }
-.catalog__box__form__input:checked{
+.modal__input:hover,
+.catalog__box__form__input:hover{
+    border-color: #3A516A;
+}
+.modal__input:focus,
+.catalog__box__form__input:focus{
     color: #203260;
+    border-color: #3A516A;    
+}
+.modal__input:invalid,
+.modal__input:invalid + label, 
+.catalog__box__form__input:invalid,
+.catalog__box__form__input:invalid + label{
+    color: #FF8E8E;
+    border-color: #FF8E8E;    
+}
+.modal__input:invalid + label::after,
+.catalog__box__form__input:invalid + label::after{
+    content: "Whoopsie doopsie, something wrong";
+    color: #FF8E8E;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 400%;
 }
 
 .radio-title{
@@ -977,7 +1001,6 @@ option{
 }
 /*-------------------About-------------------*/
 
-.about-main,
 .about-content{
     max-width: 1110px;
     margin: 0 auto;

@@ -85,3 +85,9 @@ $(document).ready(function () {
 
   // init tabby tabs
   var tabs = new Tabby('[data-tabs]');
+
+  // modal mask
+  var phoneMask = IMask(
+    document.getElementById('modal__phone'), {
+      mask: '+{7}(000)000-00-00'
+    });
