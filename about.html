@@ -15,23 +15,93 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
 </head>
 <body>
-    <div class="wrapper">
+    <!-- SPREITES -->
+  <svg id="sprites">
+
+        <!-- HEADER LOGO -->
+        <symbol id="Header_logo" viewBox="0 0 24 26">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M23.2276 0H9.54199C8.50717 0 7.39473 1.12246 7.11015 1.56622C6.82558 2.00999 6.61861 2.50596 6.48926 2.97583H19.8903C20.5629 2.97583 22.2445 2.34934 23.2276 0Z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7606 4.125H3.61634C2.14172 4.125 1.10689 4.8559 1.00341 5.97837C0.874054 7.30966 2.14172 8.06666 2.14172 8.06666C2.84022 7.12693 3.82331 7.10083 5.89296 7.10083H18.5437C19.3974 7.10083 21.5447 6.68317 22.7606 4.125Z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5249 13L11.5329 16.5501V21.2749C11.5329 21.3532 11.5329 21.4576 11.5329 21.5359C11.4553 24.1463 10.1876 25.2688 8.01447 25.9997V16.5501L5.91895 13H13.5249Z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.17804 8.27539C11.8696 8.27539 16.4746 8.27539 19.8119 8.27539C18.7512 10.5986 16.7074 11.46 12.2059 11.2773C9.79993 11.2773 7.80789 11.2773 6.28153 11.2773C4.54819 11.2512 3.7462 10.703 3.84969 9.60668C3.9273 8.71915 4.70342 8.27539 6.17804 8.27539Z"/>
+        </symbol>
+    
+        <!-- CALENDAR ICON -->
+        <symbol viewBox="0 0 19 19" id="Calendar">
+          <path d="M14.3242 8.53516C14.7341 8.53516 15.0664 8.20287 15.0664 7.79297C15.0664 7.38307 14.7341 7.05078 14.3242 7.05078C13.9143 7.05078 13.582 7.38307 13.582 7.79297C13.582 8.20287 13.9143 8.53516 14.3242 8.53516Z"/>
+          <path d="M16.0312 1.48438H15.0664V0.742188C15.0664 0.333984 14.7324 0 14.3242 0C13.916 0 13.582 0.333984 13.582 0.742188V1.48438H10.2051V0.742188C10.2051 0.333984 9.87109 0 9.46289 0C9.05469 0 8.7207 0.333984 8.7207 0.742188V1.48438H5.38086V0.742188C5.38086 0.333984 5.04688 0 4.63867 0C4.23047 0 3.89648 0.333984 3.89648 0.742188V1.48438H2.96875C1.33223 1.48438 0 2.8166 0 4.45312V16.0312C0 17.6678 1.33223 19 2.96875 19H8.64648C9.05469 19 9.38867 18.666 9.38867 18.2578C9.38867 17.8496 9.05469 17.5156 8.64648 17.5156H2.96875C2.14863 17.5156 1.48438 16.8514 1.48438 16.0312V4.45312C1.48438 3.63301 2.14863 2.96875 2.96875 2.96875H3.89648V3.71094C3.89648 4.11914 4.23047 4.45312 4.63867 4.45312C5.04688 4.45312 5.38086 4.11914 5.38086 3.71094V2.96875H8.7207V3.71094C8.7207 4.11914 9.05469 4.45312 9.46289 4.45312C9.87109 4.45312 10.2051 4.11914 10.2051 3.71094V2.96875H13.582V3.71094C13.582 4.11914 13.916 4.45312 14.3242 4.45312C14.7324 4.45312 15.0664 4.11914 15.0664 3.71094V2.96875H16.0312C16.8514 2.96875 17.5156 3.63301 17.5156 4.45312V8.68359C17.5156 9.0918 17.8496 9.42578 18.2578 9.42578C18.666 9.42578 19 9.0918 19 8.68359V4.45312C19 2.8166 17.6678 1.48438 16.0312 1.48438Z"/>
+          <path d="M14.5098 10.0195C12.0346 10.0195 10.0195 12.0346 10.0195 14.5098C10.0195 16.985 12.0346 19 14.5098 19C16.985 19 19 16.985 19 14.5098C19 12.0346 16.985 10.0195 14.5098 10.0195ZM14.5098 17.5156C12.851 17.5156 11.5039 16.1686 11.5039 14.5098C11.5039 12.851 12.851 11.5039 14.5098 11.5039C16.1686 11.5039 17.5156 12.851 17.5156 14.5098C17.5156 16.1686 16.1686 17.5156 14.5098 17.5156Z"/>
+          <path d="M15.5859 13.7676H15.252V12.9883C15.252 12.5801 14.918 12.2461 14.5098 12.2461C14.1016 12.2461 13.7676 12.5801 13.7676 12.9883V14.5098C13.7676 14.918 14.1016 15.252 14.5098 15.252H15.5859C15.9941 15.252 16.3281 14.918 16.3281 14.5098C16.3281 14.1016 15.9941 13.7676 15.5859 13.7676Z"/>
+          <path d="M11.0957 8.53516C11.5056 8.53516 11.8379 8.20287 11.8379 7.79297C11.8379 7.38307 11.5056 7.05078 11.0957 7.05078C10.6858 7.05078 10.3535 7.38307 10.3535 7.79297C10.3535 8.20287 10.6858 8.53516 11.0957 8.53516Z"/>
+          <path d="M7.86719 11.7637C8.27709 11.7637 8.60938 11.4314 8.60938 11.0215C8.60938 10.6116 8.27709 10.2793 7.86719 10.2793C7.45729 10.2793 7.125 10.6116 7.125 11.0215C7.125 11.4314 7.45729 11.7637 7.86719 11.7637Z"/>
+          <path d="M4.63867 8.53516C5.04857 8.53516 5.38086 8.20287 5.38086 7.79297C5.38086 7.38307 5.04857 7.05078 4.63867 7.05078C4.22877 7.05078 3.89648 7.38307 3.89648 7.79297C3.89648 8.20287 4.22877 8.53516 4.63867 8.53516Z"/>
+          <path d="M4.63867 11.7637C5.04857 11.7637 5.38086 11.4314 5.38086 11.0215C5.38086 10.6116 5.04857 10.2793 4.63867 10.2793C4.22877 10.2793 3.89648 10.6116 3.89648 11.0215C3.89648 11.4314 4.22877 11.7637 4.63867 11.7637Z"/>
+          <path d="M4.63867 14.9922C5.04857 14.9922 5.38086 14.6599 5.38086 14.25C5.38086 13.8401 5.04857 13.5078 4.63867 13.5078C4.22877 13.5078 3.89648 13.8401 3.89648 14.25C3.89648 14.6599 4.22877 14.9922 4.63867 14.9922Z"/>
+          <path d="M7.86719 14.9922C8.27709 14.9922 8.60938 14.6599 8.60938 14.25C8.60938 13.8401 8.27709 13.5078 7.86719 13.5078C7.45729 13.5078 7.125 13.8401 7.125 14.25C7.125 14.6599 7.45729 14.9922 7.86719 14.9922Z"/>
+          <path d="M7.86719 8.53516C8.27709 8.53516 8.60938 8.20287 8.60938 7.79297C8.60938 7.38307 8.27709 7.05078 7.86719 7.05078C7.45729 7.05078 7.125 7.38307 7.125 7.79297C7.125 8.20287 7.45729 8.53516 7.86719 8.53516Z"/>
+        </symbol>
+    
+        <!-- PHONE ICON -->
+        <symbol viewBox="0 0 21 21" id="Phone">
+          <path d="M8.4,3.8L8.4,3.8L6.1,1.4c-0.7-0.7-1.8-0.7-2.5,0C3.4,1.6,3.3,1.7,3.2,1.8C3,2,2.8,2.1,2.7,2.3v0l0,0
+              c-2.4,2.4-2.4,6.3,0,8.7c0,0,0,0,0,0l7.4,7.4l0,0c2.4,2.4,6.3,2.4,8.7,0l0.9-0.9l0,0c0.7-0.7,0.7-1.8,0-2.5l-2.4-2.4
+              c-0.7-0.7-1.8-0.7-2.5,0l-1.1,1.1c-0.5,0.5-1.2,0.5-1.6,0L7.3,9c-0.5-0.5-0.5-1.2,0-1.6l1.1-1.1C9.1,5.6,9.1,4.5,8.4,3.8z M4.5,2.3
+              L4.5,2.3c0.2-0.2,0.5-0.2,0.6,0l0,0l2.4,2.4c0,0,0,0,0,0c0.2,0.2,0.2,0.5,0,0.6l0,0L7.2,5.7l-3-3L4.5,2.3z M14.4,14.8l3,3
+              c-1.9,1.5-4.6,1.4-6.4-0.4L3.6,10l0,0C1.9,8.2,1.7,5.5,3.2,3.6l3,3C5.4,7.6,5.5,9,6.4,9.9c0,0,0,0,0,0l4.7,4.7l0,0
+              C12,15.5,13.4,15.6,14.4,14.8z M16.3,13.5L16.3,13.5l2.4,2.4l0,0c0.2,0.2,0.2,0.5,0,0.6l-0.3,0.3l-3-3l0.3-0.3c0,0,0,0,0,0
+              C15.8,13.3,16.1,13.3,16.3,13.5z"/>
+          <path d="M14.4,20.2c-1.7,0-3.2-0.6-4.4-1.8L2.6,11c-2.4-2.4-2.4-6.4,0-8.8c0.2-0.1,0.3-0.3,0.5-0.5l0.4-0.4
+              c0.7-0.7,1.9-0.7,2.6,0l2.4,2.4c0.7,0.7,0.7,1.9,0,2.6L7.4,7.4C7,7.8,7,8.5,7.4,8.9l4.7,4.7c0.4,0.4,1.1,0.4,1.5,0l1.1-1.1
+              c0.7-0.7,1.9-0.7,2.6,0l2.4,2.4c0.7,0.7,0.7,1.9,0,2.6l-0.9,0.9C17.6,19.6,16.1,20.2,14.4,20.2z M4.8,1C4.4,1,3.9,1.2,3.6,1.5
+              L3.2,1.9C3,2.1,2.9,2.2,2.8,2.3c-2.3,2.3-2.3,6.2,0,8.5l7.4,7.4c1.1,1.1,2.6,1.8,4.3,1.8s3.1-0.6,4.3-1.8l0.9-0.9
+              c0.7-0.7,0.7-1.7,0-2.4l-2.4-2.4c-0.7-0.7-1.7-0.7-2.4,0l-1.1,1.1c-0.5,0.5-1.3,0.5-1.8,0L7.3,9.1c-0.5-0.5-0.5-1.3,0-1.8l1.1-1.1
+              C9,5.6,9,4.5,8.3,3.8h0L6,1.5C5.7,1.2,5.2,1,4.8,1z M14.4,18.9c-1.3,0-2.5-0.5-3.5-1.4l-7.4-7.4C1.8,8.3,1.6,5.5,3.2,3.6l0.1-0.1
+              l0.1,0.1l3.1,3.1L6.3,6.7C5.5,7.6,5.6,9,6.5,9.9l4.7,4.7c0.9,0.9,2.2,0.9,3.2,0.2l0.1-0.1l0.1,0.1l3.1,3.1l-0.1,0.1
+              C16.5,18.5,15.5,18.9,14.4,18.9z M3.3,3.8C1.8,5.6,2,8.3,3.7,9.9l7.4,7.4c1.7,1.7,4.3,1.8,6.2,0.4l-2.9-2.9c-1,0.8-2.5,0.7-3.4-0.2
+              L6.3,10c-0.9-0.9-1-2.4-0.2-3.4L3.3,3.8z M18.3,17L18.3,17l-3.2-3.2l0.4-0.4c0.1-0.1,0.2-0.1,0.4-0.1c0,0,0,0,0,0
+              c0.1,0,0.3,0,0.4,0.1h0l2.4,2.4c0.1,0.1,0.1,0.2,0.1,0.4c0,0.1-0.1,0.3-0.2,0.4L18.3,17z M15.5,13.8l2.9,2.9l0.3-0.3
+              c0.1-0.1,0.1-0.2,0.1-0.3c0-0.1,0-0.2-0.1-0.3l-2.4-2.4c-0.1-0.1-0.2-0.1-0.2-0.1c0,0,0,0,0,0c-0.1,0-0.2,0-0.2,0.1v0.1l-0.1,0
+              L15.5,13.8z M7.2,5.8L4,2.7l0.4-0.4c0.2-0.2,0.6-0.2,0.8,0l2.4,2.4C7.7,4.7,7.7,4.9,7.7,5c0,0.1-0.1,0.3-0.2,0.4h0l0,0L7.2,5.8z
+               M4.3,2.7l2.9,2.9l0.3-0.3C7.5,5.2,7.5,5.1,7.5,5c0-0.1,0-0.2-0.1-0.3L5.1,2.4c-0.1-0.1-0.4-0.1-0.5,0h0L4.3,2.7z"/>
+        </symbol>
+    
+      </svg>
+      <!-- sprites end -->
+
     <header class="header">
-        <a href="#" class="header__logo"><img src="img/Header_logo.svg" alt=""></a>
-        <nav class="header__nav"><div ></div>
-            <a href="" class="header__nav__link" >Главная</a>
-            <a href="" class="header__nav__link">Комплекс</a>
-            <a href="" class="header__nav__link">Команда</a>
-            <a href="" class="header__nav__link">Новости</a>
-            <a href="" class="header__nav__link">Тренировки</a>
-            <a href="" class="header__nav__link">Контакты</a>
-        </nav> 
+      <div class="header-container">
+
+        <a href="#" class="header__logo">
+          <svg class="header__logo-svg">
+            <use xlink:href="#Header_logo"/>
+          </svg>
+        </a>
+
+        <nav class="header__nav">
+          <a href="#" class="header__nav__link">Главная</a>
+          <a href="#" class="header__nav__link">Комплекс</a>
+          <a href="#" class="header__nav__link">Команда</a>
+          <a href="#" class="header__nav__link">Новости</a>
+          <a href="#" class="header__nav__link">Тренировки</a>
+          <a href="#" class="header__nav__link">Контакты</a>
+        </nav>
+
         <div class="header__tool">
-            <div class="header__tool_cal" id="calendar"><img src="img/Header_cal.svg" alt=""></div>
-            <a href="tel:+79510000000" class="header__tool_phone"><img src="img/Header_phone.svg" alt=""></a>
+          <div class="header__tool_cal">
+            <svg class="header__tool_cal-svg">
+              <use xlink:href="#Calendar"/>
+            </svg>
+          </div>
+          <a href="tel:+79510000000" class="header__tool_phone">
+            <svg class="header__tool_phone-svg">
+              <use xlink:href="#Phone"/>
+            </svg>
+          </a>
         </div>
+      </div>
     </header>
     <section class="about-main">
+    <div class="wrapper">
         <div class="about-main__social">
             <a href="">WhatsApp</a>
             <span>/</span>
@@ -59,7 +129,9 @@
                 <label class="modal__label__submit" for="modal__submit">Отправить</label><input id="modal__submit" class="modal__submit" type="submit">
             </div>
         </form>
+    </div>
     </section>
+    <div class="wrapper"></div>
     <section class="sections">
         <nav class="sections__nav">
             <div class="sections__nav__item"><object data="img/fitnes_hover.svg" type="image/svg+xml"></object>Фитнес</div>
@@ -120,30 +192,36 @@
             </div>
         </div>
     </section>
-    
+</div>
     <footer class="footer">
-        <div class="footer__contacts">
-            <div class="footer__contacts__bar">
-                <div class="footer__contacts__bar__title"><span>Приходи</span><br>Владивосток, Володарского 3А</div>
-                <div class="footer__contacts__bar__phone"><span>Звони</span><br>+7 (423) 276 10 10<br> +7 (423) 242 04 04<br> +7 (423) 426 40 10</div>
-                <div class="footer__contacts__bar__socials"><span>Пиши</span><br>WhatsApp / Instagram</div>
+        <div class="wrapper">
+            <div class="footer__contacts">
+                <div class="footer__contacts__bar">
+                    <div class="footer__contacts__bar__title footer__contacts__bar__content"><span>Приходи</span><br>Владивосток, Володарского 3А</div>
+                    <div class="footer__contacts__bar__phone footer__contacts__bar__content"><span>Звони</span><br>+7 (423) 276 10 10<br> +7 (423) 242 04 04<br> +7 (423) 426 40 10</div>
+                    <div class="footer__contacts__bar__socials footer__contacts__bar__content"><span>Пиши</span><br><a href="#" class="">WhatsApp </a>/<a href="#">Instagram</a></div>
+                </div>
+                <div class="footer__contacts_map"></div>
+                <script src="/js/map.js"></script>
+                  <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWhfLFdy0iE50r6IGd_fqWNygDmbbChWM&callback=initMaps">
+                  </script>
             </div>
-            <div class="footer__contacts__map"></div>
+            <div class="footer__partners">
+                <div class="footer__partners__item"><object class="partners__item" data="img/lifefitnes.svg" type="image/svg+xml"></object></div>
+                <div class="footer__partners__item"><object data="img/hammerstrength.svg" type="image/svg+xml"></object></div>
+                <div class="footer__partners__item"><object data="img/trx.svg" type="image/svg+xml"></object></div>
+                <div class="footer__partners__item"><object data="img/bbh.svg" type="image/svg+xml"></object></div>
+                <div class="footer__partners__item"><object data="img/atlantikscity.svg" type="image/svg+xml"></object></div>
+                <div class="footer__partners__item"><object data="img/magnum.svg" type="image/svg+xml"></object></div>
+                <div class="footer__partners__item"><object data="img/amurskiyzaliv.svg" type="image/svg+xml"></object></div>
+            </div>
+            <div class="footer__copyright">Арена спорта 2017. Все права защищены</div>
         </div>
-        <div class="footer__partners">
-            <div class="footer__partners__item"><object class="partners__item" data="img/lifefitnes.svg" type="image/svg+xml"></object></div>
-            <div class="footer__partners__item"><object data="img/hammerstrength.svg" type="image/svg+xml"></object></div>
-            <div class="footer__partners__item"><object data="img/trx.svg" type="image/svg+xml"></object></div>
-            <div class="footer__partners__item"><object data="img/bbh.svg" type="image/svg+xml"></object></div>
-            <div class="footer__partners__item"><object data="img/atlantikscity.svg" type="image/svg+xml"></object></div>
-            <div class="footer__partners__item"><object data="img/magnum.svg" type="image/svg+xml"></object></div>
-            <div class="footer__partners__item"><object data="img/amurskiyzaliv.svg" type="image/svg+xml"></object></div>
-        </div>
-        <div class="footer__copyright">Арена спорта 2017. Все права защищены</div>
-    </footer>
+        </footer>
     </div>
 <script src="js/script.js"></script>
 <script src="swiper/js/swiper.min.js"></script>
-</div>
+
 </body>
 </html>
