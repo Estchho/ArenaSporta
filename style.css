@@ -659,6 +659,7 @@ option{
     cursor: pointer;
     transition: all .3s ease;
     font-size: 15px;
+    color: #fff;
 }
 .form button:hover{
     background: #7198D7;
