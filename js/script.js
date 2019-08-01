@@ -23,14 +23,18 @@ $(document).ready(function () {
         el: '.swiper-scrollbar',
         draggable: true,
       },
-      loop: true
+      // loop: true
     });
 
     // init about swiper
     var aboutSwiper = new Swiper ('.about__slider', {
       // Optional parameters
       slidesPerView: 1,
-      loop: true
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     });
 
     $(window).scroll(function() {
