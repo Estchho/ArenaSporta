@@ -101,7 +101,7 @@
       </div>
     </header>
     <section class="about-main">
-    <div class="wrapper">
+    <div class="about-wrapper">
         <div class="about-main__social">
             <a href="">WhatsApp</a>
             <span>/</span>
@@ -112,26 +112,8 @@
             Спортивные и оздоровительные направления. 3000 кв.м. для реализации твоих возможностей
         </div>
         <a class="main__button main__button__link about-main__button__link" href="#login-form" rel="modal:open">Запись на тренировку</a>
-        <form id="login-form" class="modal">
-            <div class="modal__wrap"> 
-                <h2 class="modal__title">Запись на тренировку</h2>
-                <label class="modal__label" for="modal__name">Ваше имя</label> <input class="modal__input" type="text" id="modal__name" placeholder="Введите" >
-                <label class="modal__label" for="modal__phone">Телефон</label><input class="modal__input" type="tel" id="modal__phone" placeholder="+7 (___) ___-__-__">
-                <label class="modal__label" for="modal__type">Выберите направление</label>
-                <select class="modal__input" type="text"id="modal__type">
-                    <option value="Фитнес">Фитнес</option>
-                    <option value="Бойцовский клуб">Бойцовский клуб</option>
-                    <option value="Детские секции">Детские секции</option>
-                    <option value="Игровой зал">Игровой зал</option>
-                    <option value="Олимпийские секции">Олимпийские секции</option>
-                </select>
-                <label class="modal__label" for="modal__politics">Я согласен с политикой конфиденциальности</label><input class="modal__input" type="checkbox" checked name="politics" id="modal__politics">
-                <label class="modal__label__submit" for="modal__submit">Отправить</label><input id="modal__submit" class="modal__submit" type="submit">
-            </div>
-        </form>
     </div>
     </section>
-    <div class="wrapper"></div>
     <section class="sections">
         <nav class="sections__nav">
             <div class="sections__nav__item"><object data="img/fitnes_hover.svg" type="image/svg+xml"></object>Фитнес</div>
@@ -143,11 +125,15 @@
     </section>
     <section class="about-content">
         <div class="about-content__arena">
-            <div class="about-content__arena_img"><img src="img/about-text_img.jpg" alt=""></div>
-            <div class="about-content__arena_text">
-                <div class="about-content__arena_text_top about-content__arena_text__item">Спортивный комплекс АРЕНА СПОРТА, созданный при поддержке Фонда ВВН и по личной инициативе его президента Владимира Николаева.</div>
-                <div class="about-content__arena_text_middle about-content__arena_text__item">Он объединяет спортивные и оздоровительные направления, профессионалов и спортсменов-любителей, детскую и взрослую аудитории, подходит для семейного посещения.</div>
-                <div class="about-content__arena_text_bottom about-content__arena_text__item">Каждый из четырех этажей оборудован современным профессиональным снаряжением, имеет соответствующую спортивную инфраструктуру. Для удобства гостей действует система годовых комплексных карт, а также индивидуальные пакеты тренировок.</div>
+            <div class="content-left">
+                <div class="about-content__arena_img"><img src="img/about-text_img.jpg" alt=""></div>
+            </div>
+            <div class="content-right">
+                <div class="about-content__arena_text">
+                    <div class="about-content__arena_text_top about-content__arena_text__item">Спортивный комплекс АРЕНА СПОРТА, созданный при поддержке Фонда ВВН и по личной инициативе его президента Владимира Николаева.</div>
+                    <div class="about-content__arena_text_middle about-content__arena_text__item">Он объединяет спортивные и оздоровительные направления, профессионалов и спортсменов-любителей, детскую и взрослую аудитории, подходит для семейного посещения.</div>
+                    <div class="about-content__arena_text_bottom about-content__arena_text__item">Каждый из четырех этажей оборудован современным профессиональным снаряжением, имеет соответствующую спортивную инфраструктуру. Для удобства гостей действует система годовых комплексных карт, а также индивидуальные пакеты тренировок.</div>
+                </div>
             </div>
         </div>
         <div class="about-content__nikolaev">
@@ -156,39 +142,52 @@
                 <div class="about-content__nikolaev__item">Я сам с детства в спорте и занимался бесплатно до 91-го года. А потом мне сказали – плати. Денег не было, и я уже уходил из зала, но остановил тренер… А университет продавал свой спорткомплекс как ненужный. Три тысячи квадратных метров в удручающем состоянии.</div>
                 <div class="about-content__nikolaev__item">Мы приняли решение сделать здесь спортивную арену международного класса, где можно будет проводить соревнования для всего Тихоокеанского региона. Участие в разработке концепции принимали все желающие, активно делились опытом спортивные федерации города и края…</div>
                 <div class="about-content__nikolaev__item">
-
                     <img src="img/nikolaev.png" alt="">
                 <div class="about-content__nikolaev__item__"><span>Владимир Николаев</span><br> Президент Фонда ВВН, пятый мэр Владивостока</div>
                 </div>
             </div>    
         </div>
         <div class="about-content__feature">
-            <div class="about-content__feature__left">В чем же кроется ключевая особенность проекта?</div>
-            <div class="about-content__feature__right">Особенностью проекта является уникальная система тренировок под руководством олимпийских чемпионов и чемпионов мира. Такой формат, когда региональная площадка собирает легендарные имена не просто номинально, а внедряет опыт именитых спортсменов, не имеет аналогов. Это новый уровень тренировок, а также мощная мотивация к развитию, воспитание силы духа и упорства у подрастающего поколения.</div>
+            <div class="content-left">
+                <div class="about-content__feature__left">В чем же кроется ключевая особенность проекта?</div>
+            </div>
+            <div class="content-right">
+                <div class="about-content__feature__right">Особенностью проекта является уникальная система тренировок под руководством олимпийских чемпионов и чемпионов мира. Такой формат, когда региональная площадка собирает легендарные имена не просто номинально, а внедряет опыт именитых спортсменов, не имеет аналогов. Это новый уровень тренировок, а также мощная мотивация к развитию, воспитание силы духа и упорства у подрастающего поколения.</div>
+            </div>
         </div>  
         <div class="about-content__interior">
-            <div class="about-content__interior__text">
-                <div class="">Интерьер Арены спорта</div>
-                <div class="">А что же внутри?</div>
-                <div class="">Оформленное внутреннее пространство здания, обеспечивающее человеку эстетическое восприятие 
-                        и благоприятные условия жизнедеятельности; внутреннее пространство здания или отдельного помещения, архитектурное решение которого определяется его функциональным назначением.</div>
-            </div>
-            <div class="about-content__interior__slider swiper-container">
-                <div class="swiper-wrapper about-swiper-wrapper">
-                    <div class="swiper-slide about-swiper-slide"><img src="img/about-content_slide1.jpg" alt=""></div>
-                    <div class="swiper-slide about-swiper-slide"></div>
-                    <div class="swiper-slide about-swiper-slide"></div>
-                    <div class="swiper-slide about-swiper-slide"></div>
-                    <div class="swiper-slide about-swiper-slide"></div>
-                    <div class="swiper-scrollbar about-swiper-scrollbar"></div>    
+            <div class="about-content__interior__wrapper">
+                <div class="content-left">    
+                    <div class="about-content__interior__text">
+                        <div class="">Интерьер Арены спорта</div>
+                        <div class="">А что же внутри?</div>
+                        <div class="">Оформленное внутреннее пространство здания, обеспечивающее человеку эстетическое восприятие 
+                                и благоприятные условия жизнедеятельности; внутреннее пространство здания или отдельного помещения, архитектурное решение которого определяется его функциональным назначением.</div>
+                    </div>
+                </div>
+                <div class="content-right">
+                    <div class="about-content__interior__slider swiper-container">
+                        <div class="swiper-wrapper about-swiper-wrapper">
+                            <div class="swiper-slide about-swiper-slide"><img src="img/about-content_slide1.jpg" alt=""></div>
+                            <div class="swiper-slide about-swiper-slide"></div>
+                            <div class="swiper-slide about-swiper-slide"></div>
+                            <div class="swiper-slide about-swiper-slide"></div>
+                            <div class="swiper-slide about-swiper-slide"></div>
+                            <div class="swiper-scrollbar about-swiper-scrollbar"></div>    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="about-content__history">
-            <div class="about-content__history__left">В прежние времена здесь занимались спортсмены, которые впоследствии становились чемпионами страны, Европы и мира.</div>
-            <div class="about-content__history__right">
-                <div class="about-content__history__right__top">Знаменитая школа приморского самбо закладывалась именно здесь. Но за все годы своего существования корпус ни разу капитально не ремонтировался. А после объединения в 2010 году четырёх дальневосточных вузов в федеральный университет и переезда в новый кампус на остров Русский, занятия в спортивном комплексе и вовсе прекратились.</div>
-                <div class="about-content__history__right__bottom">Здание было обречено на медленное разрушение. И это при том, что Владивостоку не хватает спортивной инфраструктуры. В процессе капитального ремонта комплекса были увеличены полезные площади, а также инженерные мощности для создания современной спортивной инфраструктуры, необходимой для проведения продуктивных тренировок и эффективного восстановления. Развитие приморского спорта, создание максимально комфортных условий не только для профессиональных спортсменов, но и тех, кому предстоит ими стать – главные задачи, которые ставит перед собой команда комплекса.</div>
+            <div class="content-left">
+                <div class="about-content__history__left">В прежние времена здесь занимались спортсмены, которые впоследствии становились чемпионами страны, Европы и мира.</div>
+            </div>
+            <div class="content-right">
+                <div class="about-content__history__right">
+                    <div class="about-content__history__right__top">Знаменитая школа приморского самбо закладывалась именно здесь. Но за все годы своего существования корпус ни разу капитально не ремонтировался. А после объединения в 2010 году четырёх дальневосточных вузов в федеральный университет и переезда в новый кампус на остров Русский, занятия в спортивном комплексе и вовсе прекратились.</div>
+                    <div class="about-content__history__right__bottom">Здание было обречено на медленное разрушение. И это при том, что Владивостоку не хватает спортивной инфраструктуры. В процессе капитального ремонта комплекса были увеличены полезные площади, а также инженерные мощности для создания современной спортивной инфраструктуры, необходимой для проведения продуктивных тренировок и эффективного восстановления. Развитие приморского спорта, создание максимально комфортных условий не только для профессиональных спортсменов, но и тех, кому предстоит ими стать – главные задачи, которые ставит перед собой команда комплекса.</div>
+                </div>
             </div>
         </div>
     </section>
@@ -220,6 +219,40 @@
         </div>
         </footer>
     </div>
+
+
+    <!-- MODALS -->
+
+    <form id="login-form" class="modal">
+            <div class="modal__wrap">
+                 <h2 class="modal__title">Запись на тренировку</h2>
+                 <div class="modal-input-box">
+                     <input class="modal__input" type="text" id="modal__name" placeholder="Введите">
+                     <label class="modal__label" for="modal__name">Ваше имя</label>
+                 </div>
+                 <div class="modal-input-box">
+                     <input class="modal__input" type="tel" id="modal__phone"  placeholder="+7 (___) ___-__-__">
+                     <label class="modal__label" for="modal__phone">Телефон</label>
+                 </div>
+                 <div class="modal-input-box">
+                     <select class="modal__input" type="text" id="modal__type">
+                         <option value="Фитнес">Фитнес</option>
+                         <option value="Бойцовский клуб">Бойцовский клуб</option>
+                         <option value="Детские секции">Детские секции</option>
+                         <option value="Игровой зал">Игровой зал</option>
+                         <option value="Олимпийские секции">Олимпийские секции</option>
+                     </select>
+                     <label class="modal__label" for="modal__type">Выберите направление</label>
+                 </div>
+                 <div class="modal-check-box">
+                     <input class="modal__input" type="checkbox" checked name="politics" id="modal__politics" checked>
+                     <label class="modal__label__check" for="modal__politics">Я согласен с <a href="#">политикой конфиденциальности</a></label>
+                 </div>
+                 <input id="modal__submit" class="modal__submit" type="submit">
+             </div>
+         </form>
+
+
 <script src="js/script.js"></script>
 <script src="swiper/js/swiper.min.js"></script>
 
