@@ -95,3 +95,11 @@ $(document).ready(function () {
     document.getElementById('modal__phone'), {
       mask: '+{7}(000)000-00-00'
     });
+    
+  // preloader
+  $('.above-fold').on('load error', function(e){
+    $('#preloader').removeClass('--visible');
+  });
+
+  // dropkick dropdowns
+  $('.dropkick').dropkick();
