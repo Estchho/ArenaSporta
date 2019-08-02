@@ -58,7 +58,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    z-index: 3;
     transition: all .3s ease;
     background: transparent;
     color: #fff;
@@ -1724,4 +1724,41 @@ a.about__tab[aria-selected="true"]:after {
 
 .team-slide:last-child {
     border-right: none;
+}
+
+div#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    transition: all .3s ease;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#preloader.--visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+.preloader-logo {
+  animation: pulse 2s infinite;
+  fill: #203260;
+  width: 40px;
+}
+
 }
