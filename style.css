@@ -577,16 +577,30 @@ option{
     width: 100%;
     height: 50px;
     margin-bottom: 32px;
-    color: #A1A7B8;
+    color: #203260;
     border-radius: 3px;
     border: 1px solid #B6BECB;
     padding-left: 16px;
+    padding: 0 16px;
     font-weight: 500;
+    transition: all .3s ease;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
 }
 .catalog__box__form__input:checked{
     color: #203260;
 }
 
+.catalog__box__form__input:focus{
+    border-color: #3a516a;
+}
+.catalog__box__form__input::placeholder{
+    color: #A1A7B8;
+}
+.catalog__box__form__input:hover{
+    border-color: #3A516A;
+}
 .radio-title{
     display: flex;
     font-size: 14px;
@@ -1620,4 +1634,85 @@ div#preloader.--visible {
   width: 40px;
 }
 
+}
+.dk-selected {
+    border: 1px solid #B6BECB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    transition: all .3s ease;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    height: 100%;
+}
+
+.dk-select {
+    padding: 0;
+}
+
+.dk-select-open-down .dk-selected {
+    color: #203260;
+    border: 1px solid #3A516A;
+}
+
+.dk-select-open-down .dk-select-options {
+    border: 1px solid #3A516A;
+    color: #203260;
+    padding: 16px 0;
+    line-height: 2.3;
+}
+
+li.dk-option {
+    padding-left: 18px;
+    transition: all .3s ease;
+}
+
+.dk-select-open-down .dk-selected:after, .dk-select-open-up .dk-selected:after {
+    border: none;
+}
+
+.dk-select-options .dk-option-highlight {
+    background: #f5f8fb;
+    color: inherit;
+}
+
+.dk-select.catalog__box__form__input.dropkick {
+    border: none;
+    user-select: none;
+}
+
+.dk-selected:focus, .dk-selected:hover {
+    border-color: #3A516A;
+}
+
+.dk-select:focus {
+    outline: none;
+}
+
+.dk-selected:after {display: none;}
+
+.dk-option-selected {background-color: transparent;color: inherit;}
+
+.dk-selected:before {
+    border: none;
+    content: url(../img/select-control.svg);
+    top: 0;
+    bottom: 0;
+    margin: auto 14px auto 0;
+    height: 16px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.modal__input.dropkick {
+    padding: 0;
+    border: none;
 }

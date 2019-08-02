@@ -94,3 +94,6 @@ $(document).ready(function () {
   $('.above-fold').on('load error', function(e){
     $('#preloader').removeClass('--visible');
   });
+
+  // dropkick dropdowns
+  $('.dropkick').dropkick();
