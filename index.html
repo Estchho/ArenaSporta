@@ -79,56 +79,56 @@
       	L15.5,13.8z M7.2,5.8L4,2.7l0.4-0.4c0.2-0.2,0.6-0.2,0.8,0l2.4,2.4C7.7,4.7,7.7,4.9,7.7,5c0,0.1-0.1,0.3-0.2,0.4h0l0,0L7.2,5.8z
       	 M4.3,2.7l2.9,2.9l0.3-0.3C7.5,5.2,7.5,5.1,7.5,5c0-0.1,0-0.2-0.1-0.3L5.1,2.4c-0.1-0.1-0.4-0.1-0.5,0h0L4.3,2.7z"/>
     </symbol>
-
   </svg>
   <!-- sprites end -->
 
-    <header class="header">
-      <div class="header-container">
+    <div class="above-fold">
+      <header class="header">
+        <div class="header-container">
 
-        <a href="#" class="header__logo">
-          <svg class="header__logo-svg">
-            <use xlink:href="#Header_logo"/>
-          </svg>
-        </a>
-
-        <nav class="header__nav">
-          <a href="#" class="header__nav__link">Главная</a>
-          <a href="#" class="header__nav__link">Комплекс</a>
-          <a href="#" class="header__nav__link">Команда</a>
-          <a href="#" class="header__nav__link">Новости</a>
-          <a href="#" class="header__nav__link">Тренировки</a>
-          <a href="#" class="header__nav__link">Контакты</a>
-        </nav>
-
-        <div class="header__tool">
-          <div class="header__tool_cal">
-            <svg class="header__tool_cal-svg">
-              <use xlink:href="#Calendar"/>
-            </svg>
-          </div>
-          <a href="tel:+79510000000" class="header__tool_phone">
-            <svg class="header__tool_phone-svg">
-              <use xlink:href="#Phone"/>
+          <a href="#" class="header__logo">
+            <svg class="header__logo-svg">
+              <use xlink:href="#Header_logo"/>
             </svg>
           </a>
+
+          <nav class="header__nav">
+            <a href="#" class="header__nav__link">Главная</a>
+            <a href="#" class="header__nav__link">Комплекс</a>
+            <a href="#" class="header__nav__link">Команда</a>
+            <a href="#" class="header__nav__link">Новости</a>
+            <a href="#" class="header__nav__link">Тренировки</a>
+            <a href="#" class="header__nav__link">Контакты</a>
+          </nav>
+
+          <div class="header__tool">
+            <div class="header__tool_cal">
+              <svg class="header__tool_cal-svg">
+                <use xlink:href="#Calendar"/>
+              </svg>
+            </div>
+            <a href="tel:+79510000000" class="header__tool_phone">
+              <svg class="header__tool_phone-svg">
+                <use xlink:href="#Phone"/>
+              </svg>
+            </a>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
 
 
-    <section class="main" id="hero">
+      <section class="main" id="hero">
 
-      <div class="hero__video-wrap">
-        <div id="hero-player"> <!-- class="plyr__video-embed" -->
+        <div class="hero__video-wrap">
+          <div id="hero-player"> <!-- class="plyr__video-embed" -->
             <iframe
-                src="https://player.vimeo.com/video/143842667?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-                allowfullscreen
-                allowtransparency
-                allow="autoplay"
+            src="https://player.vimeo.com/video/143842667?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+            allowfullscreen
+            allowtransparency
+            allow="autoplay"
             ></iframe>
+          </div>
         </div>
-      </div>
 
         <!-- Slider main container -->
         <div class="swiper-container hero__slider-wrap">
@@ -141,213 +141,217 @@
 
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-              <!-- Slides -->
+            <!-- Slides -->
 
-              <!-- 1st slide -->
-              <div class="swiper-slide hero-slide --one">
-                <div class="main__middle">
+            <!-- 1st slide -->
+            <div class="swiper-slide hero-slide --one">
+              <div class="main__middle">
 
-                  <!-- `card` -->
-                  <div class="main__middle__logo">
-                    <img class="main__middle__logo__img" src="img/Main_logo.png" alt="">
-                    <div class="main__middle__logo__location">
-                      <div class="point"><img src="img/point.svg" alt=""></div>
-                      <div class="text_box">
-                        <p>Владивосток , Володарского, 3А</p>
-                        <p>+7 (423) 276 10 10</p>
-                      </div>
+                <!-- `card` -->
+                <div class="main__middle__logo">
+                  <img class="main__middle__logo__img" src="img/Main_logo.png" alt="">
+                  <div class="main__middle__logo__location">
+                    <div class="point"><img src="img/point.svg" alt=""></div>
+                    <div class="text_box">
+                      <p>Владивосток , Володарского, 3А</p>
+                      <p>+7 (423) 276 10 10</p>
                     </div>
-
-                    <div class="video_button"></div>
-
-                    <!-- pagination -->
-                    <div class="hero-swiper-pagination"></div>
                   </div>
 
+                  <div class="video_button"></div>
 
-                  <!-- buttons container -->
-                  <div class="main__button_box">
-                    <button class="main__button">Узнать подробнее</button>
-                    <button class="main__button main__button__middle">
-                      <object data="img/downarrow.svg" type="image/svg+xml"></object>
-                    </button>
-                    <a class="main__button main__button__link" href="#login-form" rel="modal:open">Запись на тренировку</a>
-                  </div>
-
+                  <!-- pagination -->
+                  <div class="hero-swiper-pagination"></div>
                 </div>
-              </div>
 
-              <div class="swiper-slide hero-slide --two">
-                <div class="hero-slide__content">
-                  <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
-                  <p class="hero-slide__text training__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-                    <button class="main__button training__button hero-slide__cta-btn --ghost">Узнать подробнее</button>
-                  </p>
+                <!-- buttons container -->
+                <div class="main__button_box">
+                  <button class="main__button">Узнать подробнее</button>
+                  <button class="main__button main__button__middle">
+                    <object data="img/downarrow.svg" type="image/svg+xml"></object>
+                  </button>
+                  <a class="main__button main__button__link" href="#login-form" rel="modal:open">Запись на тренировку</a>
                 </div>
+
               </div>
+            </div>
 
-              <div class="swiper-slide hero-slide --three">
-                <div class="hero-slide__content --left">
-                  <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
-                  <p class="hero-slide__text training__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="swiper-slide hero-slide --two">
+              <div class="hero-slide__content">
+                <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
+                <p class="hero-slide__text training__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-                    <button class="main__button training__button hero-slide__cta-btn">Узнать подробнее</button>
-                  </p>
-                </div>
+                  <button class="main__button training__button hero-slide__cta-btn --ghost">Узнать подробнее</button>
+                </p>
               </div>
+            </div>
 
-              <div class="swiper-slide hero-slide --four">
-                <div class="hero-slide__content --left">
-                  <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
-                  <p class="hero-slide__text training__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="swiper-slide hero-slide --three">
+              <div class="hero-slide__content --left">
+                <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
+                <p class="hero-slide__text training__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-                    <button class="main__button training__button hero-slide__cta-btn --ghost">Узнать подробнее</button>
-                  </p>
-                </div>
+                  <button class="main__button training__button hero-slide__cta-btn">Узнать подробнее</button>
+                </p>
               </div>
+            </div>
+
+            <div class="swiper-slide hero-slide --four">
+              <div class="hero-slide__content --left">
+                <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
+                <p class="hero-slide__text training__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                  <button class="main__button training__button hero-slide__cta-btn --ghost">Узнать подробнее</button>
+                </p>
+              </div>
+            </div>
 
           </div>
 
         </div> <!-- slider-wrap end -->
 
-    </section>
+      </section>
 
 
-    <section class="sections">
+      <section class="sections">
         <nav class="sections__nav">
-            <div class="sections__nav__item"><object data="img/fitnes_hover.svg" type="image/svg+xml"></object>Фитнес</div>
-            <div class="sections__nav__item"><object data="img/fight_hover.svg" type="image/svg+xml"></object>Бойцовский клуб</div>
-            <div class="sections__nav__item"><object data="img/child_hover.svg" type="image/svg+xml"></object>Детские секции</div>
-            <div class="sections__nav__item"><object data="img/basket.svg" type="image/svg+xml"></object>Игровой зал</div>
-            <div class="sections__nav__item"><object data="img/rings_hover.svg" type="image/svg+xml"></object>Олимпийские секции</div>
+          <div class="sections__nav__item"><object data="img/fitnes_hover.svg" type="image/svg+xml"></object>Фитнес</div>
+          <div class="sections__nav__item"><object data="img/fight_hover.svg" type="image/svg+xml"></object>Бойцовский клуб</div>
+          <div class="sections__nav__item"><object data="img/child_hover.svg" type="image/svg+xml"></object>Детские секции</div>
+          <div class="sections__nav__item"><object data="img/basket.svg" type="image/svg+xml"></object>Игровой зал</div>
+          <div class="sections__nav__item"><object data="img/rings_hover.svg" type="image/svg+xml"></object>Олимпийские секции</div>
         </nav>
-    </section>
-    <section class="catalog">
+      </section>
+
+      <section class="catalog">
         <div class="catalog__title">
-            <h2 class="catalog__title__text">Каталог видов спорта</h2>
-            <div class="catalog__title__button">показать все</div>
+          <h2 class="catalog__title__text">Каталог видов спорта</h2>
+          <a class="catalog__title__button show-all" href="#">показать все</a>
         </div>
         <div class="catalog__box">
-            <ul class="catalog__box__items">
-                <li class="catalog__box__item">
-                    <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
-                    <div class="catalog__box__item__dots"></div>
-                    <object data="img/volleyball.svg" type="image/svg+xml"></object>
-                    <div class="catalog__box__item__text">Волейбол</div>
-                </li>
-                <li class="catalog__box__item">
-                    <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
-                    <div class="catalog__box__item__dots"></div>
-                    <object data="img/basketball.svg" type="image/svg+xml"></object>
-                    <div class="catalog__box__item__text">Баскетбол</div>
-                </li>
-                <li class="catalog__box__item">
-                    <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
-                    <div class="catalog__box__item__dots"></div>
-                    <object data="img/minifootball.svg" type="image/svg+xml"></object>
-                    <div class="catalog__box__item__text">Мини-футбол</div>
-                </li>
-                <li class="catalog__box__item">
-                    <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
-                    <div class="catalog__box__item__dots"></div>
-                    <object data="img/taekwondo.svg" type="image/svg+xml"></object>
-                    <div class="catalog__box__item__text">Тхэквондо</div>
-                </li>
-                <li class="catalog__box__item">
-                    <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
-                    <div class="catalog__box__item__dots"></div>
-                    <object data="img/box.svg" type="image/svg+xml"></object>
-                    <div class="catalog__box__item__text">Бокс</div>
-                </li>
-                <li class="catalog__box__item">
-                    <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
-                    <div class="catalog__box__item__dots"></div>
-                    <object data="img/kickboxing.svg" type="image/svg+xml"></object>
-                    <div class="catalog__box__item__text">Кикбоксинг</div>
-                </li>
-                <li class="catalog__box__item">
-                    <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
-                    <div class="catalog__box__item__dots"></div>
-                    <object data="img/taekwondo.svg" type="image/svg+xml"></object>
-                    <div class="catalog__box__item__text">Каратэномичи</div>
-                </li>
-                <li class="catalog__box__item">
-                    <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
-                    <div class="catalog__box__item__dots"></div>
-                    <object data="img/sambo.svg" type="image/svg+xml"></object>
-                    <div class="catalog__box__item__text">Самбо</div>
-                </li>
-                <li class="catalog__box__item">
-                    <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
-                    <div class="catalog__box__item__dots"></div>
-                    <object data="img/taekwondo.svg" type="image/svg+xml"></object>
-                    <div class="catalog__box__item__text">Джиу-джитсу</div>
-                </li>
-                <li class="catalog__box__item">
-                    <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
-                    <div class="catalog__box__item__dots"></div>
-                    <object data="img/gymnastic.svg" type="image/svg+xml"></object>
-                    <div class="catalog__box__item__text">Худ. гимнастика</div>
-                </li>
-                <li class="catalog__box__item">
-                    <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
-                    <div class="catalog__box__item__dots"></div>
-                    <object data="img/swim.svg" type="image/svg+xml"></object>
-                    <div class="catalog__box__item__text">Озд. гимнастика</div>
-                </li>
-                <li class="catalog__box__item">
-                    <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
-                    <div class="catalog__box__item__dots"></div>
-                    <object data="img/capoeira.svg" type="image/svg+xml"></object>
-                    <div class="catalog__box__item__text">Капоэйра</div>
-                </li>
-            </ul>
-            <div class="catalog__box__form">
-                <div class="catalog__box__form__title">Не знаете что выбрать? Мы вам поможем.</div>
-                <form class="form" action="">
-                    <div class="form-wrapper">
-                        <label class="left-top" for="catalog__activity">Темп активности</label>
-                        <select name="activity" id="catalog__activity" class="catalog__box__form__input catalog__activity">
-                            <option value="Низкий">Низкий</option>
-                            <option value="Средний" selected>Средний</option>
-                            <option value="Высокий">Высокий</option>
-                        </select>
-                    </div>
-                    <div class="form-wrapper">
-                        <label class="right-top" for="catalog__age">Ваш возраст</label>
-                        <input class="catalog__box__form__input catalog__age" id="catalog__age" type="number" step="1" value="35">
-                    </div>
-                    <div class="form-wrapper">
-                        <label class="left-bottom" for="catalog__type">Предпочтения</label>
-                        <select name="type" id="catalog__type" class="catalog__box__form__input catalog__type">
-                            <option value="Силовые тренировки" selected>Силовые тренировки</option>
-                            <option value="Кардио">Кардио</option>
-                            <option value="Безудержные нагрузки">Безудержные нагрузки</option>
-                        </select>
-                    </div>
-                    <div class="form-wrapper">
-                        <label class="right-bottom" for="catalog__group_type">Тип занятий</label>
-                        <select name="group_type" id="catalog__group_type" class="catalog__box__form__input group_type">
-                            <option value="Групповые занятия" selected>Групповые занятия</option>
-                            <option value="Индивидуальные знаятия">Индивидуальные знаятия</option>
-                        </select>
-                    </div>
-                    <div class="radio-title">Ваш пол:
-                    <input class="catalog__box__form__input-radio" type="radio" name="gender" value="man" id="male">
-                       <label for="male">М</label>
-                    /
-                    <input class="catalog__box__form__input-radio" type="radio" name="gender" value="woman" id="female">
-                    <label for="female">Ж</label>
-                    </div>
-                    <button type="submit">Показать доступные варианты</button>
-                </form>
-            </div>
+          <ul class="catalog__box__items">
+            <li class="catalog__box__item">
+              <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
+              <div class="catalog__box__item__dots"></div>
+              <object data="img/volleyball.svg" type="image/svg+xml"></object>
+              <div class="catalog__box__item__text">Волейбол</div>
+            </li>
+            <li class="catalog__box__item">
+              <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
+              <div class="catalog__box__item__dots"></div>
+              <object data="img/basketball.svg" type="image/svg+xml"></object>
+              <div class="catalog__box__item__text">Баскетбол</div>
+            </li>
+            <li class="catalog__box__item">
+              <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
+              <div class="catalog__box__item__dots"></div>
+              <object data="img/minifootball.svg" type="image/svg+xml"></object>
+              <div class="catalog__box__item__text">Мини-футбол</div>
+            </li>
+            <li class="catalog__box__item">
+              <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
+              <div class="catalog__box__item__dots"></div>
+              <object data="img/taekwondo.svg" type="image/svg+xml"></object>
+              <div class="catalog__box__item__text">Тхэквондо</div>
+            </li>
+            <li class="catalog__box__item">
+              <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
+              <div class="catalog__box__item__dots"></div>
+              <object data="img/box.svg" type="image/svg+xml"></object>
+              <div class="catalog__box__item__text">Бокс</div>
+            </li>
+            <li class="catalog__box__item">
+              <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
+              <div class="catalog__box__item__dots"></div>
+              <object data="img/kickboxing.svg" type="image/svg+xml"></object>
+              <div class="catalog__box__item__text">Кикбоксинг</div>
+            </li>
+            <li class="catalog__box__item">
+              <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
+              <div class="catalog__box__item__dots"></div>
+              <object data="img/taekwondo.svg" type="image/svg+xml"></object>
+              <div class="catalog__box__item__text">Каратэномичи</div>
+            </li>
+            <li class="catalog__box__item">
+              <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
+              <div class="catalog__box__item__dots"></div>
+              <object data="img/sambo.svg" type="image/svg+xml"></object>
+              <div class="catalog__box__item__text">Самбо</div>
+            </li>
+            <li class="catalog__box__item">
+              <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
+              <div class="catalog__box__item__dots"></div>
+              <object data="img/taekwondo.svg" type="image/svg+xml"></object>
+              <div class="catalog__box__item__text">Джиу-джитсу</div>
+            </li>
+            <li class="catalog__box__item">
+              <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
+              <div class="catalog__box__item__dots"></div>
+              <object data="img/gymnastic.svg" type="image/svg+xml"></object>
+              <div class="catalog__box__item__text">Худ. гимнастика</div>
+            </li>
+            <li class="catalog__box__item">
+              <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
+              <div class="catalog__box__item__dots"></div>
+              <object data="img/swim.svg" type="image/svg+xml"></object>
+              <div class="catalog__box__item__text">Озд. гимнастика</div>
+            </li>
+            <li class="catalog__box__item">
+              <div class="catalog__box__item__title">Фитнес, доступно для детей</div>
+              <div class="catalog__box__item__dots"></div>
+              <object data="img/capoeira.svg" type="image/svg+xml"></object>
+              <div class="catalog__box__item__text">Капоэйра</div>
+            </li>
+          </ul>
+          <div class="catalog__box__form">
+            <div class="catalog__box__form__title">Не знаете что выбрать? Мы вам поможем.</div>
+            <form class="form" action="">
+              <div class="form-wrapper">
+                <label class="left-top" for="catalog__activity">Темп активности</label>
+                <select name="activity" id="catalog__activity" class="catalog__box__form__input catalog__activity dropkick">
+                  <option value="Низкий">Низкий</option>
+                  <option value="Средний" selected>Средний</option>
+                  <option value="Высокий">Высокий</option>
+                </select>
+              </div>
+              <div class="form-wrapper">
+                <label class="right-top" for="catalog__age">Ваш возраст</label>
+                <input class="catalog__box__form__input catalog__age" id="catalog__age" type="number" step="1" placeholder="35">
+              </div>
+              <div class="form-wrapper">
+                <label class="left-bottom" for="catalog__type">Предпочтения</label>
+                <select name="type" id="catalog__type" class="catalog__box__form__input catalog__type dropkick">
+                  <option value="Силовые тренировки" selected>Силовые тренировки</option>
+                  <option value="Кардио">Кардио</option>
+                  <option value="Безудержные нагрузки">Безудержные нагрузки</option>
+                </select>
+              </div>
+              <div class="form-wrapper">
+                <label class="right-bottom" for="catalog__group_type">Тип занятий</label>
+                <select name="group_type" id="catalog__group_type" class="catalog__box__form__input group_type dropkick">
+                  <option value="Групповые занятия" selected>Групповые занятия</option>
+                  <option value="Индивидуальные знаятия">Индивидуальные знаятия</option>
+                </select>
+              </div>
+              <div class="radio-title">Ваш пол:
+                <input class="catalog__box__form__input-radio" type="radio" name="gender" value="man" id="male">
+                <label for="male">М</label>
+                /
+                <input class="catalog__box__form__input-radio" type="radio" name="gender" value="woman" id="female">
+                <label for="female">Ж</label>
+              </div>
+              <button type="submit">Показать доступные варианты</button>
+            </form>
+          </div>
         </div>
-    </section>
+      </section>
+    </div> <!-- above fold end -->
+
+
     <section class="team">
         <div class="team__title">Команда Арены</div>
         <!-- Slider main container -->
@@ -408,11 +412,14 @@
             </div>
 
             <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"><div class="swiper-scrollbar-drag" style="width: 290.333px; transform: translate3d(217.75px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-scrollbar__circle"></div></div>
-                </div>
+            <div class="swiper-scrollbar">
+              <div class="swiper-scrollbar-drag" style="width: 290.333px; transform: translate3d(217.75px, 0px, 0px); transition-duration: 0ms;">
+                <div class="swiper-scrollbar__circle"></div>
+              </div>
+            </div>
         </div>
-
     </section>
+
     </div>
     <section class="about">
 
@@ -458,7 +465,7 @@
     <section class="news">
         <div class="news__title__wrapper">
             <div class="news__title">Новости</div>
-            <a class="news__button" href="#">показать все</a>
+            <a class="news__button show-all" href="#">показать все</a>
         </div>
         <div class="news__item__wrapper">
         <div class="news__item">
@@ -481,36 +488,38 @@
         </div>
         </div>
     </section>
+
     <section class="training">
         <h3 class="training__title">Приходи на тренировку</h3>
         <div class="training__text">Спортивные и оздоровительные направления. 3000 кв.м. для реализации твоих возможностей</div>
         <button class="training__button">Записаться</button>
     </section>
+
     <footer class="footer">
-    <div class="wrapper">
-        <div class="footer__contacts">
-            <div class="footer__contacts__bar">
-                <div class="footer__contacts__bar__title footer__contacts__bar__content"><span>Приходи</span><br>Владивосток, Володарского 3А</div>
-                <div class="footer__contacts__bar__phone footer__contacts__bar__content"><span>Звони</span><br>+7 (423) 276 10 10<br> +7 (423) 242 04 04<br> +7 (423) 426 40 10</div>
-                <div class="footer__contacts__bar__socials footer__contacts__bar__content"><span>Пиши</span><br><a href="#" class="">WhatsApp </a>/<a href="#">Instagram</a></div>
-            </div>
-            <div class="footer__contacts_map"></div>
-            <script src="/js/map.js"></script>
-  	        <script async defer
-  	          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWhfLFdy0iE50r6IGd_fqWNygDmbbChWM&callback=initMaps">
-  	        </script>
-        </div>
-        <div class="footer__partners">
-            <div class="footer__partners__item"><object class="partners__item" data="img/lifefitnes.svg" type="image/svg+xml"></object></div>
-            <div class="footer__partners__item"><object data="img/hammerstrength.svg" type="image/svg+xml"></object></div>
-            <div class="footer__partners__item"><object data="img/trx.svg" type="image/svg+xml"></object></div>
-            <div class="footer__partners__item"><object data="img/bbh.svg" type="image/svg+xml"></object></div>
-            <div class="footer__partners__item"><object data="img/atlantikscity.svg" type="image/svg+xml"></object></div>
-            <div class="footer__partners__item"><object data="img/magnum.svg" type="image/svg+xml"></object></div>
-            <div class="footer__partners__item"><object data="img/amurskiyzaliv.svg" type="image/svg+xml"></object></div>
-        </div>
-        <div class="footer__copyright">Арена спорта 2017. Все права защищены</div>
-    </div>
+      <div class="wrapper">
+          <div class="footer__contacts">
+              <div class="footer__contacts__bar">
+                  <div class="footer__contacts__bar__title footer__contacts__bar__content"><span>Приходи</span><br>Владивосток, Володарского 3А</div>
+                  <div class="footer__contacts__bar__phone footer__contacts__bar__content"><span>Звони</span><br>+7 (423) 276 10 10<br> +7 (423) 242 04 04<br> +7 (423) 426 40 10</div>
+                  <div class="footer__contacts__bar__socials footer__contacts__bar__content"><span>Пиши</span><br><a href="#" class="">WhatsApp </a>/<a href="#">Instagram</a></div>
+              </div>
+              <div class="footer__contacts_map"></div>
+              <script src="/js/map.js"></script>
+    	        <script async defer
+    	          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWhfLFdy0iE50r6IGd_fqWNygDmbbChWM&callback=initMaps">
+    	        </script>
+          </div>
+          <div class="footer__partners">
+              <div class="footer__partners__item"><object class="partners__item" data="img/lifefitnes.svg" type="image/svg+xml"></object></div>
+              <div class="footer__partners__item"><object data="img/hammerstrength.svg" type="image/svg+xml"></object></div>
+              <div class="footer__partners__item"><object data="img/trx.svg" type="image/svg+xml"></object></div>
+              <div class="footer__partners__item"><object data="img/bbh.svg" type="image/svg+xml"></object></div>
+              <div class="footer__partners__item"><object data="img/atlantikscity.svg" type="image/svg+xml"></object></div>
+              <div class="footer__partners__item"><object data="img/magnum.svg" type="image/svg+xml"></object></div>
+              <div class="footer__partners__item"><object data="img/amurskiyzaliv.svg" type="image/svg+xml"></object></div>
+          </div>
+          <div class="footer__copyright">Арена спорта 2017. Все права защищены</div>
+      </div>
     </footer>
 
 
@@ -529,7 +538,7 @@
             </div>
             <div class="modal-input-box">
                 <label class="modal__label" for="modal__type">Выберите направление</label>
-                <select class="modal__input" type="text" id="modal__type">
+                <select class="modal__input dropkick" type="text" id="modal__type">
                     <option value="Фитнес">Фитнес</option>
                     <option value="Бойцовский клуб">Бойцовский клуб</option>
                     <option value="Детские секции">Детские секции</option>
@@ -538,19 +547,17 @@
                 </select>
             </div>
             <div class="modal-check-box">
-                <input class="modal__input" type="checkbox" checked name="politics" id="modal__politics" checked>
+                <input class="modal__input" type="checkbox" required name="politics" id="modal__politics" checked>
                 <label class="modal__label__check" for="modal__politics">Я согласен с <a href="#">политикой конфиденциальности</a></label>
             </div>
-            <input id="modal__submit" class="modal__submit" type="submit">
+            <input id="modal__submit" class="modal__submit" type="submit" value="Отправить">
         </div>
     </form>
-
 
     <script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
     <script src="swiper/js/swiper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dropkickjs@2.2.4/dist/dropkick.min.js"></script>
     <script src="js/script.js"></script>
 
-    </div>
 </body>
 </html>
