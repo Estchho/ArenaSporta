@@ -654,6 +654,7 @@ option{
     left: 0;
     width: 400%;
 }
+
 .catalog__box__form__input:focus{
     border-color: #3a516a;
 }
@@ -1813,7 +1814,6 @@ div#preloader.--visible {
   fill: #203260;
   width: 40px;
 }
-
 
 .dk-selected {
     border: 1px solid #B6BECB;
