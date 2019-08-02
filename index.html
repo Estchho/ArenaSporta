@@ -84,6 +84,7 @@
   <!-- sprites end -->
 
     <div class="above-fold">
+
       <header class="header">
         <div class="header-container">
 
@@ -116,7 +117,6 @@
           </div>
         </div>
       </header>
-
 
       <section class="main" id="hero">
 
@@ -217,7 +217,6 @@
 
       </section>
 
-
       <section class="sections">
         <nav class="sections__nav">
           <div class="sections__nav__item"><object data="img/fitnes_hover.svg" type="image/svg+xml"></object>Фитнес</div>
@@ -312,37 +311,37 @@
             <div class="catalog__box__form__title">Не знаете что выбрать? Мы вам поможем.</div>
             <form class="form" action="">
               <div class="form-wrapper">
-                <label class="left-top" for="catalog__activity">Темп активности</label>
-                <select name="activity" id="catalog__activity" class="catalog__box__form__input catalog__activity dropkick">
+                <select name="activity" id="catalog__activity" class="input catalog__activity dropkick">
                   <option value="Низкий">Низкий</option>
                   <option value="Средний" selected>Средний</option>
                   <option value="Высокий">Высокий</option>
                 </select>
+                <label class="left-top" for="catalog__activity">Темп активности</label>
               </div>
               <div class="form-wrapper">
-                <label class="right-top" for="catalog__age">Ваш возраст</label>
-                <input class="catalog__box__form__input catalog__age" id="catalog__age" type="number" step="1" placeholder="35">
+                <input class="input catalog__age --invalid" id="catalog__age" type="number" step="1" placeholder="35">
+                <label class="right-top" for="catalog__age" data-invalid="Whoopsie doopsie, something wrong">Ваш возраст</label>
               </div>
               <div class="form-wrapper">
-                <label class="left-bottom" for="catalog__type">Предпочтения</label>
-                <select name="type" id="catalog__type" class="catalog__box__form__input catalog__type dropkick">
+                <select name="type" id="catalog__type" class="input catalog__type dropkick">
                   <option value="Силовые тренировки" selected>Силовые тренировки</option>
                   <option value="Кардио">Кардио</option>
                   <option value="Безудержные нагрузки">Безудержные нагрузки</option>
                 </select>
+                <label class="left-bottom" for="catalog__type">Предпочтения</label>
               </div>
               <div class="form-wrapper">
-                <label class="right-bottom" for="catalog__group_type">Тип занятий</label>
-                <select name="group_type" id="catalog__group_type" class="catalog__box__form__input group_type dropkick">
+                <select name="group_type" id="catalog__group_type" class="input group_type dropkick">
                   <option value="Групповые занятия" selected>Групповые занятия</option>
                   <option value="Индивидуальные знаятия">Индивидуальные знаятия</option>
                 </select>
+                <label class="right-bottom" for="catalog__group_type">Тип занятий</label>
               </div>
               <div class="radio-title">Ваш пол:
-                <input class="catalog__box__form__input-radio" type="radio" name="gender" value="man" id="male">
+                <input class="input-radio" type="radio" name="gender" value="man" id="male">
                 <label for="male">М</label>
                 /
-                <input class="catalog__box__form__input-radio" type="radio" name="gender" value="woman" id="female">
+                <input class="input-radio" type="radio" name="gender" value="woman" id="female">
                 <label for="female">Ж</label>
               </div>
               <button type="submit">Показать доступные варианты</button>
@@ -350,6 +349,7 @@
           </div>
         </div>
       </section>
+      
     </div> <!-- above fold end -->
 
 
@@ -538,7 +538,6 @@
                 <label class="modal__label" for="modal__phone">Телефон</label>
             </div>
             <div class="modal-input-box">
-                <label class="modal__label" for="modal__type">Выберите направление</label>
                 <select class="modal__input dropkick" type="text" id="modal__type">
                     <option value="Фитнес">Фитнес</option>
                     <option value="Бойцовский клуб">Бойцовский клуб</option>
