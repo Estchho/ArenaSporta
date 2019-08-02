@@ -89,3 +89,8 @@ $(document).ready(function () {
 
   // init tabby tabs
   var tabs = new Tabby('[data-tabs]');
+
+  // preloader
+  $('.above-fold').on('load error', function(e){
+    $('#preloader').removeClass('--visible');
+  });
