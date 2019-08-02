@@ -633,14 +633,20 @@ option{
     border-color: #3A516A;
 }
 .modal__input:invalid,
+.modal__input.--invalid,
 .modal__input:invalid + label,
+.modal__input.--invalid + label,
 .catalog__box__form__input:invalid,
-.catalog__box__form__input:invalid + label{
+.catalog__box__form__input.--invalid,
+.catalog__box__form__input:invalid + label,
+.catalog__box__form__input.--invalid + label {
     color: #FF8E8E;
     border-color: #FF8E8E;
 }
 .modal__input:invalid + label::after,
-.catalog__box__form__input:invalid + label::after{
+.modal__input.--invalid + label::after,
+.catalog__box__form__input:invalid + label::after
+.catalog__box__form__input.--invalid + label::after {
     content: "Whoopsie doopsie, something wrong";
     color: #FF8E8E;
     position: absolute;
