@@ -121,6 +121,7 @@ section.main {
   align-items: center;
   justify-content: center;
   position: relative;
+  height: 85vh;
 }
 
 .main-wrapper {
@@ -1913,4 +1914,9 @@ input[type=number]::-webkit-outer-spin-button {
 .input.dropkick {
   padding: 0;
   border: none;
+}
+
+
+.plyr--video {
+    height: 100%;
 }

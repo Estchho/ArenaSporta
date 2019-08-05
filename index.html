@@ -83,8 +83,6 @@
   </svg>
   <!-- sprites end -->
 
-    <div class="above-fold">
-
       <header class="header">
         <div class="header-container">
 
@@ -121,14 +119,12 @@
       <section class="main" id="hero">
 
         <div class="hero__video-wrap">
-          <div id="hero-player"> <!-- class="plyr__video-embed" -->
-            <iframe
-            src="https://player.vimeo.com/video/143842667?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-            allowfullscreen
-            allowtransparency
-            allow="autoplay"
-            ></iframe>
-          </div>
+
+          <video poster="/img/poster2.jpg" id="hero-player" playsinline controls>
+              <source src="/video/karate_finalcut.mp4" type="video/mp4" />
+              <!-- <source src="/path/to/video.webm" type="video/webm" /> -->
+          </video>
+
         </div>
 
         <!-- Slider main container -->
@@ -349,8 +345,6 @@
           </div>
         </div>
       </section>
-      
-    </div> <!-- above fold end -->
 
 
     <section class="team">
