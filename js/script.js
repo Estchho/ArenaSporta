@@ -96,12 +96,22 @@ $(document).ready(function () {
     document.getElementById('modal__phone'), {
       mask: '+{7}(000)000-00-00'
     });
-
-
-  // preloader
-  $('.above-fold').on('load error', function(e){
-    $('#preloader').removeClass('--visible');
   });
 
   // dropkick dropdowns
   $('.dropkick').dropkick();
+
+  /**
+  * preloader
+  */
+  var $slide = $('.hero-slide.--one');
+  var bgsrc = $slide.css('background-image');
+  // get rid of url()
+  bgsrc = bgsrc.match(/(?<=url\(").*?(?="\))/g)[0];
+  var img = new Image();
+  img.src = bgsrc;
+  $(img).on('load error', function(e) {
+    $('#preloader').removeClass('--visible');
+  });
+
+}); // doc ready end
