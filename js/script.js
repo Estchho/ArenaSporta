@@ -65,10 +65,10 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() > 1) {
       $('header').addClass('sticky');
-      $('.header__nav__link').addClass("header__nav__link-scroll");
+      $('.header__nav-link').addClass("header__nav-link-scroll");
     } else {
       $('header').removeClass('sticky');
-      $('.header__nav__link').removeClass('header__nav__link-scroll')
+      $('.header__nav-link').removeClass('header__nav-link-scroll')
     }
   });
 
