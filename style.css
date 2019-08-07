@@ -46,6 +46,28 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'TT Norms';
+  src: url('font/subset-TTNorms-MediumItalic.eot');
+  src:
+    url('font/subset-TTNorms-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/subset-TTNorms-MediumItalic.woff2') format('woff2'),
+    url('font/subset-TTNorms-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('font/subset-TTNorms-Italic.eot');
+  src:
+    url('font/subset-TTNorms-Italic.eot?#iefix') format('embedded-opentype'),
+    url('font/subset-TTNorms-Italic.woff2') format('woff2'),
+    url('font/subset-TTNorms-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
 * {
   list-style: none;
   text-decoration: none;
