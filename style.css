@@ -1161,16 +1161,10 @@ img {
 }
 
 .sticky {
-    background: #fff;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  background: #fff;
 }
 
 /* -------------------About------------------- */
-
-.content-left,
-.content-right{
-    width: 50%;
-}
 
 .about-content {
   max-width: 1110px;
@@ -1178,65 +1172,38 @@ img {
 }
 
 .about-main {
-    width: 100%;
-    height: 325px;
-    background-image: url(img/about-main-bg.jpg);
-}
-.about-wrapper{
-    width: 100%;
-    height: 100%;
-    max-width: 1270px;
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
+  width: 100%;
+  height: 325px;
+  background-image: url(img/about-main-bg.jpg);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
-.about-main__social{
-    position: absolute;
-    transform: rotate(-90deg);
-    left: -80px;
-    top: 180px;
-    bottom: 0;
-    height: 20px;
-    color: #fff;
+.about-main__social {
+  transform: rotate(-90deg);
+  margin-left: -10px;
+  margin-bottom: 130px;
 }
 
 .about-main__text {
-    max-width: 300px;
-    margin-left: 100px;
-    margin-bottom: 90px;
-    margin-right: 600px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    color: #fff;
-}
-.about-main__text h1{
-    font-weight: 500;
-    font-size: 60px;
-    line-height: 66px;
-    color: #fff;
+  max-width: 300px;
+  margin-left: 100px;
+  margin-bottom: 90px;
+  margin-right: 600px;
 }
 
 .about-content__arena {
-    display: flex;
-    justify-content: center;
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.about-main__button__link{
-    margin-bottom: 50px;
-    color: #fff;
-}
-
-.about-content__arena_text{
-    width: 100%;
-    max-width: 520px;
-    margin-left: 63px;
+.about-content__arena_text {
+  max-width: 520px;
+  margin-left: 63px;
 }
 
 .about-content__arena_text__item {
@@ -1257,22 +1224,18 @@ img {
 }
 
 .about-content__nikolaev {
-    max-width: 1110px;
-    width: 100%;
-    background: #f5f8fb;
-    padding-top: 76px;
-    padding-bottom: 76px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
+  max-width: 1110px;
+  background: #f5f8fb;
+  padding-top: 76px;
+  padding-bottom: 76px;
+  margin: 0 auto;
 }
 
 .about-content__nikolaev__items {
-    width: 50%;
-    margin-left: 539px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  margin-left: 539px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .about-content__nikolaev__item {
@@ -1297,14 +1260,10 @@ img {
   line-height: 15px;
 }
 
-.about-content__feature{
-    max-width: 1110px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 90px 0;
-    display: flex;
-    padding: 90px 0;
-    justify-content: space-between;
+.about-content__feature {
+  display: flex;
+  padding: 90px 0;
+  justify-content: space-between;
 }
 
 .about-content__feature__left {
@@ -1329,13 +1288,6 @@ img {
   justify-content: space-between;
   background: linear-gradient(0deg, #f5f8fb, #f5f8fb), #f7f7f7;
 }
-
-.about-content__interior__wrapper{
-    width: 100%;
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 80px 0;
-    display: flex;
 
 .about-content__interior__text {
   max-width: 400px;
@@ -1373,13 +1325,11 @@ img {
   width: 700px;
 }
 
-.about-content__history{
-    width: 100%;
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 100px 0;
-    display: flex;
-    justify-content: space-between;
+.about-content__history {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1110px;
 }
 
 .about-content__history__left {
@@ -1399,36 +1349,12 @@ img {
 
 /* -------------------Team------------------- */
 
-.team-main{
-    width: 100%;
-    height: 325px;
-    background: url(img/team-main-bg.jpg)
+.team-main {
+  background: url(img/team-main-bg.jpg);
 }
 
-.team__content{
-    width: 100%;
-    max-width: 1110px;
-    margin: 0 auto;
-}
-
-.team-links{
-    display: flex;
-    margin: 0  0 50px -18px;
-}
-
-.team-links__item{
-    padding: 20px;
-    font-size: 15px;
-    line-height: 19px;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 19px;
-    color: #3A516A;
-
-}
-.team-links__item:hover{
-    text-decoration-line: underline;
-
+.team-links {
+  display: flex;
 }
 
 .team-members {
