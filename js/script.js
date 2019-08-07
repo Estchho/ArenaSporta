@@ -35,11 +35,11 @@ $(document).ready(function () {
 
     $(window).scroll(function() {
       if ($(this).scrollTop() > 1){
-        $('header').addClass('sticky');
+        $('.header-container').addClass('sticky');
         $('.header__nav__link').addClass("header__nav__link-scroll");
       }
       else {
-        $('header').removeClass('sticky');
+        $('.header-container').removeClass('sticky');
         $('.header__nav__link').removeClass('header__nav__link-scroll')
       }
     });
