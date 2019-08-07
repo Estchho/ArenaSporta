@@ -26,7 +26,7 @@ $(document).ready(function() {
     // loop: true
   });
 
-  // init about swiper
+  // init about section swiper
   var aboutSwiper = new Swiper('.about__slider', {
     // Optional parameters
     slidesPerView: 1,
@@ -34,6 +34,31 @@ $(document).ready(function() {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+  });
+
+  function pad(num) {
+    return (num.toString().length == 1) ? '0' + num : num;
+  }
+
+  // init about page swiper
+  var aboutPageSwiper = new Swiper('.js-about-page-slider', {
+    // Optional parameters
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.about__swiper-pagination',
+      type: 'fraction',
+      formatFractionCurrent: function(num) {
+          return pad(num)
+      },
+      formatFractionTotal: function(num) {
+          return pad(num)
+      },
     },
   });
 
@@ -85,7 +110,9 @@ $(document).ready(function() {
   });
 
   // init tabby tabs
-  var tabs = new Tabby('[data-tabs]');
+  if ($('[data-tabs]').length > 0) {
+    var tabs = new Tabby('[data-tabs]');
+  }
 
   // modal mask
   var phoneMask = IMask(document.getElementById('modal__phone'), {
@@ -102,11 +129,20 @@ $(document).ready(function() {
   var bgsrc = $slide.css('background-image');
   // get rid of url()
   // bgsrc = bgsrc.match(/(?<=url\(").*?(?="\))/g)[0];
-  bgsrc = /(?:url\(")(.*?)(?:"\))/gi.exec(bgsrc)[1];
-  var img = new Image();
-  img.src = bgsrc;
-  $(img).on('load error', function(e) {
-    $('#preloader').removeClass('--visible');
-  });
+  if (bgsrc && bgsrc.length > 0) {
+    bgsrc = /(?:url\(")(.*?)(?:"\))/gi.exec(bgsrc)[1];
+    var img = new Image();
+    img.src = bgsrc;
+    $(img).on('load error', function(e) {
+      $('#preloader').removeClass('--visible');
+    });
+  } else {
+    $(window).on('load error', function(e) {
+      $('#preloader').removeClass('--visible');
+    });
+  }
+
+  // stick it to the man
+  var sticky = new Sticky('.js-sticky');
 
 }); // doc ready end
