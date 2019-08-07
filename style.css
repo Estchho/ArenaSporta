@@ -4,7 +4,6 @@ body {
   position: relative;
 }
 
-.wrapper,
 .container {
   max-width: 1110px;
   width: 100%;
@@ -74,8 +73,6 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
-  /* transition: all 0.5s ease-in-out; */
   font-family: 'TT Norms', sans-serif;
   outline: none;
 }
@@ -268,6 +265,7 @@ section.main {
   cursor: pointer;
   transition: all 0.3s ease;
   font-weight: 500;
+  padding: 0 20px;
 }
 
 .training__button {
@@ -374,7 +372,7 @@ option {
   background-color: #7198d7;
 }
 
-.modal__label__check {
+.modal__label-check {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -1926,6 +1924,12 @@ input[type=number]::-webkit-outer-spin-button {
   height: 100%;
 }
 
+.page-header__cta-btn {
+  position: absolute;
+  right: 64px;
+  bottom: 40px;
+}
+
 .about__p {
   margin-bottom: 32px;
 }
@@ -2071,84 +2075,84 @@ span.swiper-pagination-total {
 }
 
 .team-card__info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
-    background: hsla(210, 43%, 97%, 0.95);
-    padding: 32px 24px 24px;
-    font-size: 15px;
-    color: #203260;
-    line-height: 1.4;
-    transition: all .3s;
-    opacity: 0;
-    visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background: hsla(210, 43%, 97%, 0.95);
+  padding: 32px 24px 24px;
+  font-size: 15px;
+  color: #203260;
+  line-height: 1.4;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .team-card:hover .team-card__info {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 h3.team-card__info-title {
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 23px;
-    margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  margin-bottom: 5px;
 }
 
 .team-card__info-name {
-    font-weight: normal;
-    font-size: 15px;
-    margin-bottom: 32px;
+  font-weight: normal;
+  font-size: 15px;
+  margin-bottom: 32px;
 }
 
 .team-card__info-awards-title {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .team-card__info-awards {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .team-card__info-coast {
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 20px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
 }
 
 .team-card__info-bottom-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .team-card__info-age-rating-box {
-    width: 32px;
-    height: 32px;
-    border: 2px solid #203260;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 14px;
-    position: relative;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #203260;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  position: relative;
 }
 
-.team-card__info-age-rating-box:after {
-    content: url(/img/plus-sign.svg);
-    padding: 0 0 0 4px;
-    background-color: #F5F8FB;
-    position: absolute;
-    top: -6px;
-    right: -4px;
-    display: block;
+.team-card__info-age-rating-box::after {
+  content: url(/img/plus-sign.svg);
+  padding: 0 0 0 4px;
+  background-color: #f5f8fb;
+  position: absolute;
+  top: -6px;
+  right: -4px;
+  display: block;
 }
 
 section.team__content {
-    max-width: 1110px;
-    margin: 0 auto;
-    overflow: hidden;
+  max-width: 1110px;
+  margin: 0 auto;
+  overflow: hidden;
 }
