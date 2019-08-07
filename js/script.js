@@ -101,7 +101,8 @@ $(document).ready(function() {
   var $slide = $('.hero-slide.--one');
   var bgsrc = $slide.css('background-image');
   // get rid of url()
-  bgsrc = bgsrc.match(/(?<=url\(").*?(?="\))/g)[0];
+  // bgsrc = bgsrc.match(/(?<=url\(").*?(?="\))/g)[0];
+  bgsrc = /(?:url\(")(.*?)(?:"\))/gi.exec(bgsrc)[1];
   var img = new Image();
   img.src = bgsrc;
   $(img).on('load error', function(e) {
