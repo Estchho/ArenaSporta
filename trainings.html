@@ -11,9 +11,14 @@
   <script src="js/moment.js" type="text/javascript"></script>
   <script src="js/underscore.js" type="text/javascript"></script>
   <script src="js/clndr.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/imask"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <link rel="stylesheet" href="style.css">
+
+  <!-- tabby  -->
+  <script src="https://cdn.jsdelivr.net/npm/tabbyjs@12.0.1/dist/js/tabby.min.js"></script>
+
 </head>
 
 <body>
@@ -82,7 +87,6 @@
   </svg>
   <!-- sprites end -->
 
-
   <header class="header">
     <div class="header-container">
 
@@ -116,7 +120,7 @@
     </div>
   </header>
 
-  <section class="page-header" style="background-image: url(img/team-main-bg.jpg);">
+  <section class="page-header" style="background-image: url(img/trainings-header-bg.jpg);">
     <div class="container">
 
       <div class="flex-wrap page-header__flex-c">
@@ -126,9 +130,9 @@
           <a href="">Instagram</a>
         </div>
         <div class="page-header__text">
-          <h1>Команда</h1>
+          <h1>Тренировки</h1>
           <p>
-            Профессиональные тренеры и грамотный подход. Будь первым, будь с нами.
+            Система годовых карт и индивидуальные пакеты тренировок. Выбери, что удобно тебе
           </p>
         </div>
       </div>
@@ -148,177 +152,169 @@
     </nav>
   </section>
 
-  <section class="team__content">
+  <section class="trainings">
+    <div class="container">
 
-    <div class="team-links">
-      <a href="#" class="team-links__item" data-shuffle="null">Все</a>
-      <a href="#" class="team-links__item --fitness" data-shuffle="fitness">Фитнес</a>
-      <a href="#" class="team-links__item --martial" data-shuffle="martial">Боевые искусства</a>
-      <a href="#" class="team-links__item --kids" data-shuffle="kids">Детям</a>
-      <a href="#" class="team-links__item --games" data-shuffle="games">Спортивные игры</a>
-      <a href="#" class="team-links__item --olympic" data-shuffle="olympic">Олимпийские секции</a>
-    </div>
+      <h2 class="trainings__h2 --games">Игровые виды спорта</h2>
+      <div class="flex-wrap trainings__row">
 
-    <div class="team-members js-shuffle-container">
-
-      <div class="team-card team-members__item" data-groups='["fitness"]'>
-        <div class="team-card__img">
-          <img src="img/trener1.jpg" alt="" class="team-members__item-img">
-        </div>
-        <div class="team-card__sport_type">Волейбол</div>
-        <div class="team-card__name">Леонид Грицай</div>
-
-        <div class="team-card__info">
-          <h2 class="team-card__info-title">Волейбол</h2>
-          <div class="team-card__info-name">Леонид Грицай</div>
-          <div class="team-card__info-awards-title">Регалии:</div>
-          <div class="team-card__info-awards">Главный тренер СК «Патриот», мастер спорта по боксу,тренер первой квалификационной категории.</div>
-          <div class="team-card__info-bottom-box">
-            <div class="team-card__info-coast">12 занятий - 2300 <span class="team-card__currency">₽</span></div>
-            <div class="team-card__info-age-rating-box">
-              <!-- <div class="team-card__info-age-rating">7</div> -->
-              <span>7</span>
+        <div class="training-card">
+          <h3 class="training-card__title">Волейбол</h3>
+          <div class="training-card__name">Грицай Леонид Анатольевич</div>
+          <div class="training-card__awards-title">Регалии:</div>
+          <div class="training-card__awards">Мастер спорта России и Айзербайджана по волейболу, старший тренер сборной молодёжной команды.</div>
+          <div class="training-card__availale">
+            Пн, Ср, Пт / 15:00 - 16:30
+          </div>
+          <div class="training-card__bottom-box">
+            <div class="training-card__coast">12 занятий - 2300 <span class="training-card__currency">₽</span></div>
+            <div class="training-card__age-rating-box">
+              <span>7-8</span>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="team-card team-members__item" data-groups='["games"]'>
-        <div class="team-card__img">
-          <img src="img/trener2.jpg" alt="" class="team-members__item-img">
-        </div>
-        <div class="team-card__sport_type">Мини-футбол</div>
-        <div class="team-card__name">Александр Кулик</div>
-
-        <div class="team-card__info">
-          <h2 class="team-card__info-title">Мини-футбол</h2>
-          <div class="team-card__info-name">Александр Кулик</div>
-          <div class="team-card__info-awards-title">Регалии:</div>
-          <div class="team-card__info-awards">Главный тренер СК «Патриот», мастер спорта по боксу,тренер первой квалификационной категории.</div>
-          <div class="team-card__info-bottom-box">
-            <div class="team-card__info-coast">12 занятий - 2300 <span class="team-card__currency">₽</span></div>
-            <div class="team-card__info-age-rating-box">
-              <!-- <div class="team-card__info-age-rating">7</div> -->
-              <span>7</span>
+        <div class="training-card">
+          <h3 class="training-card__title">Мини-футбол</h3>
+          <div class="training-card__name">Кулик Александр Александрович</div>
+          <div class="training-card__awards-title">Регалии:</div>
+          <div class="training-card__awards">Тренер — преподаватель, учредитель детской футбольной школы «Олимпико»</div>
+          <div class="training-card__availale">
+            Пн, Ср, Пт / 15:00 - 16:30
+          </div>
+          <div class="training-card__bottom-box">
+            <div class="training-card__coast">8/12 занятий - 3000/4000<span class="training-card__currency">₽</span></div>
+            <div class="training-card__age-rating-box">
+              <span>7-8</span>
             </div>
           </div>
         </div>
-      </div>
+      </div row-end>
 
-      <div class="team-card team-members__item" data-groups='["martial"]'>
-        <div class="team-card__img">
-          <img src="img/trener3.jpg" alt="" class="team-members__item-img">
-        </div>
-        <div class="team-card__sport_type">Каратэномичи</div>
-        <div class="team-card__name">Алексей Воскобойников</div>
+      <h2 class="trainings__h2 --martial">Боевые виды спорта</h2>
+      <div class="flex-wrap trainings__row">
 
-        <div class="team-card__info">
-          <h2 class="team-card__info-title">Каратэномичи</h2>
-          <div class="team-card__info-name">Алексей Воскобойников</div>
-          <div class="team-card__info-awards-title">Регалии:</div>
-          <div class="team-card__info-awards">Главный тренер СК «Патриот», мастер спорта по боксу,тренер первой квалификационной категории.</div>
-          <div class="team-card__info-bottom-box">
-            <div class="team-card__info-coast">12 занятий - 2300 <span class="team-card__currency">₽</span></div>
-            <div class="team-card__info-age-rating-box">
-              <!-- <div class="team-card__info-age-rating">7</div> -->
-              <span>7</span>
+        <div class="training-card">
+          <h3 class="training-card__title">Волейбол</h3>
+          <div class="training-card__name">Грицай Леонид Анатольевич</div>
+          <div class="training-card__awards-title">Регалии:</div>
+          <div class="training-card__awards">Мастер спорта России и Айзербайджана по волейболу, старший тренер сборной молодёжной команды.</div>
+          <div class="training-card__availale">
+            Пн, Ср, Пт / 15:00 - 16:30
+          </div>
+          <div class="training-card__bottom-box">
+            <div class="training-card__coast">12 занятий - 2300 <span class="training-card__currency">₽</span></div>
+            <div class="training-card__age-rating-box">
+              <span>7-8</span>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="team-card team-members__item" data-groups='["fitness"]'>
-        <div class="team-card__img">
-          <img src="img/trener4.jpg" alt="" class="team-members__item-img">
-        </div>
-        <div class="team-card__sport_type">капоэро</div>
-        <div class="team-card__name">Сергей Пыхов</div>
-
-        <div class="team-card__info">
-          <h2 class="team-card__info-title">капоэро</h2>
-          <div class="team-card__info-name">Сергей Пыхов</div>
-          <div class="team-card__info-awards-title">Регалии:</div>
-          <div class="team-card__info-awards">Главный тренер СК «Патриот», мастер спорта по боксу,тренер первой квалификационной категории.</div>
-          <div class="team-card__info-bottom-box">
-            <div class="team-card__info-coast">12 занятий - 2300 <span class="team-card__currency">₽</span></div>
-            <div class="team-card__info-age-rating-box">
-              <!-- <div class="team-card__info-age-rating">7</div> -->
-              <span>7</span>
+        <div class="training-card">
+          <h3 class="training-card__title">Мини-футбол</h3>
+          <div class="training-card__name">Кулик Александр Александрович</div>
+          <div class="training-card__awards-title">Регалии:</div>
+          <div class="training-card__awards">Тренер — преподаватель, учредитель детской футбольной школы «Олимпико»</div>
+          <div class="training-card__availale">
+            Пн, Ср, Пт / 15:00 - 16:30
+          </div>
+          <div class="training-card__bottom-box">
+            <div class="training-card__coast">8/12 занятий - 3000/4000<span class="training-card__currency">₽</span></div>
+            <div class="training-card__age-rating-box">
+              <span>7-8</span>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="team-card team-members__item" data-groups='["games"]'>
-        <div class="team-card__img">
-          <img src="img/trener5.jpg" alt="" class="team-members__item-img">
-        </div>
-        <div class="team-card__sport_type">Тхеквондо</div>
-        <div class="team-card__name">Соколинский Алексей Владимирович</div>
-
-        <div class="team-card__info">
-          <h2 class="team-card__info-title">Тхеквондо</h2>
-          <div class="team-card__info-name">Соколинский Алексей Владимирович</div>
-          <div class="team-card__info-awards-title">Регалии:</div>
-          <div class="team-card__info-awards">Главный тренер СК «Патриот», мастер спорта по боксу,тренер первой квалификационной категории.</div>
-          <div class="team-card__info-bottom-box">
-            <div class="team-card__info-coast">12 занятий - 2300 <span class="team-card__currency">₽</span></div>
-            <div class="team-card__info-age-rating-box">
-              <!-- <div class="team-card__info-age-rating">7</div> -->
-              <span>7</span>
+        <div class="training-card">
+          <h3 class="training-card__title">Волейбол</h3>
+          <div class="training-card__name">Грицай Леонид Анатольевич</div>
+          <div class="training-card__awards-title">Регалии:</div>
+          <div class="training-card__awards">Мастер спорта России и Айзербайджана по волейболу, старший тренер сборной молодёжной команды.</div>
+          <div class="training-card__availale">
+            Пн, Ср, Пт / 15:00 - 16:30
+          </div>
+          <div class="training-card__bottom-box">
+            <div class="training-card__coast">12 занятий - 2300 <span class="training-card__currency">₽</span></div>
+            <div class="training-card__age-rating-box">
+              <span>7-8</span>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="team-card team-members__item" data-groups='["martial"]'>
-        <div class="team-card__img">
-          <img src="img/trener6.jpg" alt="" class="team-members__item-img">
-        </div>
-        <div class="team-card__sport_type">КАПОЭРО</div>
-        <div class="team-card__name">Сергей Пыхов</div>
-
-        <div class="team-card__info">
-          <h2 class="team-card__info-title">Волейбол</h2>
-          <div class="team-card__info-name">Леонид Грицай</div>
-          <div class="team-card__info-awards-title">Регалии:</div>
-          <div class="team-card__info-awards">Главный тренер СК «Патриот», мастер спорта по боксу,тренер первой квалификационной категории.</div>
-          <div class="team-card__info-bottom-box">
-            <div class="team-card__info-coast">12 занятий - 2300 <span class="team-card__currency">₽</span></div>
-            <div class="team-card__info-age-rating-box">
-              <!-- <div class="team-card__info-age-rating">7</div> -->
-              <span>7</span>
+        <div class="training-card">
+          <h3 class="training-card__title">Мини-футбол</h3>
+          <div class="training-card__name">Кулик Александр Александрович</div>
+          <div class="training-card__awards-title">Регалии:</div>
+          <div class="training-card__awards">Тренер — преподаватель, учредитель детской футбольной школы «Олимпико»</div>
+          <div class="training-card__availale">
+            Пн, Ср, Пт / 15:00 - 16:30
+          </div>
+          <div class="training-card__bottom-box">
+            <div class="training-card__coast">8/12 занятий - 3000/4000<span class="training-card__currency">₽</span></div>
+            <div class="training-card__age-rating-box">
+              <span>7-8</span>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="team-card team-members__item" data-groups='["fitness"]'>
-        <div class="team-card__img">
-          <img src="img/trener7.jpg" alt="" class="team-members__item-img">
-        </div>
-        <div class="team-card__sport_type">бокс</div>
-        <div class="team-card__name">Черес Александр Анатольевич</div>
-
-        <div class="team-card__info">
-          <h2 class="team-card__info-title">Бокс</h2>
-          <div class="team-card__info-name">Черес Александр Анатольевич</div>
-          <div class="team-card__info-awards-title">Регалии:</div>
-          <div class="team-card__info-awards">Главный тренер СК «Патриот», мастер спорта по боксу,тренер первой квалификационной категории.</div>
-          <div class="team-card__info-bottom-box">
-            <div class="team-card__info-coast">12 занятий - 2300 <span class="team-card__currency">₽</span></div>
-            <div class="team-card__info-age-rating-box">
-              <!-- <div class="team-card__info-age-rating">7</div> -->
-              <span>7</span>
+        <div class="training-card">
+          <h3 class="training-card__title">Волейбол</h3>
+          <div class="training-card__name">Грицай Леонид Анатольевич</div>
+          <div class="training-card__awards-title">Регалии:</div>
+          <div class="training-card__awards">Мастер спорта России и Айзербайджана по волейболу, старший тренер сборной молодёжной команды.</div>
+          <div class="training-card__availale">
+            Пн, Ср, Пт / 15:00 - 16:30
+          </div>
+          <div class="training-card__bottom-box">
+            <div class="training-card__coast">12 занятий - 2300 <span class="training-card__currency">₽</span></div>
+            <div class="training-card__age-rating-box">
+              <span>7-8</span>
             </div>
           </div>
         </div>
-      </div>
+
+      </div row-end>
+
+      <h2 class="trainings__h2 --olympic">Олимпийский спорт</h2>
+      <div class="flex-wrap trainings__row">
+
+        <div class="training-card">
+          <h3 class="training-card__title">Волейбол</h3>
+          <div class="training-card__name">Грицай Леонид Анатольевич</div>
+          <div class="training-card__awards-title">Регалии:</div>
+          <div class="training-card__awards">Мастер спорта России и Айзербайджана по волейболу, старший тренер сборной молодёжной команды.</div>
+          <div class="training-card__availale">
+            Пн, Ср, Пт / 15:00 - 16:30
+          </div>
+          <div class="training-card__bottom-box">
+            <div class="training-card__coast">12 занятий - 2300 <span class="training-card__currency">₽</span></div>
+            <div class="training-card__age-rating-box">
+              <span>7-8</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="training-card">
+          <h3 class="training-card__title">Мини-футбол</h3>
+          <div class="training-card__name">Кулик Александр Александрович</div>
+          <div class="training-card__awards-title">Регалии:</div>
+          <div class="training-card__awards">Тренер — преподаватель, учредитель детской футбольной школы «Олимпико»</div>
+          <div class="training-card__availale">
+            Пн, Ср, Пт / 15:00 - 16:30
+          </div>
+          <div class="training-card__bottom-box">
+            <div class="training-card__coast">8/12 занятий - 3000/4000<span class="training-card__currency">₽</span></div>
+            <div class="training-card__age-rating-box">
+              <span>7-8</span>
+            </div>
+          </div>
+        </div>
+      </div row-end>
 
     </div>
-
   </section>
-  
+
   <footer class="footer">
     <div class="container">
       <div class="footer__contacts">
@@ -344,6 +340,7 @@
       <div class="footer__copyright">Арена спорта 2017. Все права защищены</div>
     </div>
   </footer>
+  </div>
 
 
   <!-- MODALS -->
@@ -360,7 +357,7 @@
         <label class="modal__label" for="modal__phone">Телефон</label>
       </div>
       <div class="modal-input-box">
-        <select class="modal__input dropkick" type="text" id="modal__type">
+        <select class="modal__input" type="text" id="modal__type">
           <option value="Фитнес">Фитнес</option>
           <option value="Бойцовский клуб">Бойцовский клуб</option>
           <option value="Детские секции">Детские секции</option>
@@ -370,12 +367,32 @@
         <label class="modal__label" for="modal__type">Выберите направление</label>
       </div>
       <div class="modal-check-box">
-        <input class="modal__input" type="checkbox" required name="politics" id="modal__politics" checked>
+        <input class="modal__input" type="checkbox" checked name="politics" id="modal__politics" checked>
         <label class="modal__label-check" for="modal__politics">Я согласен с <a href="#">политикой конфиденциальности</a></label>
       </div>
-      <input id="modal__submit" class="modal__submit" type="submit" value="Отправить">
+      <input id="modal__submit" class="modal__submit" type="submit">
     </div>
   </form>
+
+  <!-- modal -->
+  <form id="login-form" class="modal">
+    <div class="modal__wrap">
+      <h2 class="modal__title">Запись на тренировку</h2>
+      <label class="modal__label" for="modal__name">Ваше имя</label> <input class="modal__input" type="text" id="modal__name" placeholder="Введите">
+      <label class="modal__label" for="modal__phone">Телефон</label><input class="modal__input" type="tel" id="modal__phone" placeholder="+7 (___) ___-__-__">
+      <label class="modal__label" for="modal__type">Выберите направление</label>
+      <select class="modal__input" type="text" id="modal__type">
+        <option value="Фитнес">Фитнес</option>
+        <option value="Бойцовский клуб">Бойцовский клуб</option>
+        <option value="Детские секции">Детские секции</option>
+        <option value="Игровой зал">Игровой зал</option>
+        <option value="Олимпийские секции">Олимпийские секции</option>
+      </select>
+      <label class="modal__label" for="modal__politics">Я согласен с политикой конфиденциальности</label><input class="modal__input" type="checkbox" checked name="politics" id="modal__politics">
+      <label class="modal__label__submit" for="modal__submit">Отправить</label><input id="modal__submit" class="modal__submit" type="submit">
+    </div>
+  </form>
+  <!-- modal end -->
 
   <script src="js/svg-inliner.js"></script>
   <script src="https://unpkg.com/imask"></script>
@@ -384,30 +401,8 @@
   <script src="swiper/js/swiper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dropkickjs@2.2.4/dist/dropkick.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.2.0/sticky.compile.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.2/shuffle.min.js" crossorigin="anonymous"></script> -->
-  <script src="js/shuffle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.2/shuffle.min.js" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
-
-  <script type="text/javascript">
-    var Shuffle = window.Shuffle;
-    var element = document.querySelector('.js-shuffle-container');
-    // var sizer = element.querySelector('.my-sizer-element');
-
-    var shuffleInstance = new Shuffle(element, {
-      itemSelector: '.team-card',
-      // sizer: sizer // could also be a selector: '.my-sizer-element'
-    });
-
-    $('[data-shuffle]').click(function(e){
-      e.preventDefault();
-      var $link = $(this);
-      $('[data-shuffle]').removeClass('--active');
-      $link.addClass('--active');
-      shuffleInstance.filter($link.data('shuffle'));
-    });
-
-
-  </script>
 
 </body>
 

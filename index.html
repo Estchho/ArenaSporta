@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="swiper/css/swiper.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
-    <script src="js/moment.js" type="text/javascript"></script>
-    <script src="js/underscore.js" type="text/javascript"></script>
-    <script src="js/clndr.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="swiper/css/swiper.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+  <script src="js/moment.js" type="text/javascript"></script>
+  <script src="js/underscore.js" type="text/javascript"></script>
+  <script src="js/clndr.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
 
-    <!-- tabby  -->
-    <script src="https://cdn.jsdelivr.net/npm/tabbyjs@12.0.1/dist/js/tabby.min.js"></script>
+  <!-- tabby  -->
+  <script src="https://cdn.jsdelivr.net/npm/tabbyjs@12.0.1/dist/js/tabby.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dropkickjs@2.2.4/dist/dropkick.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="laptop.css" media="screen and (max-width: 1366px)">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dropkickjs@2.2.4/dist/dropkick.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="laptop.css" media="screen and (max-width: 1366px)">
 </head>
+
 <body>
 
   <div id="preloader" class="--visible">
     <svg class="preloader-logo">
-      <use xlink:href="#Header_logo"/>
+      <use xlink:href="#Header_logo" />
     </svg>
   </div>
 
@@ -33,25 +35,30 @@
 
     <!-- HEADER LOGO -->
     <symbol id="Header_logo" viewBox="0 0 24 26">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.2276 0H9.54199C8.50717 0 7.39473 1.12246 7.11015 1.56622C6.82558 2.00999 6.61861 2.50596 6.48926 2.97583H19.8903C20.5629 2.97583 22.2445 2.34934 23.2276 0Z"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7606 4.125H3.61634C2.14172 4.125 1.10689 4.8559 1.00341 5.97837C0.874054 7.30966 2.14172 8.06666 2.14172 8.06666C2.84022 7.12693 3.82331 7.10083 5.89296 7.10083H18.5437C19.3974 7.10083 21.5447 6.68317 22.7606 4.125Z"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5249 13L11.5329 16.5501V21.2749C11.5329 21.3532 11.5329 21.4576 11.5329 21.5359C11.4553 24.1463 10.1876 25.2688 8.01447 25.9997V16.5501L5.91895 13H13.5249Z"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.17804 8.27539C11.8696 8.27539 16.4746 8.27539 19.8119 8.27539C18.7512 10.5986 16.7074 11.46 12.2059 11.2773C9.79993 11.2773 7.80789 11.2773 6.28153 11.2773C4.54819 11.2512 3.7462 10.703 3.84969 9.60668C3.9273 8.71915 4.70342 8.27539 6.17804 8.27539Z"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.2276 0H9.54199C8.50717 0 7.39473 1.12246 7.11015 1.56622C6.82558 2.00999 6.61861 2.50596 6.48926 2.97583H19.8903C20.5629 2.97583 22.2445 2.34934 23.2276 0Z" />
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M22.7606 4.125H3.61634C2.14172 4.125 1.10689 4.8559 1.00341 5.97837C0.874054 7.30966 2.14172 8.06666 2.14172 8.06666C2.84022 7.12693 3.82331 7.10083 5.89296 7.10083H18.5437C19.3974 7.10083 21.5447 6.68317 22.7606 4.125Z" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5249 13L11.5329 16.5501V21.2749C11.5329 21.3532 11.5329 21.4576 11.5329 21.5359C11.4553 24.1463 10.1876 25.2688 8.01447 25.9997V16.5501L5.91895 13H13.5249Z" />
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M6.17804 8.27539C11.8696 8.27539 16.4746 8.27539 19.8119 8.27539C18.7512 10.5986 16.7074 11.46 12.2059 11.2773C9.79993 11.2773 7.80789 11.2773 6.28153 11.2773C4.54819 11.2512 3.7462 10.703 3.84969 9.60668C3.9273 8.71915 4.70342 8.27539 6.17804 8.27539Z" />
     </symbol>
 
     <!-- CALENDAR ICON -->
     <symbol viewBox="0 0 19 19" id="Calendar">
-      <path d="M14.3242 8.53516C14.7341 8.53516 15.0664 8.20287 15.0664 7.79297C15.0664 7.38307 14.7341 7.05078 14.3242 7.05078C13.9143 7.05078 13.582 7.38307 13.582 7.79297C13.582 8.20287 13.9143 8.53516 14.3242 8.53516Z"/>
-      <path d="M16.0312 1.48438H15.0664V0.742188C15.0664 0.333984 14.7324 0 14.3242 0C13.916 0 13.582 0.333984 13.582 0.742188V1.48438H10.2051V0.742188C10.2051 0.333984 9.87109 0 9.46289 0C9.05469 0 8.7207 0.333984 8.7207 0.742188V1.48438H5.38086V0.742188C5.38086 0.333984 5.04688 0 4.63867 0C4.23047 0 3.89648 0.333984 3.89648 0.742188V1.48438H2.96875C1.33223 1.48438 0 2.8166 0 4.45312V16.0312C0 17.6678 1.33223 19 2.96875 19H8.64648C9.05469 19 9.38867 18.666 9.38867 18.2578C9.38867 17.8496 9.05469 17.5156 8.64648 17.5156H2.96875C2.14863 17.5156 1.48438 16.8514 1.48438 16.0312V4.45312C1.48438 3.63301 2.14863 2.96875 2.96875 2.96875H3.89648V3.71094C3.89648 4.11914 4.23047 4.45312 4.63867 4.45312C5.04688 4.45312 5.38086 4.11914 5.38086 3.71094V2.96875H8.7207V3.71094C8.7207 4.11914 9.05469 4.45312 9.46289 4.45312C9.87109 4.45312 10.2051 4.11914 10.2051 3.71094V2.96875H13.582V3.71094C13.582 4.11914 13.916 4.45312 14.3242 4.45312C14.7324 4.45312 15.0664 4.11914 15.0664 3.71094V2.96875H16.0312C16.8514 2.96875 17.5156 3.63301 17.5156 4.45312V8.68359C17.5156 9.0918 17.8496 9.42578 18.2578 9.42578C18.666 9.42578 19 9.0918 19 8.68359V4.45312C19 2.8166 17.6678 1.48438 16.0312 1.48438Z"/>
-      <path d="M14.5098 10.0195C12.0346 10.0195 10.0195 12.0346 10.0195 14.5098C10.0195 16.985 12.0346 19 14.5098 19C16.985 19 19 16.985 19 14.5098C19 12.0346 16.985 10.0195 14.5098 10.0195ZM14.5098 17.5156C12.851 17.5156 11.5039 16.1686 11.5039 14.5098C11.5039 12.851 12.851 11.5039 14.5098 11.5039C16.1686 11.5039 17.5156 12.851 17.5156 14.5098C17.5156 16.1686 16.1686 17.5156 14.5098 17.5156Z"/>
-      <path d="M15.5859 13.7676H15.252V12.9883C15.252 12.5801 14.918 12.2461 14.5098 12.2461C14.1016 12.2461 13.7676 12.5801 13.7676 12.9883V14.5098C13.7676 14.918 14.1016 15.252 14.5098 15.252H15.5859C15.9941 15.252 16.3281 14.918 16.3281 14.5098C16.3281 14.1016 15.9941 13.7676 15.5859 13.7676Z"/>
-      <path d="M11.0957 8.53516C11.5056 8.53516 11.8379 8.20287 11.8379 7.79297C11.8379 7.38307 11.5056 7.05078 11.0957 7.05078C10.6858 7.05078 10.3535 7.38307 10.3535 7.79297C10.3535 8.20287 10.6858 8.53516 11.0957 8.53516Z"/>
-      <path d="M7.86719 11.7637C8.27709 11.7637 8.60938 11.4314 8.60938 11.0215C8.60938 10.6116 8.27709 10.2793 7.86719 10.2793C7.45729 10.2793 7.125 10.6116 7.125 11.0215C7.125 11.4314 7.45729 11.7637 7.86719 11.7637Z"/>
-      <path d="M4.63867 8.53516C5.04857 8.53516 5.38086 8.20287 5.38086 7.79297C5.38086 7.38307 5.04857 7.05078 4.63867 7.05078C4.22877 7.05078 3.89648 7.38307 3.89648 7.79297C3.89648 8.20287 4.22877 8.53516 4.63867 8.53516Z"/>
-      <path d="M4.63867 11.7637C5.04857 11.7637 5.38086 11.4314 5.38086 11.0215C5.38086 10.6116 5.04857 10.2793 4.63867 10.2793C4.22877 10.2793 3.89648 10.6116 3.89648 11.0215C3.89648 11.4314 4.22877 11.7637 4.63867 11.7637Z"/>
-      <path d="M4.63867 14.9922C5.04857 14.9922 5.38086 14.6599 5.38086 14.25C5.38086 13.8401 5.04857 13.5078 4.63867 13.5078C4.22877 13.5078 3.89648 13.8401 3.89648 14.25C3.89648 14.6599 4.22877 14.9922 4.63867 14.9922Z"/>
-      <path d="M7.86719 14.9922C8.27709 14.9922 8.60938 14.6599 8.60938 14.25C8.60938 13.8401 8.27709 13.5078 7.86719 13.5078C7.45729 13.5078 7.125 13.8401 7.125 14.25C7.125 14.6599 7.45729 14.9922 7.86719 14.9922Z"/>
-      <path d="M7.86719 8.53516C8.27709 8.53516 8.60938 8.20287 8.60938 7.79297C8.60938 7.38307 8.27709 7.05078 7.86719 7.05078C7.45729 7.05078 7.125 7.38307 7.125 7.79297C7.125 8.20287 7.45729 8.53516 7.86719 8.53516Z"/>
+      <path d="M14.3242 8.53516C14.7341 8.53516 15.0664 8.20287 15.0664 7.79297C15.0664 7.38307 14.7341 7.05078 14.3242 7.05078C13.9143 7.05078 13.582 7.38307 13.582 7.79297C13.582 8.20287 13.9143 8.53516 14.3242 8.53516Z" />
+      <path
+        d="M16.0312 1.48438H15.0664V0.742188C15.0664 0.333984 14.7324 0 14.3242 0C13.916 0 13.582 0.333984 13.582 0.742188V1.48438H10.2051V0.742188C10.2051 0.333984 9.87109 0 9.46289 0C9.05469 0 8.7207 0.333984 8.7207 0.742188V1.48438H5.38086V0.742188C5.38086 0.333984 5.04688 0 4.63867 0C4.23047 0 3.89648 0.333984 3.89648 0.742188V1.48438H2.96875C1.33223 1.48438 0 2.8166 0 4.45312V16.0312C0 17.6678 1.33223 19 2.96875 19H8.64648C9.05469 19 9.38867 18.666 9.38867 18.2578C9.38867 17.8496 9.05469 17.5156 8.64648 17.5156H2.96875C2.14863 17.5156 1.48438 16.8514 1.48438 16.0312V4.45312C1.48438 3.63301 2.14863 2.96875 2.96875 2.96875H3.89648V3.71094C3.89648 4.11914 4.23047 4.45312 4.63867 4.45312C5.04688 4.45312 5.38086 4.11914 5.38086 3.71094V2.96875H8.7207V3.71094C8.7207 4.11914 9.05469 4.45312 9.46289 4.45312C9.87109 4.45312 10.2051 4.11914 10.2051 3.71094V2.96875H13.582V3.71094C13.582 4.11914 13.916 4.45312 14.3242 4.45312C14.7324 4.45312 15.0664 4.11914 15.0664 3.71094V2.96875H16.0312C16.8514 2.96875 17.5156 3.63301 17.5156 4.45312V8.68359C17.5156 9.0918 17.8496 9.42578 18.2578 9.42578C18.666 9.42578 19 9.0918 19 8.68359V4.45312C19 2.8166 17.6678 1.48438 16.0312 1.48438Z" />
+      <path
+        d="M14.5098 10.0195C12.0346 10.0195 10.0195 12.0346 10.0195 14.5098C10.0195 16.985 12.0346 19 14.5098 19C16.985 19 19 16.985 19 14.5098C19 12.0346 16.985 10.0195 14.5098 10.0195ZM14.5098 17.5156C12.851 17.5156 11.5039 16.1686 11.5039 14.5098C11.5039 12.851 12.851 11.5039 14.5098 11.5039C16.1686 11.5039 17.5156 12.851 17.5156 14.5098C17.5156 16.1686 16.1686 17.5156 14.5098 17.5156Z" />
+      <path
+        d="M15.5859 13.7676H15.252V12.9883C15.252 12.5801 14.918 12.2461 14.5098 12.2461C14.1016 12.2461 13.7676 12.5801 13.7676 12.9883V14.5098C13.7676 14.918 14.1016 15.252 14.5098 15.252H15.5859C15.9941 15.252 16.3281 14.918 16.3281 14.5098C16.3281 14.1016 15.9941 13.7676 15.5859 13.7676Z" />
+      <path d="M11.0957 8.53516C11.5056 8.53516 11.8379 8.20287 11.8379 7.79297C11.8379 7.38307 11.5056 7.05078 11.0957 7.05078C10.6858 7.05078 10.3535 7.38307 10.3535 7.79297C10.3535 8.20287 10.6858 8.53516 11.0957 8.53516Z" />
+      <path d="M7.86719 11.7637C8.27709 11.7637 8.60938 11.4314 8.60938 11.0215C8.60938 10.6116 8.27709 10.2793 7.86719 10.2793C7.45729 10.2793 7.125 10.6116 7.125 11.0215C7.125 11.4314 7.45729 11.7637 7.86719 11.7637Z" />
+      <path d="M4.63867 8.53516C5.04857 8.53516 5.38086 8.20287 5.38086 7.79297C5.38086 7.38307 5.04857 7.05078 4.63867 7.05078C4.22877 7.05078 3.89648 7.38307 3.89648 7.79297C3.89648 8.20287 4.22877 8.53516 4.63867 8.53516Z" />
+      <path d="M4.63867 11.7637C5.04857 11.7637 5.38086 11.4314 5.38086 11.0215C5.38086 10.6116 5.04857 10.2793 4.63867 10.2793C4.22877 10.2793 3.89648 10.6116 3.89648 11.0215C3.89648 11.4314 4.22877 11.7637 4.63867 11.7637Z" />
+      <path d="M4.63867 14.9922C5.04857 14.9922 5.38086 14.6599 5.38086 14.25C5.38086 13.8401 5.04857 13.5078 4.63867 13.5078C4.22877 13.5078 3.89648 13.8401 3.89648 14.25C3.89648 14.6599 4.22877 14.9922 4.63867 14.9922Z" />
+      <path d="M7.86719 14.9922C8.27709 14.9922 8.60938 14.6599 8.60938 14.25C8.60938 13.8401 8.27709 13.5078 7.86719 13.5078C7.45729 13.5078 7.125 13.8401 7.125 14.25C7.125 14.6599 7.45729 14.9922 7.86719 14.9922Z" />
+      <path d="M7.86719 8.53516C8.27709 8.53516 8.60938 8.20287 8.60938 7.79297C8.60938 7.38307 8.27709 7.05078 7.86719 7.05078C7.45729 7.05078 7.125 7.38307 7.125 7.79297C7.125 8.20287 7.45729 8.53516 7.86719 8.53516Z" />
     </symbol>
 
     <!-- PHONE ICON -->
@@ -62,7 +69,7 @@
       	L4.5,2.3c0.2-0.2,0.5-0.2,0.6,0l0,0l2.4,2.4c0,0,0,0,0,0c0.2,0.2,0.2,0.5,0,0.6l0,0L7.2,5.7l-3-3L4.5,2.3z M14.4,14.8l3,3
       	c-1.9,1.5-4.6,1.4-6.4-0.4L3.6,10l0,0C1.9,8.2,1.7,5.5,3.2,3.6l3,3C5.4,7.6,5.5,9,6.4,9.9c0,0,0,0,0,0l4.7,4.7l0,0
       	C12,15.5,13.4,15.6,14.4,14.8z M16.3,13.5L16.3,13.5l2.4,2.4l0,0c0.2,0.2,0.2,0.5,0,0.6l-0.3,0.3l-3-3l0.3-0.3c0,0,0,0,0,0
-      	C15.8,13.3,16.1,13.3,16.3,13.5z"/>
+      	C15.8,13.3,16.1,13.3,16.3,13.5z" />
       <path d="M14.4,20.2c-1.7,0-3.2-0.6-4.4-1.8L2.6,11c-2.4-2.4-2.4-6.4,0-8.8c0.2-0.1,0.3-0.3,0.5-0.5l0.4-0.4
       	c0.7-0.7,1.9-0.7,2.6,0l2.4,2.4c0.7,0.7,0.7,1.9,0,2.6L7.4,7.4C7,7.8,7,8.5,7.4,8.9l4.7,4.7c0.4,0.4,1.1,0.4,1.5,0l1.1-1.1
       	c0.7-0.7,1.9-0.7,2.6,0l2.4,2.4c0.7,0.7,0.7,1.9,0,2.6l-0.9,0.9C17.6,19.6,16.1,20.2,14.4,20.2z M4.8,1C4.4,1,3.9,1.2,3.6,1.5
@@ -75,485 +82,498 @@
       	c0.1,0,0.3,0,0.4,0.1h0l2.4,2.4c0.1,0.1,0.1,0.2,0.1,0.4c0,0.1-0.1,0.3-0.2,0.4L18.3,17z M15.5,13.8l2.9,2.9l0.3-0.3
       	c0.1-0.1,0.1-0.2,0.1-0.3c0-0.1,0-0.2-0.1-0.3l-2.4-2.4c-0.1-0.1-0.2-0.1-0.2-0.1c0,0,0,0,0,0c-0.1,0-0.2,0-0.2,0.1v0.1l-0.1,0
       	L15.5,13.8z M7.2,5.8L4,2.7l0.4-0.4c0.2-0.2,0.6-0.2,0.8,0l2.4,2.4C7.7,4.7,7.7,4.9,7.7,5c0,0.1-0.1,0.3-0.2,0.4h0l0,0L7.2,5.8z
-      	 M4.3,2.7l2.9,2.9l0.3-0.3C7.5,5.2,7.5,5.1,7.5,5c0-0.1,0-0.2-0.1-0.3L5.1,2.4c-0.1-0.1-0.4-0.1-0.5,0h0L4.3,2.7z"/>
+      	 M4.3,2.7l2.9,2.9l0.3-0.3C7.5,5.2,7.5,5.1,7.5,5c0-0.1,0-0.2-0.1-0.3L5.1,2.4c-0.1-0.1-0.4-0.1-0.5,0h0L4.3,2.7z" />
     </symbol>
   </svg>
   <!-- sprites end -->
 
-      <header class="header">
-        <div class="header-container">
+  <header class="header">
+    <div class="header-container">
 
-          <a href="#" class="header__logo">
-            <svg class="header__logo-svg">
-              <use xlink:href="#Header_logo"/>
-            </svg>
-          </a>
+      <a href="#" class="header__logo">
+        <svg class="header__logo-svg">
+          <use xlink:href="#Header_logo" />
+        </svg>
+      </a>
 
-          <nav class="header__nav">
-            <a href="/" class="header__nav-link">Главная</a>
-            <a href="/about" class="header__nav-link">Комплекс</a>
-            <a href="/team" class="header__nav-link">Команда</a>
-            <a href="/news" class="header__nav-link">Новости</a>
-            <a href="#" class="header__nav-link">Тренировки</a>
-            <a href="#" class="header__nav-link">Контакты</a>
-          </nav>
+      <nav class="header__nav">
+        <a href="/" class="header__nav-link">Главная</a>
+        <a href="/about.html" class="header__nav-link">Комплекс</a>
+        <a href="/team.html" class="header__nav-link">Команда</a>
+        <a href="/news.html" class="header__nav-link">Новости</a>
+        <a href="/trainings.html" class="header__nav-link">Тренировки</a>
+        <a href="/contacts.html" class="header__nav-link">Контакты</a>
+      </nav>
 
-          <div class="header__tool">
-            <div class="header__tool_cal">
-              <svg class="header__tool_cal-svg">
-                <use xlink:href="#Calendar"/>
-              </svg>
+      <div class="header__tool">
+        <div class="header__tool_cal">
+          <svg class="header__tool_cal-svg">
+            <use xlink:href="#Calendar" />
+          </svg>
+        </div>
+        <a href="tel:+79510000000" class="header__tool_phone">
+          <svg class="header__tool_phone-svg">
+            <use xlink:href="#Phone" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="main" id="hero">
+
+    <div class="hero__video-wrap">
+
+      <video poster="/img/poster2.jpg" id="hero-player" playsinline controls>
+        <source src="/video/karate_finalcut.mp4" type="video/mp4" />
+        <!-- <source src="/path/to/video.webm" type="video/webm" /> -->
+      </video>
+
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper-container hero__slider-wrap">
+
+      <div class="main__middle-social">
+        <a href="#">WhatsApp</a>
+        <span>&nbsp;/&nbsp;</span>
+        <a href="#">Instagram</a>
+      </div>
+
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+
+        <!-- 1st slide -->
+        <div class="swiper-slide hero-slide --one">
+          <div class="main__middle">
+
+            <!-- `card` -->
+            <div class="main__middle-logo">
+              <img class="main__middle-logo_img" src="img/Main_logo.png" alt="">
+              <div class="main__middle-logo_location">
+                <div class="point"><img src="img/point.svg" alt=""></div>
+                <div class="text_box">
+                  <div>Владивосток , Володарского, 3А</div>
+                  <div>+7 (423) 276 10 10</div>
+                </div>
+              </div>
+
+              <div class="video_button"></div>
+
+              <!-- pagination -->
+              <div class="hero-swiper-pagination"></div>
             </div>
-            <a href="tel:+79510000000" class="header__tool_phone">
-              <svg class="header__tool_phone-svg">
-                <use xlink:href="#Phone"/>
-              </svg>
-            </a>
+
+
+            <!-- buttons container -->
+            <div class="main__button_box">
+              <button class="main__button">Узнать подробнее</button>
+              <button class="main__button main__button_middle">
+                <object data="img/downarrow.svg" type="image/svg+xml"></object>
+              </button>
+              <a class="main__button main__button_link" href="#login-form" rel="modal:open">Запись на тренировку</a>
+            </div>
+
           </div>
         </div>
-      </header>
 
-      <section class="main" id="hero">
+        <div class="swiper-slide hero-slide --two">
+          <div class="hero-slide__content --left">
+            <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
+            <p class="hero-slide__text training__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-        <div class="hero__video-wrap">
-
-          <video poster="/img/poster2.jpg" id="hero-player" playsinline controls>
-              <source src="/video/karate_finalcut.mp4" type="video/mp4" />
-              <!-- <source src="/path/to/video.webm" type="video/webm" /> -->
-          </video>
-
+              <button class="main__button cta__button hero-slide__cta-btn --ghost">Узнать подробнее</button>
+            </p>
+          </div>
         </div>
+
+        <div class="swiper-slide hero-slide --three">
+          <div class="hero-slide__content --left">
+            <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
+            <p class="hero-slide__text training__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+              <button class="main__button cta__button hero-slide__cta-btn">Узнать подробнее</button>
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide hero-slide --four">
+          <div class="hero-slide__content --left">
+            <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
+            <p class="hero-slide__text training__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+              <button class="main__button cta__button hero-slide__cta-btn --ghost">Узнать подробнее</button>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div> <!-- slider-wrap end -->
+
+  </section>
+
+  <section class="sections">
+    <nav class="sections__nav">
+
+      <a href="/category.html" class="sections__nav-item --fitness"><img src="img/fitnes_hover.svg">Фитнес</a>
+      <a href="/category.html" class="sections__nav-item --martial"><img src="img/fight_hover.svg">Бойцовский клуб</a>
+      <a href="/category.html" class="sections__nav-item --kids"><img src="img/child_hover.svg">Детские секции</a>
+      <a href="/category.html" class="sections__nav-item --games"><img src="img/basket.svg">Игровой зал</a>
+      <a href="/category.html" class="sections__nav-item --olympic"><img src="img/rings_hover.svg">Олимпийские секции</a>
+
+    </nav>
+  </section>
+
+  <section class="catalog">
+    <div class="catalog__title heading-w-more">
+      <h2 class="catalog__title_text">Каталог видов спорта</h2>
+      <a class="catalog__title_button show-all" href="#">показать все</a>
+    </div>
+    <div class="catalog__box">
+      <ul class="catalog__items">
+        <li class="catalog__item" data-fields='["kids", "fitness"]'>
+          <div class="catalog__item_dots"></div>
+          <img src="img/volleyball.svg" />
+          <div class="catalog__item_text">Волейбол</div>
+        </li>
+        <li class="catalog__item" data-fields='["games", "kids"]'>
+          <div class="catalog__item_dots"></div>
+          <img src="img/basketball.svg" />
+          <div class="catalog__item_text">Баскетбол</div>
+        </li>
+        <li class="catalog__item --games --kids" data-fields='["games", "kids"]'>
+          <div class="catalog__item_dots"></div>
+          <img src="img/minifootball.svg" />
+          <div class="catalog__item_text">Мини-футбол</div>
+        </li>
+        <li class="catalog__item --kids --martial" data-fields='["martial", "kids"]'>
+          <div class="catalog__item_dots"></div>
+          <img src="img/taekwondo.svg" />
+          <div class="catalog__item_text">Тхэквондо</div>
+        </li>
+        <li class="catalog__item --olympic" data-fields='["martial"]'>
+          <div class="catalog__item_dots"></div>
+          <img src="img/box.svg" />
+          <div class="catalog__item_text">Бокс</div>
+        </li>
+        <li class="catalog__item" data-fields='["fitness", "martial", "kids", "games", "olympic"]'>
+          <div class="catalog__item_dots"></div>
+          <img src="img/kickboxing.svg" />
+          <div class="catalog__item_text">Кикбоксинг</div>
+        </li>
+        <li class="catalog__item" data-fields='["martial"]'>
+          <div class="catalog__item_dots"></div>
+          <img src="img/taekwondo.svg" />
+          <div class="catalog__item_text">Каратэномичи</div>
+        </li>
+        <li class="catalog__item" data-fields='["martial"]'>
+          <div class="catalog__item_dots"></div>
+          <img src="img/sambo.svg" />
+          <div class="catalog__item_text">Самбо</div>
+        </li>
+        <li class="catalog__item" data-fields='["martial"]'>
+          <div class="catalog__item_dots"></div>
+          <img src="img/taekwondo.svg" />
+          <div class="catalog__item_text">Джиу-джитсу</div>
+        </li>
+        <li class="catalog__item" data-fields='["olympic", "kids"]'>
+          <div class="catalog__item_dots"></div>
+          <img src="img/gymnastic.svg" />
+          <div class="catalog__item_text">Худ. гимнастика</div>
+        </li>
+        <li class="catalog__item" data-fields='["olympic", "kids"]'>
+          <div class="catalog__item_dots"></div>
+          <img src="img/swim.svg" />
+          <div class="catalog__item_text">Озд. гимнастика</div>
+        </li>
+        <li class="catalog__item" data-fields='["martial"]'>
+          <div class="catalog__item_dots"></div>
+          <img src="img/capoeira.svg" />
+          <div class="catalog__item_text">Капоэйра</div>
+        </li>
+      </ul>
+
+      <div class="catalog__form">
+        <h2 class="catalog__form_title">Не знаете что выбрать? Мы вам поможем.</h2>
+        <form class="form" action="">
+          <div class="form-wrapper">
+            <select name="activity" id="catalog__activity" class="input catalog__activity dropkick">
+              <option value="Низкий">Низкий</option>
+              <option value="Средний" selected>Средний</option>
+              <option value="Высокий">Высокий</option>
+            </select>
+            <label class="left-top" for="catalog__activity">Темп активности</label>
+          </div>
+          <div class="form-wrapper">
+            <input class="input catalog__age --invalid" id="catalog__age" type="number" step="1" placeholder="35">
+            <label class="right-top" for="catalog__age" data-invalid="Whoopsie doopsie, something wrong">Ваш возраст</label>
+          </div>
+          <div class="form-wrapper">
+            <select name="type" id="catalog__type" class="input catalog__type dropkick">
+              <option value="Силовые тренировки" selected>Силовые тренировки</option>
+              <option value="Кардио">Кардио</option>
+              <option value="Безудержные нагрузки">Безудержные нагрузки</option>
+            </select>
+            <label class="left-bottom" for="catalog__type">Предпочтения</label>
+          </div>
+          <div class="form-wrapper">
+            <select name="group_type" id="catalog__group_type" class="input group_type dropkick">
+              <option value="Групповые занятия" selected>Групповые занятия</option>
+              <option value="Индивидуальные знаятия">Индивидуальные знаятия</option>
+            </select>
+            <label class="right-bottom" for="catalog__group_type">Тип занятий</label>
+          </div>
+          <div class="radio-title">Ваш пол:
+            <input class="input-radio" type="radio" name="gender" value="man" id="male">
+            <label for="male">М</label>
+            /
+            <input class="input-radio" type="radio" name="gender" value="woman" id="female">
+            <label for="female">Ж</label>
+          </div>
+          <button type="submit">Показать доступные варианты</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="team">
+    <h2 class="team__title">Команда Арены</h2>
+    <!-- Slider main container -->
+    <div class="swiper-container swiper-team">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper --home-team">
+        <!-- Slides -->
+        <div class="team-card swiper-slide">
+          <div class="team-card__img"><img src="img/trener1.jpg" alt="Леонид Грицай"></div>
+          <div class="team-card__sport_type">ВОЛЕЙБОЛ</div>
+          <div class="team-card__name">Леонид Грицай</div>
+        </div>
+        <div class="team-card swiper-slide">
+          <div class="team-card__img"><img src="img/trainer2.jpg" alt="Александр Кулик"></div>
+          <div class="team-card__sport_type">МИНИ-ФУТБОЛ</div>
+          <div class="team-card__name">Александр Кулик</div>
+        </div>
+        <div class="team-card swiper-slide">
+          <div class="team-card__img"><img src="img/trainer3.jpg" alt="Алексей Воскобойников"></div>
+          <div class="team-card__sport_type">КАРАТЭНОМИЧИ</div>
+          <div class="team-card__name">Алексей Воскобойников</div>
+        </div>
+        <div class="team-card swiper-slide">
+          <div class="team-card__img"><img src="img/trainer4.jpg" alt="Сергей Пыхов"></div>
+          <div class="team-card__sport_type">КАПОЭРО</div>
+          <div class="team-card__name">Сергей Пыхов</div>
+        </div>
+        <div class="team-card swiper-slide">
+          <div class="team-card__img"><img src="img/trener1.jpg" alt="Леонид Грицай"></div>
+          <div class="team-card__sport_type">ВОЛЕЙБОЛ</div>
+          <div class="team-card__name">Леонид Грицай</div>
+        </div>
+        <div class="team-card swiper-slide">
+          <div class="team-card__img"><img src="img/trainer2.jpg" alt="Александр Кулик"></div>
+          <div class="team-card__sport_type">МИНИ-ФУТБОЛ</div>
+          <div class="team-card__name">Александр Кулик</div>
+        </div>
+        <div class="team-card swiper-slide">
+          <div class="team-card__img"><img src="img/trainer3.jpg" alt="Алексей Воскобойников"></div>
+          <div class="team-card__sport_type">КАРАТЭНОМИЧИ</div>
+          <div class="team-card__name">Алексей Воскобойников</div>
+        </div>
+        <div class="team-card swiper-slide">
+          <div class="team-card__img"><img src="img/trainer4.jpg" alt="Сергей Пыхов"></div>
+          <div class="team-card__sport_type">КАПОЭРО</div>
+          <div class="team-card__name">Сергей Пыхов</div>
+        </div>
+        <div class="team-card swiper-slide">
+          <div class="team-card__img"><img src="img/trainer3.jpg" alt="Алексей Воскобойников"></div>
+          <div class="team-card__sport_type">КАРАТЭНОМИЧИ</div>
+          <div class="team-card__name">Алексей Воскобойников</div>
+        </div>
+        <div class="team-card swiper-slide">
+          <div class="team-card__img"><img src="img/trainer4.jpg" alt="Сергей Пыхов"></div>
+          <div class="team-card__sport_type">КАПОЭРО</div>
+          <div class="team-card__name">Сергей Пыхов</div>
+        </div>
+      </div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar">
+        <div class="swiper-scrollbar-drag">
+          <div class="swiper-scrollbar__circle"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+
+    <div class="container">
+      <div class="flex-wrap">
 
         <!-- Slider main container -->
-        <div class="swiper-container hero__slider-wrap">
-
-          <div class="main__middle-social">
-            <a href="#">WhatsApp</a>
-            <span>&nbsp;/&nbsp;</span>
-            <a href="#">Instagram</a>
-          </div>
-
+        <div class="swiper-container about__slider wide-row__col-left --home">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-
-            <!-- 1st slide -->
-            <div class="swiper-slide hero-slide --one">
-              <div class="main__middle">
-
-                <!-- `card` -->
-                <div class="main__middle-logo">
-                  <img class="main__middle-logo_img" src="img/Main_logo.png" alt="">
-                  <div class="main__middle-logo_location">
-                    <div class="point"><img src="img/point.svg" alt=""></div>
-                    <div class="text_box">
-                      <p>Владивосток , Володарского, 3А</p>
-                      <p>+7 (423) 276 10 10</p>
-                    </div>
-                  </div>
-
-                  <div class="video_button"></div>
-
-                  <!-- pagination -->
-                  <div class="hero-swiper-pagination"></div>
-                </div>
-
-
-                <!-- buttons container -->
-                <div class="main__button_box">
-                  <button class="main__button">Узнать подробнее</button>
-                  <button class="main__button main__button_middle">
-                    <object data="img/downarrow.svg" type="image/svg+xml"></object>
-                  </button>
-                  <a class="main__button main__button_link" href="#login-form" rel="modal:open">Запись на тренировку</a>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="swiper-slide hero-slide --two">
-              <div class="hero-slide__content">
-                <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
-                <p class="hero-slide__text training__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-                  <button class="main__button training__button hero-slide__cta-btn --ghost">Узнать подробнее</button>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide hero-slide --three">
-              <div class="hero-slide__content --left">
-                <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
-                <p class="hero-slide__text training__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-                  <button class="main__button training__button hero-slide__cta-btn">Узнать подробнее</button>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide hero-slide --four">
-              <div class="hero-slide__content --left">
-                <h1 class="hero-slide__h1 training__title">Заголовок слайда</h1>
-                <p class="hero-slide__text training__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-                  <button class="main__button training__button hero-slide__cta-btn --ghost">Узнать подробнее</button>
-                </p>
-              </div>
-            </div>
-
+            <img src="img/about_img.svg" class="swiper-slide">
+            <img src="img/slider2/2-1.jpg" class="swiper-slide">
+            <img src="img/slider2/2-2.jpg" class="swiper-slide">
+            <img src="img/slider2/2-3.jpg" class="swiper-slide">
+            <img src="img/slider2/2-4.jpg" class="swiper-slide">
+            <img src="img/slider2/2-5.jpg" class="swiper-slide">
           </div>
-
-        </div> <!-- slider-wrap end -->
-
-      </section>
-
-      <section class="sections">
-        <nav class="sections__nav">
-          <div class="sections__nav-item"><object data="img/fitnes_hover.svg" type="image/svg+xml"></object>Фитнес</div>
-          <div class="sections__nav-item"><object data="img/fight_hover.svg" type="image/svg+xml"></object>Бойцовский клуб</div>
-          <div class="sections__nav-item"><object data="img/child_hover.svg" type="image/svg+xml"></object>Детские секции</div>
-          <div class="sections__nav-item"><object data="img/basket.svg" type="image/svg+xml"></object>Игровой зал</div>
-          <div class="sections__nav-item"><object data="img/rings_hover.svg" type="image/svg+xml"></object>Олимпийские секции</div>
-        </nav>
-      </section>
-
-      <section class="catalog">
-        <div class="catalog__title">
-          <h2 class="catalog__title_text">Каталог видов спорта</h2>
-          <a class="catalog__title_button show-all" href="#">показать все</a>
+          <!-- navigation buttons -->
+          <div class="wide-row__swiper-controls --home">
+            <div class="swiper-control swiper-button-prev --type1"></div>
+            <div class="swiper-control swiper-button-next --type1"></div>
+          </div>
         </div>
-        <div class="catalog__box">
-          <ul class="catalog__box_items">
-            <li class="catalog__box_item">
-              <div class="catalog__box_item_title">Фитнес, доступно для детей</div>
-              <div class="catalog__box_item_dots"></div>
-              <object data="img/volleyball.svg" type="image/svg+xml"></object>
-              <div class="catalog__box_item_text">Волейбол</div>
-            </li>
-            <li class="catalog__box_item">
-              <div class="catalog__box_item_title">Фитнес, доступно для детей</div>
-              <div class="catalog__box_item_dots"></div>
-              <object data="img/basketball.svg" type="image/svg+xml"></object>
-              <div class="catalog__box_item_text">Баскетбол</div>
-            </li>
-            <li class="catalog__box_item">
-              <div class="catalog__box_item_title">Фитнес, доступно для детей</div>
-              <div class="catalog__box_item_dots"></div>
-              <object data="img/minifootball.svg" type="image/svg+xml"></object>
-              <div class="catalog__box_item_text">Мини-футбол</div>
-            </li>
-            <li class="catalog__box_item">
-              <div class="catalog__box_item_title">Фитнес, доступно для детей</div>
-              <div class="catalog__box_item_dots"></div>
-              <object data="img/taekwondo.svg" type="image/svg+xml"></object>
-              <div class="catalog__box_item_text">Тхэквондо</div>
-            </li>
-            <li class="catalog__box_item">
-              <div class="catalog__box_item_title">Фитнес, доступно для детей</div>
-              <div class="catalog__box_item_dots"></div>
-              <object data="img/box.svg" type="image/svg+xml"></object>
-              <div class="catalog__box_item_text">Бокс</div>
-            </li>
-            <li class="catalog__box_item">
-              <div class="catalog__box_item_title">Фитнес, доступно для детей</div>
-              <div class="catalog__box_item_dots"></div>
-              <object data="img/kickboxing.svg" type="image/svg+xml"></object>
-              <div class="catalog__box_item_text">Кикбоксинг</div>
-            </li>
-            <li class="catalog__box_item">
-              <div class="catalog__box_item_title">Фитнес, доступно для детей</div>
-              <div class="catalog__box_item_dots"></div>
-              <object data="img/taekwondo.svg" type="image/svg+xml"></object>
-              <div class="catalog__box_item_text">Каратэномичи</div>
-            </li>
-            <li class="catalog__box_item">
-              <div class="catalog__box_item_title">Фитнес, доступно для детей</div>
-              <div class="catalog__box_item_dots"></div>
-              <object data="img/sambo.svg" type="image/svg+xml"></object>
-              <div class="catalog__box_item_text">Самбо</div>
-            </li>
-            <li class="catalog__box_item">
-              <div class="catalog__box_item_title">Фитнес, доступно для детей</div>
-              <div class="catalog__box_item_dots"></div>
-              <object data="img/taekwondo.svg" type="image/svg+xml"></object>
-              <div class="catalog__box_item_text">Джиу-джитсу</div>
-            </li>
-            <li class="catalog__box_item">
-              <div class="catalog__box_item_title">Фитнес, доступно для детей</div>
-              <div class="catalog__box_item_dots"></div>
-              <object data="img/gymnastic.svg" type="image/svg+xml"></object>
-              <div class="catalog__box_item_text">Худ. гимнастика</div>
-            </li>
-            <li class="catalog__box_item">
-              <div class="catalog__box_item_title">Фитнес, доступно для детей</div>
-              <div class="catalog__box_item_dots"></div>
-              <object data="img/swim.svg" type="image/svg+xml"></object>
-              <div class="catalog__box_item_text">Озд. гимнастика</div>
-            </li>
-            <li class="catalog__box_item">
-              <div class="catalog__box_item_title">Фитнес, доступно для детей</div>
-              <div class="catalog__box_item_dots"></div>
-              <object data="img/capoeira.svg" type="image/svg+xml"></object>
-              <div class="catalog__box_item_text">Капоэйра</div>
-            </li>
+
+        <div class="about__text wide-row__col-right">
+          <h2 class="about__text_sup">
+            Арена спорта - Это современный комплекс, призванный не только развивать и поддерживать приморский спорт, но и создавать максимально комфортные и благоприятные условия.
+          </h2>
+          <ul data-tabs class="about__text_middle">
+            <li><a data-tabby-default class="about__tab" href="#about-tab">Об Арене</a></li>
+            <li><a class="about__tab" href="#fields-tab">Направления</a></li>
+            <li><a class="about__tab" href="#team-tab">Специалисты</a></li>
           </ul>
-          <div class="catalog__box_form">
-            <h2 class="catalog__box_form_title">Не знаете что выбрать? Мы вам поможем.</h2>
-            <form class="form" action="">
-              <div class="form-wrapper">
-                <select name="activity" id="catalog__activity" class="input catalog__activity dropkick">
-                  <option value="Низкий">Низкий</option>
-                  <option value="Средний" selected>Средний</option>
-                  <option value="Высокий">Высокий</option>
-                </select>
-                <label class="left-top" for="catalog__activity">Темп активности</label>
-              </div>
-              <div class="form-wrapper">
-                <input class="input catalog__age --invalid" id="catalog__age" type="number" step="1" placeholder="35">
-                <label class="right-top" for="catalog__age" data-invalid="Whoopsie doopsie, something wrong">Ваш возраст</label>
-              </div>
-              <div class="form-wrapper">
-                <select name="type" id="catalog__type" class="input catalog__type dropkick">
-                  <option value="Силовые тренировки" selected>Силовые тренировки</option>
-                  <option value="Кардио">Кардио</option>
-                  <option value="Безудержные нагрузки">Безудержные нагрузки</option>
-                </select>
-                <label class="left-bottom" for="catalog__type">Предпочтения</label>
-              </div>
-              <div class="form-wrapper">
-                <select name="group_type" id="catalog__group_type" class="input group_type dropkick">
-                  <option value="Групповые занятия" selected>Групповые занятия</option>
-                  <option value="Индивидуальные знаятия">Индивидуальные знаятия</option>
-                </select>
-                <label class="right-bottom" for="catalog__group_type">Тип занятий</label>
-              </div>
-              <div class="radio-title">Ваш пол:
-                <input class="input-radio" type="radio" name="gender" value="man" id="male">
-                <label for="male">М</label>
-                /
-                <input class="input-radio" type="radio" name="gender" value="woman" id="female">
-                <label for="female">Ж</label>
-              </div>
-              <button type="submit">Показать доступные варианты</button>
-            </form>
-          </div>
+          <div class="about__text_sub" id="about-tab">Об Арене — группа теплокровных яйцекладущих позвоночных животных, традиционно рассматриваемая в ранге отдельного класса. Представляют собой хорошо обособленную на фоне остальных современных
+            животных группу, одним из наиболее характерных признаков представителей которой является покров.</div>
+          <div class="about__text_sub" id="fields-tab">Направления — группа теплокровных яйцекладущих позвоночных животных, традиционно рассматриваемая в ранге отдельного класса. Представляют собой хорошо обособленную на фоне остальных современных
+            животных группу, одним из наиболее характерных признаков представителей которой является покров.</div>
+          <div class="about__text_sub" id="team-tab">Специалисты — группа теплокровных яйцекладущих позвоночных животных, традиционно рассматриваемая в ранге отдельного класса. Представляют собой хорошо обособленную на фоне остальных современных
+            животных группу, одним из наиболее характерных признаков представителей которой является покров.</div>
         </div>
-      </section>
+
+      </div> <!-- flex wrap end -->
+    </div> <!-- container end -->
+  </section>
 
 
-    <section class="team">
-        <div class="team__title">Команда Арены</div>
-        <!-- Slider main container -->
-        <div class="swiper-container swiper-team">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-                <div class="team-card swiper-slide">
-                    <div class="team-card__img"><img src="img/trener1.jpg" alt="Леонид Грицай"></div>
-                    <div class="team-card__sport_type">ВОЛЕЙБОЛ</div>
-                    <div class="team-card__name">Леонид Грицай</div>
-                </div>
-                <div class="team-card swiper-slide">
-                    <div class="team-card__img"><img src="img/trener2.jpg" alt="Александр Кулик"></div>
-                    <div class="team-card__sport_type">МИНИ-ФУТБОЛ</div>
-                    <div class="team-card__name">Александр Кулик</div>
-                </div>
-                <div class="team-card swiper-slide">
-                    <div class="team-card__img"><img src="img/trener3.jpg" alt="Алексей Воскобойников"></div>
-                    <div class="team-card__sport_type">КАРАТЭНОМИЧИ</div>
-                    <div class="team-card__name">Алексей Воскобойников</div>
-                </div>
-                <div class="team-card swiper-slide">
-                    <div class="team-card__img"><img src="img/trener4.jpg" alt="Сергей Пыхов"></div>
-                    <div class="team-card__sport_type">КАПОЭРО</div>
-                    <div class="team-card__name">Сергей Пыхов</div>
-                </div>
-                <div class="team-card swiper-slide">
-                    <div class="team-card__img"><img src="img/trener1.jpg" alt="Леонид Грицай"></div>
-                    <div class="team-card__sport_type">ВОЛЕЙБОЛ</div>
-                    <div class="team-card__name">Леонид Грицай</div>
-                </div>
-                <div class="team-card swiper-slide">
-                    <div class="team-card__img"><img src="img/trener2.jpg" alt="Александр Кулик"></div>
-                    <div class="team-card__sport_type">МИНИ-ФУТБОЛ</div>
-                    <div class="team-card__name">Александр Кулик</div>
-                </div>
-                <div class="team-card swiper-slide">
-                    <div class="team-card__img"><img src="img/trener3.jpg" alt="Алексей Воскобойников"></div>
-                    <div class="team-card__sport_type">КАРАТЭНОМИЧИ</div>
-                    <div class="team-card__name">Алексей Воскобойников</div>
-                </div>
-                <div class="team-card swiper-slide">
-                    <div class="team-card__img"><img src="img/trener4.jpg" alt="Сергей Пыхов"></div>
-                    <div class="team-card__sport_type">КАПОЭРО</div>
-                    <div class="team-card__name">Сергей Пыхов</div>
-                </div>
-                <div class="team-card swiper-slide">
-                    <div class="team-card__img"><img src="img/trener3.jpg" alt="Алексей Воскобойников"></div>
-                    <div class="team-card__sport_type">КАРАТЭНОМИЧИ</div>
-                    <div class="team-card__name">Алексей Воскобойников</div>
-                </div>
-                <div class="team-card swiper-slide">
-                    <div class="team-card__img"><img src="img/trener4.jpg" alt="Сергей Пыхов"></div>
-                    <div class="team-card__sport_type">КАПОЭРО</div>
-                    <div class="team-card__name">Сергей Пыхов</div>
-                </div>
-            </div>
+  <section class="news">
 
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar">
-              <div class="swiper-scrollbar-drag" style="width: 290.333px; transform: translate3d(217.75px, 0px, 0px); transition-duration: 0ms;">
-                <div class="swiper-scrollbar__circle"></div>
-              </div>
-            </div>
+    <div class="news__title_wrapper heading-w-more">
+      <div class="news__title">Новости</div>
+      <a class="show-all" href="/news.html">показать все</a>
+    </div>
+
+    <div class="news__flex-wrap">
+
+      <div class="news-card">
+        <img src="img/news_1.jpg" alt="">
+        <div class="news-card__text">
+          <h3 class="news-card__title"><a href="/newsitem.html">Дружественный матч по волейболу в рамках Приморской спартакиады среди студентов</a></h3>
+          <div class="news-card__excerpt">Пти́цы (лат. Aves) — группа теплокровных яйцекладущих позвоночных животных</div>
+          <a href="/newsitem.html" class="news-card__link"><object data="img/news_arrow.svg" type="image/svg+xml"></object></a>
         </div>
-    </section>
-
-    <section class="about">
-
-      <div class="container">
-        <div class="flex-wrap">
-
-          <!-- Slider main container -->
-          <div class="swiper-container about__slider about__col-left">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <img src="img/about_img.svg" class="swiper-slide">
-                  <img src="img/slider2/2-1.jpg" class="swiper-slide">
-                  <img src="img/slider2/2-2.jpg" class="swiper-slide">
-                  <img src="img/slider2/2-3.jpg" class="swiper-slide">
-                  <img src="img/slider2/2-4.jpg" class="swiper-slide">
-                  <img src="img/slider2/2-5.jpg" class="swiper-slide">
-              </div>
-              <!-- navigation buttons -->
-              <div class="about__swiper-controls --home">
-                <div class="swiper-control swiper-button-prev --type1"></div>
-                <div class="swiper-control swiper-button-next --type1"></div>
-              </div>
-          </div>
-
-          <div class="about__text about__col-right">
-              <div class="about__text_sup">Арена спорта - Это современный комплекс, призванный не только развивать и поддерживать приморский спорт, но и создавать максимально комфортные и благоприятные условия.</div>
-              <ul data-tabs class="about__text_middle">
-                  <li><a data-tabby-default class="about__tab" href="#about-tab">Об Арене</a></li>
-                  <li><a class="about__tab" href="#fields-tab">Направления</a></li>
-                  <li><a class="about__tab" href="#team-tab">Специалисты</a></li>
-              </ul>
-              <div class="about__text_sub" id="about-tab">Об Арене — группа теплокровных яйцекладущих позвоночных животных, традиционно рассматриваемая в ранге отдельного класса. Представляют собой хорошо обособленную на фоне остальных современных животных группу, одним из наиболее характерных признаков представителей которой является покров.</div>
-              <div class="about__text_sub" id="fields-tab">Направления — группа теплокровных яйцекладущих позвоночных животных, традиционно рассматриваемая в ранге отдельного класса. Представляют собой хорошо обособленную на фоне остальных современных животных группу, одним из наиболее характерных признаков представителей которой является покров.</div>
-              <div class="about__text_sub" id="team-tab">Специалисты — группа теплокровных яйцекладущих позвоночных животных, традиционно рассматриваемая в ранге отдельного класса. Представляют собой хорошо обособленную на фоне остальных современных животных группу, одним из наиболее характерных признаков представителей которой является покров.</div>
-          </div>
-
-        </div> <!-- flex wrap end -->
-      </div> <!-- container end -->
-    </section>
-
-
-    <section class="news">
-        <div class="news__title_wrapper">
-            <div class="news__title">Новости</div>
-            <a class="news__button show-all" href="#">показать все</a>
-        </div>
-        <div class="news__item_wrapper">
-        <div class="news__item">
-            <img src="img/news_1.jpg" alt="">
-            <div class="news__item_title">Дружественный матч по волейболу в рамках Приморской спартакиады среди студентов</div>
-            <div class="news__item_text">Пти́цы (лат. Aves) — группа теплокровных яйцекладущих позвоночных животных</div>
-            <a href="#" class="news__item_link"><object data="img/news_arrow.svg" type="image/svg+xml"></object></a>
-        </div>
-        <div class="news__item">
-            <img src="img/news_2.jpg" alt="">
-            <div class="news__item_title">Боксеры клуба «Патриот» подвели итоги достижений 2017 года и обсудили спортивные планы</div>
-            <div class="news__item_text">Пти́цы (лат. Aves) — группа теплокровных яйцекладущих позвоночных животных</div>
-            <a href="#" class="news__item_link"><object data="img/news_arrow.svg" type="image/svg+xml"></object></a>
-        </div>
-        <div class="news__item">
-            <img src="img/news_3.jpg" alt="">
-            <div class="news__item_title">Финальные игры по гандболу в рамках Приморской Спартакиады среди студентов</div>
-            <div class="news__item_text">Пти́цы (лат. Aves) — группа теплокровных яйцекладущих позвоночных животных</div>
-            <a href="#" class="news__item_link"><object data="img/news_arrow.svg" type="image/svg+xml"></object></a>
-        </div>
-        </div>
-    </section>
-
-    <section class="training">
-        <h3 class="training__title">Приходи на тренировку</h3>
-        <div class="training__text">Спортивные и оздоровительные направления. 3000 кв.м. для реализации твоих возможностей</div>
-        <button class="training__button">Записаться</button>
-    </section>
-
-    <footer class="footer">
-      <div class="container">
-          <div class="footer__contacts">
-              <div class="footer__contacts-bar">
-                  <div class="footer__contacts-bar-title footer__contacts-bar-content"><span>Приходи</span><br>Владивосток, Володарского 3А</div>
-                  <div class="footer__contacts-bar-phone footer__contacts-bar-content"><span>Звони</span><br>+7 (423) 276 10 10<br> +7 (423) 242 04 04<br> +7 (423) 426 40 10</div>
-                  <div class="footer__contacts-bar-socials footer__contacts-bar-content"><span>Пиши</span><br><a href="#" class="">WhatsApp </a>/<a href="#">Instagram</a></div>
-              </div>
-              <div class="footer__contacts_map"></div>
-              <script src="/js/map.js"></script>
-    	        <script async defer
-    	          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWhfLFdy0iE50r6IGd_fqWNygDmbbChWM&callback=initMaps">
-    	        </script>
-          </div>
-          <div class="footer__partners">
-              <div class="footer__partners-item"><object class="partners__item" data="img/lifefitnes.svg" type="image/svg+xml"></object></div>
-              <div class="footer__partners-item"><object data="img/hammerstrength.svg" type="image/svg+xml"></object></div>
-              <div class="footer__partners-item"><object data="img/trx.svg" type="image/svg+xml"></object></div>
-              <div class="footer__partners-item"><object data="img/bbh.svg" type="image/svg+xml"></object></div>
-              <div class="footer__partners-item"><object data="img/atlantikscity.svg" type="image/svg+xml"></object></div>
-              <div class="footer__partners-item"><object data="img/magnum.svg" type="image/svg+xml"></object></div>
-              <div class="footer__partners-item"><object data="img/amurskiyzaliv.svg" type="image/svg+xml"></object></div>
-          </div>
-          <div class="footer__copyright">Арена спорта 2017. Все права защищены</div>
       </div>
-    </footer>
 
-
-    <!-- MODALS -->
-
-    <form id="login-form" class="modal">
-       <div class="modal__wrap">
-            <h2 class="modal__title">Запись на тренировку</h2>
-            <div class="modal-input-box">
-                <input class="modal__input" type="text" id="modal__name" placeholder="Введите">
-                <label class="modal__label" for="modal__name">Ваше имя</label>
-            </div>
-            <div class="modal-input-box">
-                <input class="modal__input" type="tel" id="modal__phone"  placeholder="+7 (___) ___-__-__">
-                <label class="modal__label" for="modal__phone">Телефон</label>
-            </div>
-            <div class="modal-input-box">
-                <select class="modal__input dropkick" type="text" id="modal__type">
-                    <option value="Фитнес">Фитнес</option>
-                    <option value="Бойцовский клуб">Бойцовский клуб</option>
-                    <option value="Детские секции">Детские секции</option>
-                    <option value="Игровой зал">Игровой зал</option>
-                    <option value="Олимпийские секции">Олимпийские секции</option>
-                </select>
-                <label class="modal__label" for="modal__type">Выберите направление</label>
-            </div>
-            <div class="modal-check-box">
-                <input class="modal__input" type="checkbox" required name="politics" id="modal__politics" checked>
-                <label class="modal__label-check" for="modal__politics">Я согласен с <a href="#">политикой конфиденциальности</a></label>
-            </div>
-            <input id="modal__submit" class="modal__submit" type="submit" value="Отправить">
+      <div class="news-card">
+        <img src="img/news_2.jpg" alt="">
+        <div class="news-card__text">
+          <h3 class="news-card__title"><a href="/newsitem.html">Боксеры клуба «Патриот» подвели итоги достижений 2017 года и обсудили спортивные планы</a></h3>
+          <div class="news-card__excerpt">Пти́цы (лат. Aves) — группа теплокровных яйцекладущих позвоночных животных</div>
+          <a href="/newsitem.html" class="news-card__link"><object data="img/news_arrow.svg" type="image/svg+xml"></object></a>
         </div>
-    </form>
+      </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.2.0/sticky.compile.js"></script>
-    <script src="https://unpkg.com/imask"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/plyr@3.5.6/dist/plyr.min.js"></script>
-    <script src="swiper/js/swiper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dropkickjs@2.2.4/dist/dropkick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.2.0/sticky.compile.js"></script>    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.2/shuffle.min.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+      <div class="news-card">
+        <img src="img/news_3.jpg" alt="">
+        <div class="news-card__text">
+          <h3 class="news-card__title"><a href="/newsitem.html">Финальные игры по гандболу в рамках Приморской Спартакиады среди студентов</a></h3>
+          <div class="news-card__excerpt">Пти́цы (лат. Aves) — группа теплокровных яйцекладущих позвоночных животных</div>
+          <a href="/newsitem.html" class="news-card__link"><object data="img/news_arrow.svg" type="image/svg+xml"></object></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta">
+    <h3 class="cta__title">Приходи на тренировку</h3>
+    <div class="cta__text">Спортивные и оздоровительные направления. 3000 кв.м. для реализации твоих возможностей</div>
+    <button class="cta__button btn-round">Записаться</button>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__contacts">
+        <div class="footer__contacts-bar">
+          <div class="footer__contacts-bar-title footer__contacts-bar-content"><span>Приходи</span><br>Владивосток, Володарского 3А</div>
+          <div class="footer__contacts-bar-phone footer__contacts-bar-content"><span>Звони</span><br>+7 (423) 276 10 10<br> +7 (423) 242 04 04<br> +7 (423) 426 40 10</div>
+          <div class="footer__contacts-bar-socials footer__contacts-bar-content"><span>Пиши</span><br><a href="#" class="">WhatsApp </a>/<a href="#">Instagram</a></div>
+        </div>
+        <div class="footer__contacts_map"></div>
+        <script src="/js/map.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWhfLFdy0iE50r6IGd_fqWNygDmbbChWM&callback=initMaps">
+        </script>
+      </div>
+      <div class="footer__partners">
+        <div class="footer__partners-item"><img class="svg" src="img/lifefitnes.svg" /></div>
+        <div class="footer__partners-item"><img class="svg" src="img/hammerstrength.svg" /></div>
+        <div class="footer__partners-item"><img class="svg" src="img/trx.svg" /></div>
+        <div class="footer__partners-item"><img class="svg" src="img/bbh.svg" /></div>
+        <div class="footer__partners-item"><img class="svg" src="img/atlantikscity.svg" /></div>
+        <div class="footer__partners-item"><img class="svg" src="img/magnum.svg" /></div>
+        <div class="footer__partners-item"><img class="svg" src="img/amurskiyzaliv.svg" /></div>
+      </div>
+      <div class="footer__copyright">Арена спорта 2017. Все права защищены</div>
+    </div>
+  </footer>
+
+
+  <!-- MODALS -->
+
+  <form id="login-form" class="modal">
+    <div class="modal__wrap">
+      <h2 class="modal__title">Запись на тренировку</h2>
+      <div class="modal-input-box">
+        <input class="modal__input" type="text" id="modal__name" placeholder="Введите">
+        <label class="modal__label" for="modal__name">Ваше имя</label>
+      </div>
+      <div class="modal-input-box">
+        <input class="modal__input" type="tel" id="modal__phone" placeholder="+7 (___) ___-__-__">
+        <label class="modal__label" for="modal__phone">Телефон</label>
+      </div>
+      <div class="modal-input-box">
+        <select class="modal__input dropkick" type="text" id="modal__type">
+          <option value="Фитнес">Фитнес</option>
+          <option value="Бойцовский клуб">Бойцовский клуб</option>
+          <option value="Детские секции">Детские секции</option>
+          <option value="Игровой зал">Игровой зал</option>
+          <option value="Олимпийские секции">Олимпийские секции</option>
+        </select>
+        <label class="modal__label" for="modal__type">Выберите направление</label>
+      </div>
+      <div class="modal-check-box">
+        <input class="modal__input" type="checkbox" required name="politics" id="modal__politics" checked>
+        <label class="modal__label-check" for="modal__politics">Я согласен с <a href="#">политикой конфиденциальности</a></label>
+      </div>
+      <input id="modal__submit" class="modal__submit" type="submit" value="Отправить">
+    </div>
+  </form>
+
+  <!-- popper + tooltip -->
+  <script src="https://unpkg.com/popper.js"></script>
+  <script src="https://unpkg.com/tooltip.js"></script>
+
+  <script src="js/svg-inliner.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/plyr@3.5.6/dist/plyr.min.js"></script>
+  <script src="swiper/js/swiper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dropkickjs@2.2.4/dist/dropkick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.2.0/sticky.compile.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.2/shuffle.min.js" crossorigin="anonymous"></script> -->
+  <script src="js/shuffle.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
+
 </html>

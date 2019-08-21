@@ -1,21 +1,24 @@
 $(document).ready(function() {
 
   // init hero swiper
-  var heroSwiper = new Swiper('.hero__slider-wrap', {
-    autoplay: {
-      delay: 6000,
-    },
-    pagination: {
-      el: '.hero-swiper-pagination',
-      type: 'bullets',
-      bulletClass: 'fancy-pagination-bullet',
-      bulletActiveClass: '--active',
-      clickable: true,
-    },
-  });
+  function initHomeSlider() {
+    var heroSwiper = new Swiper('.hero__slider-wrap', {
+      autoplay: {
+        delay: 6000,
+        // disableOnInteraction: false
+      },
+      pagination: {
+        el: '.hero-swiper-pagination',
+        type: 'bullets',
+        bulletClass: 'fancy-pagination-bullet',
+        bulletActiveClass: '--active',
+        clickable: true,
+      },
+    });
+  }
 
-  //initialize swiper when document ready
-  var mySwiper = new Swiper('.swiper-team', {
+  //initialize team swiper
+  var teamSwiper = new Swiper('.swiper-team', {
     // Optional parameters
     direction: 'horizontal',
     slidesPerView: 4,
@@ -24,6 +27,16 @@ $(document).ready(function() {
       draggable: true,
     },
     // loop: true
+  });
+
+  // init schedule swiper
+  //initialize swiper when document ready
+  var schedSwiper = new Swiper('.swiper-schedule', {
+    slidesPerView: 'auto',
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+    },
   });
 
   // init about section swiper
@@ -37,12 +50,13 @@ $(document).ready(function() {
     },
   });
 
+  // zero-pad a number
   function pad(num) {
     return (num.toString().length == 1) ? '0' + num : num;
   }
 
   // init about page swiper
-  var aboutPageSwiper = new Swiper('.js-about-page-slider', {
+  var aboutPageSwiper = new Swiper('.js-wide-row-slider', {
     // Optional parameters
     slidesPerView: 1,
     loop: true,
@@ -51,7 +65,7 @@ $(document).ready(function() {
       prevEl: '.swiper-button-prev',
     },
     pagination: {
-      el: '.about__swiper-pagination',
+      el: '.wide-row__swiper-pagination',
       type: 'fraction',
       formatFractionCurrent: function(num) {
           return pad(num)
@@ -62,7 +76,9 @@ $(document).ready(function() {
     },
   });
 
-  $(window).scroll(function() {
+
+  // header scroll states
+  function headerOnScroll() {
     if ($(this).scrollTop() > 1) {
       $('header').addClass('sticky');
       $('.header__nav-link').addClass("header__nav-link-scroll");
@@ -70,18 +86,14 @@ $(document).ready(function() {
       $('header').removeClass('sticky');
       $('.header__nav-link').removeClass('header__nav-link-scroll')
     }
+  }
+
+  $(window).scroll(function() {
+    headerOnScroll();
   });
 
-  $('.catalog__box__item').hover(function() {
-    $(this).closest('.catalog__box__item').find('.catalog__box__item__title').css("opacity", "1");
-    $(this).closest('.catalog__box__item').find('.catalog__box__item__dots').css("opacity", "1");
-  }, function() {
-    $('.catalog__box__item__title').css("opacity", "0");
-    $('.catalog__box__item__dots').css("opacity", "0");
-  });
+  headerOnScroll();
 
-  //$('#calendar').clndr();
-  // $('#news-filter__date').clndr();
 
   // init PLYR
   var player = new Plyr('#hero-player', {
@@ -136,13 +148,55 @@ $(document).ready(function() {
     $(img).on('load error', function(e) {
       $('#preloader').removeClass('--visible');
     });
+    initHomeSlider();
   } else {
     $(window).on('load error', function(e) {
       $('#preloader').removeClass('--visible');
     });
+    initHomeSlider();
   }
 
   // stick it to the man
   var sticky = new Sticky('.js-sticky');
+
+  // catalog dots
+  $('[data-fields]').each(function(){
+    var $catItem = $(this);
+    var fields = $catItem.data('fields');
+    var $dots = $catItem.find('.catalog__item_dots');
+    var $tooltip = $('<div class="catalog__item_tooltip"/>');
+
+    var map = {
+      fitness: "фитнес",
+      martial: "боевые искусства",
+      kids: "доступно для детей",
+      games: "игровой спорт",
+      olympic: "олимпийский спорт",
+    }
+
+    // create a dot for each field
+    $.each(fields, function(i, field){
+      var $dot = $('<div class="catalog__item_dot"/>');
+      var className = '--' + field;
+      $dots.append($dot.addClass(className));
+      $catItem.addClass(className);
+      // add tooltip text
+      $tooltip.append($('<span/>').text(map[field]));
+      var html = $tooltip[0].outerHTML;
+      console.log();
+
+      new Tooltip($dots, {
+        placement: 'top',
+        trigger: 'hover',
+        html: true,
+        title: html
+      });
+    });
+  });
+
+  // back button
+  $('.page-back').click(function(){
+    window.history.back();
+  });
 
 }); // doc ready end

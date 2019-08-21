@@ -21,11 +21,11 @@
 
 </head>
 
-<body>
+<body class="page-news-single header-text-dark">
 
   <div id="preloader" class="--visible">
     <svg class="preloader-logo">
-      <use xlink:href="#Header_logo"/>
+      <use xlink:href="#Header_logo" />
     </svg>
   </div>
 
@@ -120,190 +120,197 @@
     </div>
   </header>
 
-  <section class="page-header" style="background-image: url(img/about-main-bg.jpg);">
-    <div class="container">
+  <article class="field single">
 
-      <div class="flex-wrap page-header__flex-c">
-        <div class="page-header__social">
-          <a href="">WhatsApp</a>
-          <span>/</span>
-          <a href="">Instagram</a>
+    <section class="field__page-content">
+      <div class="container">
+        <div class="single__header">
+          <a href="#" class="page-back"></a>
+          <h1 class="single__h1 field__h1 --fitness">
+            Фитнес
+          </h1>
         </div>
-        <div class="page-header__text">
-          <h1>Комплекс</h1>
+
+        <div class="single__content">
+          <h2>
+            Фитнес в более широком смысле — общая физическая подготовленность
+            организма человека.
+          </h2>
           <p>
-            Спортивные и оздоровительные направления. 3000 кв.м. для реализации твоих возможностей
+            Вы хотите сбросить вес или улучшить фигуру, но не знаете, какой вид
+            спорта выбрать? Отличный вариант для женщин — заняться фитнесом. Что
+            такое фитнес? Это одно из популярных направлений в спорте, суть
+            которого заключается в выполнении упражнений, направленных на
+            оздоровление и поддержание физической формы.
           </p>
         </div>
-      </div>
 
-      <a class="main__button page-header__cta-btn" href="#login-form" rel="modal:open">Запись на тренировку</a>
+      </div container-end>
+    </section>
 
-    </div>
-  </section>
+    <section class="schedule__row">
+      <div class="container">
 
-  <section class="sections">
-    <nav class="sections__nav">
-      <a href="/category.html" class="sections__nav-item --fitness"><img src="img/fitnes_hover.svg">Фитнес</a>
-      <a href="/category.html" class="sections__nav-item --martial"><img src="img/fight_hover.svg">Бойцовский клуб</a>
-      <a href="/category.html" class="sections__nav-item --kids"><img src="img/child_hover.svg">Детские секции</a>
-      <a href="/category.html" class="sections__nav-item --games"><img src="img/basket.svg">Игровой зал</a>
-      <a href="/category.html" class="sections__nav-item --olympic"><img src="img/rings_hover.svg">Олимпийские секции</a>
-    </nav>
-  </section>
-
-  <section class="about-content">
-
-    <div class="about-content__sticky-cont" data-sticky-container>
-      <div class="about-content__arena wide-row__row  ">
-        <div class="wide-row__col-left --pad">
-          <div class="about-content__arena_img js-sticky" data-margin-top="88" data-sticky-class="--stuck">
-            <img src="img/about-text_img.jpg" alt="">
-          </div>
+        <div class="schedule-head">
+          <h2 class="schedule-head__h2">Расписание занятий на сегодня</h2>
+          <a href="#" class="schedule-head__link">Расписание на неделю</a>
         </div>
-        <div class="wide-row__col-right">
-          <div class="about-content__arena_text">
-            <h2 class="about__h2">
-              Спортивный комплекс АРЕНА СПОРТА, созданный при поддержке Фонда ВВН и по личной инициативе его президента Владимира Николаева.
-            </h2>
-            <p class="about__p">
-              <b>Он объединяет спортивные и оздоровительные направления, профессионалов и спортсменов-любителей</b>, детскую и взрослую аудитории, подходит для семейного посещения.
-              <br><br>
-              Каждый из четырех этажей оборудован современным профессиональным снаряжением, имеет соответствующую спортивную инфраструктуру. Для удобства гостей действует
-              система годовых комплексных карт, а также индивидуальные пакеты тренировок.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="about-content__nikolaev wide-row__row">
-        <div class="wide-row__col-right">
-          <p class="about__p italic quote">
-            <b>Созданный мною спортивный клуб «Патриот» существует уже 20 лет, в нём занимаются более тысячи человек</b>, из него вышли десятки мастеров спорта, в том числе международного класса. Занятия в клубе для
-            детей – бесплатные, это моя принципиальная позиция, вступить в него может любой мальчишка с восьмилетнего возраста.
-            <br><br>
-            Я сам с детства в спорте и занимался бесплатно до 91-го года. А потом мне сказали – плати. Денег не было, и я уже уходил из зала, но остановил тренер… А университет продавал свой спорткомплекс как
-            ненужный. Три тысячи квадратных метров в удручающем состоянии.
-            <br><br>
-            Мы приняли решение сделать здесь спортивную арену международного класса, где можно будет проводить соревнования для всего Тихоокеанского региона. Участие в разработке концепции принимали все
-            желающие, активно делились опытом спортивные федерации города и края…
-          </p>
 
-          <div class="about__credits">
-            <img src="img/nikolaev.png" alt="">
-            <div class="about__credits-text">
-              <div class="about__credits-name">Владимир Николаев</div>
-              <div class="about__creadits-title">
-                Президент Фонда ВВН, пятый мэр Владивостока
-              </div>
-            </div>
-          </div>
+        <div class="swiper-container swiper-schedule">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
 
-        </div>
-      </div>
-    </div>
-    </div>
-
-    <div class="about-content__feature wide-row__row">
-      <div class="wide-row__col-left">
-        <h3 class="about__h3-left">
-          В чем же кроется ключевая особенность проекта?
-        </h3>
-      </div>
-      <div class="wide-row__col-right">
-        <div class="about-content__feature__right">Особенностью проекта является уникальная система тренировок под руководством олимпийских чемпионов и чемпионов мира. Такой формат, когда региональная площадка собирает легендарные имена не просто
-          номинально, а внедряет опыт именитых спортсменов, не имеет аналогов. Это новый уровень тренировок, а также мощная мотивация к развитию, воспитание силы духа и упорства у подрастающего поколения.</div>
-      </div>
-    </div>
-    <div class="wide-row__section">
-      <div class="wide-row__row">
-
-        <div class="wide-row__col-left about__interior-text">
-
-          <div class="wide-row__heading">
-            <h2 class="wide-row__h2">Интерьер Арены спорта</h2>
-            <div class="wide-row__interior-subhead">А что же внутри?</div>
-          </div>
-
-            <p class="about__p">
-              Оформленное внутреннее пространство здания, обеспечивающее человеку эстетическое восприятие
-              и благоприятные условия жизнедеятельности; внутреннее пространство здания или отдельного помещения,
-               архитектурное решение которого определяется его функциональным назначением.
-            </p>
-          </div>
-
-          <div class="wide-row__col-right wide-row__slider-col">
-
-            <div class="wide-row__outer-wrap">
-              <!-- omg this awful hack is the best I was able to come up with -->
-              <img src="/img/wide-row-blank.png" class="wide-row__blank-img" alt="">
-
-              <div class="wide-row__slider swiper-container js-wide-row-slider">
-                <div class="swiper-wrapper about-swiper-wrapper">
-                  <div class="swiper-slide wide-row-slide"><img src="img/about-content_slide1.jpg" alt=""></div>
-                  <div class="swiper-slide wide-row-slide"><img src="img/slider2/2-1.jpg" alt=""></div>
-                  <div class="swiper-slide wide-row-slide"><img src="img/slider2/2-2.jpg" alt=""></div>
-                  <div class="swiper-slide wide-row-slide"><img src="img/slider2/2-3.jpg" alt=""></div>
-                  <div class="swiper-slide wide-row-slide"><img src="img/slider2/2-4.jpg" alt=""></div>
+              <div class="sched-card swiper-slide --fitness">
+                <div class="sched-card__training">
+                  <a>Бег ногами</a>
                 </div>
+                <div class="sched-card__location">
+                  Фитнес-цех
+                </div>
+                <div class="sched-card__trainer">
+                  <a>Ашлапова Екатерина Ильинична</a>
+                </div>
+                <div class="sched-card__slot">
+                  15:00-18:00
+                </div>
+              </div>
 
-                <div class="wide-row__swiper-controls">
-                  <div class="wide-row__swiper-pagination"></div>
-                  <div class="swiper-control swiper-button-prev --type2"></div>
-                  <div class="swiper-control swiper-button-next --type2"></div>
+              <div class="sched-card swiper-slide --martial">
+                <div class="sched-card__training">
+                  <a>Бег ногами</a>
+                </div>
+                <div class="sched-card__location">
+                  Фитнес-цех
+                </div>
+                <div class="sched-card__trainer">
+                  <a>Ашлапова Екатерина Ильинична</a>
+                </div>
+                <div class="sched-card__slot">
+                  15:00-18:00
+                </div>
+              </div>
+
+              <div class="sched-card swiper-slide --kids">
+                <div class="sched-card__training">
+                  <a>Бег ногами</a>
+                </div>
+                <div class="sched-card__location">
+                  Фитнес-цех
+                </div>
+                <div class="sched-card__trainer">
+                  <a>Ашлапова Екатерина Ильинична</a>
+                </div>
+                <div class="sched-card__slot">
+                  15:00-18:00
+                </div>
+              </div>
+
+              <div class="sched-card swiper-slide --games">
+                <div class="sched-card__training">
+                  <a>Бег ногами</a>
+                </div>
+                <div class="sched-card__location">
+                  Фитнес-цех
+                </div>
+                <div class="sched-card__trainer">
+                  <a>Ашлапова Екатерина Ильинична</a>
+                </div>
+                <div class="sched-card__slot">
+                  15:00-18:00
+                </div>
+              </div>
+
+              <div class="sched-card swiper-slide --olympic">
+                <div class="sched-card__training">
+                  <a>Бег ногами</a>
+                </div>
+                <div class="sched-card__location">
+                  Фитнес-цех
+                </div>
+                <div class="sched-card__trainer">
+                  <a>Ашлапова Екатерина Ильинична</a>
+                </div>
+                <div class="sched-card__slot">
+                  15:00-18:00
                 </div>
               </div>
 
             </div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar">
+              <div class="swiper-scrollbar-drag">
+                <div class="swiper-scrollbar__circle"></div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="team-grid">
+      <div class="container">
+        <div class="flex-wrap">
+          <a href="#"  class="team-card team-grid__card">
+            <div class="team-card__img"><img src="img/trener1.jpg" alt="Леонид Грицай"></div>
+            <div class="team-card__sport_type">ВОЛЕЙБОЛ</div>
+            <div class="team-card__name">Леонид Грицай</div>
+          </a>
+          <a href="#" class="team-card team-grid__card">
+            <div class="team-card__img"><img src="img/trainer2.jpg" alt="Александр Кулик"></div>
+            <div class="team-card__sport_type">МИНИ-ФУТБОЛ</div>
+            <div class="team-card__name">Александр Кулик</div>
+          </a>
+          <a href="" class="team-card team-grid__card">
+            <div class="team-card__img"><img src="img/trainer3.jpg" alt="Алексей Воскобойников"></div>
+            <div class="team-card__sport_type">КАРАТЭНОМИЧИ</div>
+            <div class="team-card__name">Алексей Воскобойников</div>
+          </a>
+          <a href="" class="team-card team-grid__card">
+            <div class="team-card__img"><img src="img/trainer4.jpg" alt="Сергей Пыхов"></div>
+            <div class="team-card__sport_type">КАПОЭРО</div>
+            <div class="team-card__name">Сергей Пыхов</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h3 class="cta__title">Любишь фитнес? Приходи к нам!</h3>
+      <div class="cta__text">Спортивные и оздоровительные направления. 3000 кв.м. для реализации твоих возможностей</div>
+      <button class="cta__button btn-round">Записаться</button>
+    </section>
+
+  </article>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__contacts">
+          <div class="footer__contacts-bar">
+            <div class="footer__contacts-bar-title footer__contacts-bar-content"><span>Приходи</span><br>Владивосток, Володарского 3А</div>
+            <div class="footer__contacts-bar-phone footer__contacts-bar-content"><span>Звони</span><br>+7 (423) 276 10 10<br> +7 (423) 242 04 04<br> +7 (423) 426 40 10</div>
+            <div class="footer__contacts-bar-socials footer__contacts-bar-content"><span>Пиши</span><br><a href="#" class="">WhatsApp </a>/<a href="#">Instagram</a></div>
           </div>
+          <div class="footer__contacts_map"></div>
+          <script src="/js/map.js"></script>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWhfLFdy0iE50r6IGd_fqWNygDmbbChWM&callback=initMaps">
+          </script>
         </div>
-
-      </div>
-    </div>
-    <div class="about-content__history wide-row__row">
-      <div class="wide-row__col-left">
-        <h3 class="about__h3-left">
-          В прежние времена здесь занимались спортсмены, которые впоследствии становились чемпионами страны, Европы и мира.
-        </h3>
-      </div>
-      <div class="wide-row__col-right">
-          <p class="about__p">
-            <b>Знаменитая школа приморского самбо закладывалась именно здесь.</b> Но за все годы своего существования корпус ни разу капитально не ремонтировался. А после объединения в 2010 году четырёх
-            дальневосточных вузов в федеральный университет и переезда в новый кампус на остров Русский, занятия в спортивном комплексе и вовсе прекратились.
-            <br><br>
-            <strong>Здание было обречено на медленное разрушение. И это при том, что Владивостоку не хватает спортивной инфраструктуры.</strong> В процессе капитального ремонта комплекса были увеличены полезные
-            площади, а также инженерные мощности для создания современной спортивной инфраструктуры, необходимой для проведения продуктивных тренировок и эффективного восстановления. Развитие приморского спорта, создание максимально комфортных
-            условий не только для профессиональных спортсменов, но и тех, кому предстоит ими стать – главные задачи, которые ставит перед собой команда комплекса.
-          </p>
-      </div>
-    </div>
-  </section>
-
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__contacts">
-        <div class="footer__contacts-bar">
-          <div class="footer__contacts-bar-title footer__contacts-bar-content"><span>Приходи</span><br>Владивосток, Володарского 3А</div>
-          <div class="footer__contacts-bar-phone footer__contacts-bar-content"><span>Звони</span><br>+7 (423) 276 10 10<br> +7 (423) 242 04 04<br> +7 (423) 426 40 10</div>
-          <div class="footer__contacts-bar-socials footer__contacts-bar-content"><span>Пиши</span><br><a href="#" class="">WhatsApp </a>/<a href="#">Instagram</a></div>
+        <div class="footer__partners">
+          <div class="footer__partners-item"><img class="svg" src="img/lifefitnes.svg" /></div>
+          <div class="footer__partners-item"><img class="svg" src="img/hammerstrength.svg" /></div>
+          <div class="footer__partners-item"><img class="svg" src="img/trx.svg" /></div>
+          <div class="footer__partners-item"><img class="svg" src="img/bbh.svg" /></div>
+          <div class="footer__partners-item"><img class="svg" src="img/atlantikscity.svg" /></div>
+          <div class="footer__partners-item"><img class="svg" src="img/magnum.svg" /></div>
+          <div class="footer__partners-item"><img class="svg" src="img/amurskiyzaliv.svg" /></div>
         </div>
-        <div class="footer__contacts_map"></div>
-        <script src="/js/map.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWhfLFdy0iE50r6IGd_fqWNygDmbbChWM&callback=initMaps">
-        </script>
+        <div class="footer__copyright">Арена спорта 2017. Все права защищены</div>
       </div>
-      <div class="footer__partners">
-        <div class="footer__partners-item"><img class="svg" src="img/lifefitnes.svg" /></div>
-        <div class="footer__partners-item"><img class="svg" src="img/hammerstrength.svg" /></div>
-        <div class="footer__partners-item"><img class="svg" src="img/trx.svg" /></div>
-        <div class="footer__partners-item"><img class="svg" src="img/bbh.svg" /></div>
-        <div class="footer__partners-item"><img class="svg" src="img/atlantikscity.svg" /></div>
-        <div class="footer__partners-item"><img class="svg" src="img/magnum.svg" /></div>
-        <div class="footer__partners-item"><img class="svg" src="img/amurskiyzaliv.svg" /></div>
-      </div>
-      <div class="footer__copyright">Арена спорта 2017. Все права защищены</div>
-    </div>
-  </footer>
+    </footer>
+
   </div>
 
 
